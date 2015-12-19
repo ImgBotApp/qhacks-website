@@ -6,6 +6,7 @@ html, body{
 #first_section{
 	background: #49B7C9;
 	height: 100%;
+	position: relative;
 }
 
 
@@ -14,6 +15,18 @@ html, body{
 	font-family: 'Lato', sans-serif;
 	text-align: center;
 	color:white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -70%);
+}
+
+#first_section .circle_gradient{
+	width:70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
 }
 
 #logo_and_title h1{
@@ -26,10 +39,40 @@ html, body{
 }
 
 #first_section .hill_1{
-	float: left;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
 }
 #first_section .hill_2{
-	float: right;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+#first_section .cloud_1{
+	width:200px;
+	position: absolute;
+	top:20%;
+	left:80%;
+}
+
+#first_section .cloud_2{
+	width:150px;
+	position: absolute;
+	top:30%;
+	left:20%;
+}
+#first_section .cloud_3{
+	width:300px;
+	position: absolute;
+	top:10%;
+	left:10%;
+}
+#first_section .cloud_4{
+	width:240px;
+	position: absolute;
+	top:15%;
+	left:60%;
 }
 
 /*===== other sections =====*/
