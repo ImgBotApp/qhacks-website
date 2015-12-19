@@ -7,6 +7,7 @@ html, body{
 	background: #49B7C9;
 	height: 100%;
 	position: relative;
+    overflow:hidden;
 }
 
 
@@ -16,15 +17,15 @@ html, body{
 	text-align: center;
 	color:white;
 	position: absolute;
-	top: 50%;
+	top: 35%;
 	left: 50%;
-	transform: translate(-50%, -70%);
+	transform: translate(-50%, -60%);
 }
 
 #first_section .circle_gradient{
 	width:70%;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -60%);
 }
@@ -32,27 +33,55 @@ html, body{
 #logo_and_title h1{
 	font-weight: bold;
 	font-size: 4.2em;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+#logo_and_title h2{
+	margin-top: 0px;
 }
 
 #logo_and_title .logo{
 	width:240px;
+	margin-bottom: 0px;
 }
 
-#first_section .hill_1{
+
+#first_section .clock_tower{
+	height: 70%;
+	margin-left: 60px;
+	margin-top: 40px;
+	z-index: 60;
 	position: absolute;
-	bottom: 0px;
-	left: 0px;
 }
-#first_section .hill_2{
+
+#first_section .buildings{
 	position: absolute;
-	bottom: 0px;
-	right: 0px;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	width:40%;
+}
+
+
+#first_section .hill_left{
+	position: absolute;
+	bottom: -170px;
+	left: -60px;
+	width:80%;
+	z-index: 60;
+}
+#first_section .hill_right{
+	position: absolute;
+	bottom: -330px;
+	right: -140px;
+	width:120%;
+	z-index: 70;
 }
 
 #first_section .cloud_1{
 	width:200px;
 	position: absolute;
-	top:20%;
+	top:22%;
 	left:80%;
 }
 
@@ -65,13 +94,13 @@ html, body{
 #first_section .cloud_3{
 	width:300px;
 	position: absolute;
-	top:10%;
+	top:3%;
 	left:10%;
 }
 #first_section .cloud_4{
 	width:240px;
 	position: absolute;
-	top:15%;
+	top:12%;
 	left:60%;
 }
 

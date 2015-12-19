@@ -31,9 +31,9 @@ cloud4Func();
 
 function cloud1Func(){
 	cloud1.animate({
-		left: "+=70%"
+		left: "+=100%"
 	},{
-		duration:110000,
+		duration:120000,
 		specialEasing: easing,
 		step: function(now,fx) {
 			if (now>=100){
@@ -54,9 +54,9 @@ function cloud1Func(){
 }
 function cloud2Func(){
 	cloud2.animate({
-		left: "+=120%"
+		left: "+=100%"
 	},{
-		duration:110000,
+		duration:120000,
 		specialEasing: easing,
 		step: function(now,fx) {
 			if (now>=100){
@@ -75,9 +75,9 @@ function cloud2Func(){
 }
 function cloud3Func(){
 	cloud3.animate({
-		left: "+=90%"
+		left: "+=100%"
 	},{
-		duration:110000,
+		duration:120000,
 		specialEasing: easing,
 		step: function(now,fx) {
 			if (now>=100){
@@ -96,9 +96,9 @@ function cloud3Func(){
 }
 function cloud4Func(){
 	cloud4.animate({
-		left: "+=60%"
+		left: "+=100%"
 	},{
-		duration:110000,
+		duration:120000,
 		specialEasing: easing,
 		step: function(now,fx) {
 			if (now>=100){
