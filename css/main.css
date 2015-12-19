@@ -1,13 +1,35 @@
-
+html, body{
+  height:100%;
+}
 
 /*===== first section =====*/
+#first_section{
+	background: #49B7C9;
+	height: 100%;
+}
+
+
 #logo_and_title{
 	margin-top: 20px; 
 	font-family: 'Lato', sans-serif;
 	text-align: center;
+	color:white;
 }
 
 #logo_and_title h1{
 	font-weight: bold;
 	font-size: 4.2em;
 }
+
+#logo_and_title .logo{
+	width:240px;
+}
+
+#first_section .hill_1{
+	float: left;
+}
+#first_section .hill_2{
+	float: right;
+}
+
+/*===== other sections =====*/
