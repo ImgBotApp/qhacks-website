@@ -1,0 +1,13 @@
+
+
+/*===== first section =====*/
+#logo_and_title{
+	margin-top: 20px; 
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
+#logo_and_title h1{
+	font-weight: bold;
+	font-size: 4.2em;
+}
