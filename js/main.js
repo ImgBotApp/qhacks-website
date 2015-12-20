@@ -11,10 +11,10 @@ $(document).ready(function(){
 	var cloud3 = $('#first_section .cloud_3');
 	var cloud4 = $('#first_section .cloud_4');
 
-	setupClouds(cloud1);
-	setupClouds(cloud2);
-	setupClouds(cloud3);
-	setupClouds(cloud4);
+	// setupClouds(cloud1);
+	// setupClouds(cloud2);
+	// setupClouds(cloud3);
+	// setupClouds(cloud4);
 
 	function setupClouds(cloud){
 		cloud.animate({

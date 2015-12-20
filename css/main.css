@@ -18,6 +18,9 @@ html, body{
 	font-family: 'Lato', sans-serif;
 	font-size: 115%;
 }
+.text_align_center{
+	text-align: center;
+}
 
 /*===== first section =====*/
 #first_section{
@@ -51,7 +54,11 @@ html, body{
 	font-family: 'Lato', sans-serif;
 	font-size: 160%;
 }
-
+#logo_and_title .narrow_total{
+	display: none;
+	width: 100%;
+	text-align: center;
+}
 #first_section .circle_gradient{
 	width:70%;
 	position: absolute;
@@ -213,6 +220,9 @@ html, body{
 	#first_section .hill_right{
 		bottom: -350px;
 	}
+	#logo_and_title button{
+		margin-top: 5px;
+	}
 }
 
 @media only screen and (max-width : 960px) { 
@@ -220,10 +230,49 @@ html, body{
 		bottom:0%;
 	}
 	#first_section .buildings{
-		bottom:-5%;
+		display: none!important;
 	}
 	#first_section .hill_right{
 		bottom: -300px;
 	}
 }
 
+@media only screen and (max-width : 850px) { 
+	#logo_and_title .wide_total{
+		display: none;
+	}
+	#logo_and_title .narrow_total{
+		display: block;
+	}
+	#first_section .hill_left{
+		bottom: -180px;
+	}
+	#first_section .hill_right{
+		bottom: -260px;
+	}
+}
+
+@media only screen and (max-width : 700px) { 
+	#first_section .clock_tower{
+		display: none!important;
+	}
+	#first_section .hill_left{
+		bottom: -80px;
+	}
+	#first_section .hill_right{
+		bottom: -160px;
+		right: -80px;
+	}
+	#logo_and_title{
+		width: 90%!important;
+	}
+}
+
+@media (max-height: 700px) { 
+
+	#logo_and_title{
+		margin-top: 10px; 
+		top: 0%!important;
+		transform: translate(-50%, 0%)!important;
+	}
+}
