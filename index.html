@@ -14,7 +14,7 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,100,300,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
+        <meta property="og:image" content="img/ogimage.png" />
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -25,28 +25,30 @@
         <div id="first_section"> 
             <img src="img/gradient.png" class="circle_gradient">
 
-            <img src="img/tower.png" class="clock_tower">
-            <img class="cloud_1" src="img/cloud.png">
-            <img class="cloud_2" src="img/cloud.png">
-            <img class="cloud_3" src="img/cloud.png">
-            <img class="cloud_4" src="img/cloud.png">
+            <img src="img/tower.png" class="clock_tower hidden">
+            <img class="cloud cloud_1" src="img/cloud.png">
+            <img class="cloud cloud_2" src="img/cloud.png">
+            <img class="cloud cloud_3" src="img/cloud.png">
+            <img class="cloud cloud_4" src="img/cloud.png">
 
-            <img src="img/buildings.png" class="buildings">
+            <img src="img/buildings.png" class="buildings hidden">
 
-            <img src="img/hill_left.png" class="hill_left">
-            <img src="img/hill_right.png" class="hill_right">
+            <img src="img/hill_left.png" class="hill_left hidden">
+            <img src="img/hill_right.png" class="hill_right hidden">
 
 
-            <div id="logo_and_title">
+            <div id="logo_and_title" class="hidden">
                 <img class="logo" src="img/paw_logo.png">
                 <h1>QHacks</h1>
                 <h2>Queen's University | Spring 2016</h2>
+                <span class="talk_to_us">Talk to us at</span>
+                <h3><a class="email_link" href="mailto:hello@qhacks.ca">hello@qhacks.ca</a></h3>
                 <div class="row btn_row">
                     <div class="col-md-6">
-                        <button class="btn btn-warning btn-block btn_custom">LOGIN</button>
+                        <button class="btn btn-warning btn-block btn_custom" id="btn_learnmore">LEARN MORE</button>
                     </div>
                     <div class="col-md-6">
-                        <button class="btn btn-warning btn-block btn_custom">REGISTER</button>
+                        <button class="btn btn-warning btn-block btn_custom" id="btn_sponsorship">SPONSORSHIP</button>
                     </div>
                 </div>       
             </div>
@@ -57,7 +59,7 @@
         </div>
 
         <div class="header_wrapper">            
-            <h2 class="header_title">ABOUT</h2>
+            <h2 class="header_title" id="about_header">ABOUT</h2>
         </div>
 
         <div class="container text about_section">
@@ -72,10 +74,52 @@
                 </div>
             </div>
         </div>
+        <br/>
+
+        <div class="header_wrapper">            
+            <h2 class="header_title" id="sponsor_header">SPONSORS</h2>
+        </div>
+        <br/>
+        <div class="container text about_section">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="http://placehold.it/310x150">
+                </div>
+                <div class="col-md-4">
+                    <img src="http://placehold.it/310x150">
+                </div>
+                <div class="col-md-4">
+                    <img src="http://placehold.it/310x150">
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="http://placehold.it/260x140">
+                </div>
+                <div class="col-md-3">
+                    <img src="http://placehold.it/260x140">
+                </div>
+                <div class="col-md-3">
+                    <img src="http://placehold.it/260x140">
+                </div>
+                <div class="col-md-3">
+                    <img src="http://placehold.it/260x140">
+                </div>
+            </div>
+        </div>
+        <br/>
 
 
         <div class="footer">
-            Footer stuff
+            <div class="container" id="footer_container">
+                <h1>QHacks 2016</h1>
+                <a class="email_link" href="mailto:hello@qhacks.ca">hello@qhacks.ca</a>
+                <br/>
+                <br/>
+                <br/>
+            </div>
         </div>
 
 

@@ -1,5 +1,7 @@
 
 $(document).ready(function(){
+
+	// setup clouds
 	var easing = {
       left: "linear"
     };
@@ -9,112 +11,57 @@ $(document).ready(function(){
 	var cloud3 = $('#first_section .cloud_3');
 	var cloud4 = $('#first_section .cloud_4');
 
-	// var cloud1Percent = 80.0;
-	// var cloud2Percent = 20.0;
-	// var cloud3Percent = 10.0;
-	// var cloud4Percent = 60.0;
-	// setInterval(function(){
-	// 	cloud1Percent+=0.001
-	// 	cloud2Percent+=0.002
-	// 	cloud3Percent+=0.003
-	// 	cloud4Percent+=0.004
+	setupClouds(cloud1);
+	setupClouds(cloud2);
+	setupClouds(cloud3);
+	setupClouds(cloud4);
 
-	// 	cloud1.animate({"left":cloud1Percent+"%"},10,"linear")
-	// 	cloud2.animate({"left":cloud2Percent+"%"},10,"linear")
-	// 	cloud3.animate({"left":cloud3Percent+"%"},10,"linear")
-	// 	cloud4.animate({"left":cloud4Percent+"%"},10,"linear")
-	// },10);
-cloud1Func();
-cloud2Func();
-cloud3Func();
-cloud4Func();
+	function setupClouds(cloud){
+		cloud.animate({
+			left: "+=130%"
+		},{
+			duration:130000,
+			specialEasing: easing,
+			step: function(now,fx) {
+				if (now>=100){
+					cloud.stop();
+					cloud.finish();
+				}
+			},
+			always:function(now,fx){
+				setTimeout(function(){
+					cloud.css("left","-20%");
+					setupClouds(cloud);
+				},100)
+				
+			}
+		});
+	}
 
-function cloud1Func(){
-	cloud1.animate({
-		left: "+=100%"
-	},{
-		duration:120000,
-		specialEasing: easing,
-		step: function(now,fx) {
-			if (now>=100){
-				console.log(now)
-				cloud1.stop();
-				cloud1.finish();
-			}
-		},
-		always:function(now,fx){
-			setTimeout(function(){
-				cloud1.css("left","-20%");
-				cloud1Func();
 
-			},100)
-			
-		}
+	// setup scroll buttons
+	$("#btn_learnmore").click(function(){
+		$("html, body").animate({ scrollTop: $('#about_header').offset().top-20 }, 600);
 	});
-}
-function cloud2Func(){
-	cloud2.animate({
-		left: "+=100%"
-	},{
-		duration:120000,
-		specialEasing: easing,
-		step: function(now,fx) {
-			if (now>=100){
-				cloud2.stop();
-				cloud2.finish();
-			}
-		},
-		always:function(now,fx){
-			setTimeout(function(){
-				cloud2.css("left","-20%");
-				cloud2Func();
-			},100)
-			
-		}
+	$("#btn_sponsorship").click(function(){
+		$("html, body").animate({ scrollTop: $('#sponsor_header').offset().top-20 }, 600);
 	});
-}
-function cloud3Func(){
-	cloud3.animate({
-		left: "+=100%"
-	},{
-		duration:120000,
-		specialEasing: easing,
-		step: function(now,fx) {
-			if (now>=100){
-				cloud3.stop();
-				cloud3.finish();
-			}
-		},
-		always:function(now,fx){
-			setTimeout(function(){
-				cloud3.css("left","-20%");
-				cloud3Func();
-			},100)
-			
-		}
-	}); 
-}
-function cloud4Func(){
-	cloud4.animate({
-		left: "+=100%"
-	},{
-		duration:120000,
-		specialEasing: easing,
-		step: function(now,fx) {
-			if (now>=100){
-				cloud4.stop();
-				cloud4.finish();
-			}
-		},
-		always:function(now,fx){
-			setTimeout(function(){
-				cloud4.css("left","-20%");
-				cloud4Func();
-			},100)
-			
-		}
-	});
-}
+
+
+	// setup fade in
+
+	var tower = $("#first_section .clock_tower");
+	var buildings = $("#first_section .buildings");
+	var hillLeft = $("#first_section .hill_left");
+	var hillRight = $("#first_section .hill_right");
+	var logoAndTitle = $("#first_section #logo_and_title");
+
+
+	hillLeft.fadeIn(1200).removeClass('hidden');
+	hillRight.fadeIn(800).removeClass('hidden');
+	tower.fadeIn(1600).removeClass('hidden');
+	buildings.fadeIn(1600).removeClass('hidden');
+	logoAndTitle.fadeIn(1800).removeClass('hidden');
 
 
 });
