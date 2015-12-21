@@ -301,10 +301,10 @@ html, body{
 		display: none!important;
 	}
 	#first_section .hill_left{
-		bottom: -80px;
+		bottom: -70px;
 	}
 	#first_section .hill_right{
-		bottom: -160px;
+		bottom: -140px;
 		right: -80px;
 	}
 	#logo_and_title{
