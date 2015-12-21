@@ -11,6 +11,7 @@
         
         <link href="css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,100,300,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -20,17 +21,17 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+        <a id="mlh-trust-badge" style="position:fixed;top:0;right:50px;max-width:100px;width:10%;min-width: 60px;display:block;z-index:10000" href="https://mlh.io/?utm_campaign=Trust%20Badge" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/s2016.png" alt="MLH Official - Spring 2016" style="width:100%;" ></a>
 
         <div id="first_section"> 
             <img src="img/gradient.png" class="circle_gradient">
             <img src="img/tower.png" class="clock_tower hidden">
 
             <div id="parallax_scene1" class="scene_container">                
-                <div class="layer" data-depth="0.00"><img class="cloud cloud_1" src="img/cloud.png"></div>
-                <div class="layer" data-depth="0.10"><img class="cloud cloud_2" src="img/cloud.png"></div>
-                <div class="layer" data-depth="0.20"><img class="cloud cloud_3" src="img/cloud.png"></div>
-                <div class="layer" data-depth="0.30"><img class="cloud cloud_4" src="img/cloud.png"></div>
+                <div class="layer" data-depth="0.00"><img class="cloud cloud_1 hidden" src="img/cloud.png"></div>
+                <div class="layer" data-depth="0.10"><img class="cloud cloud_2 hidden" src="img/cloud.png"></div>
+                <div class="layer" data-depth="0.20"><img class="cloud cloud_3 hidden" src="img/cloud.png"></div>
+                <div class="layer" data-depth="0.30"><img class="cloud cloud_4 hidden" src="img/cloud.png"></div>
             </div>
 
             <div id="parallax_scene2" class="scene_container">                
@@ -62,42 +63,66 @@
                 &nbsp;
             </div> -->
         </div>
-
+        <br/>
         <div class="header_wrapper">            
             <h2 class="header_title" id="about_header">ABOUT</h2>
         </div>
 
         <div class="container text about_section">
-            <div class="row">
-                <div class="col-md-4 text_align_center">
-                    <img src="http://placehold.it/310x150">
-                </div>
-                <div class="col-md-8">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed neque cursus, facilisis mi vel, facilisis libero. In eget ante maximus, sodales lorem eu, lobortis ipsum. Proin hendrerit tortor in quam fringilla, non auctor massa maximus. Sed sit amet placerat erat, nec tristique massa. Vestibulum lectus dui, dignissim pharetra arcu malesuada, pharetra tempor ex. Donec imperdiet ut leo in efficitur. Aliquam in aliquet ante. Integer consectetur elit et orci accumsan, non auctor libero eleifend. Maecenas ullamcorper libero vel eleifend vulputate. Duis felis metus, volutpat quis pretium tincidunt, condimentum ut dui. In a tempus orci, vehicula tincidunt ante. Donec egestas varius libero, eu cursus nisl.
-                    <br/><br/>
-                    Cras diam ligula, ullamcorper vulputate lacus convallis, lacinia iaculis arcu. Vestibulum sodales dapibus neque ut feugiat. Sed placerat purus sem. Suspendisse potenti. Nunc tincidunt, magna vel consequat gravida, justo turpis consequat dui, sit amet imperdiet arcu purus sed neque. Integer quam nibh, eleifend vel.
-                </div>
-            </div>
-        </div>
-        <br/>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed neque cursus, facilisis mi vel, facilisis libero. In eget ante maximus, sodales lorem eu, lobortis ipsum. Proin hendrerit tortor in quam fringilla, non auctor massa maximus. Sed sit amet placerat erat, nec tristique massa. Vestibulum lectus dui, dignissim pharetra arcu malesuada, pharetra tempor ex. Donec imperdiet ut leo in efficitur. Aliquam in aliquet ante.
 
-        <div class="header_wrapper">            
-            <h2 class="header_title" id="sponsor_header">SPONSORS</h2>
-        </div>
-        <br/>
-        <div class="container text about_section">
             <div class="row">
-                <div class="col-md-4 sponsorimage_contianer">
-                    <img src="http://placehold.it/310x150">
+                <div class="col-md-6">
+                    <div class="faq_container">
+                        <h4>Curabitur vulputate sem pharetra, eleifend ligula vel, semper urna.</h4>
+                        Duis bibendum convallis risus non tempor. In laoreet est viverra enim rutrum, eget laoreet velit posuere. Aenean pulvinar nulla ac mauris lobortis lacinia.
+                    </div>
+                    <div class="faq_container">
+                        <h4>Phasellus a nulla egestas, placerat mauris eget, iaculis turpis.</h4>
+                        Fusce convallis nunc rhoncus, pulvinar libero vehicula, gravida nunc. Morbi id accumsan est. Nulla vestibulum leo et semper ornare.
+                    </div>
+                    <div class="faq_container">
+                        <h4>Nulla luctus commodo ipsum, in porta mi aliquam non.</h4>
+                        Mauris consectetur odio consectetur tempor dignissim. Phasellus aliquam eu turpis id dignissim. Nulla commodo lacus quis ultrices viverra.
+                    </div>
                 </div>
-                <div class="col-md-4 sponsorimage_contianer">
-                    <img src="http://placehold.it/310x150">
-                </div>
-                <div class="col-md-4 sponsorimage_contianer">
-                    <img src="http://placehold.it/310x150">
+                <div class="col-md-6">
+                    <div class="faq_container">
+                        <h4>Fusce enim nunc, vestibulum convallis rutrum eget, porttitor non nisl.</h4>
+                        Donec est quam, mollis in libero et, molestie cursus ante. Morbi condimentum pulvinar augue, et suscipit enim tempor at. Fusce sed aliquam justo. Phasellus imperdiet sollicitudin erat, non tempus augue congue posuere.
+                    </div>
+                    <div class="faq_container">
+                        <h4>Aenean hendrerit nibh eu nulla accumsan bibendum.</h4>
+                         Suspendisse at eros finibus, ornare augue ac, sodales lacus. Vivamus est metus, fringilla sit amet velit eget, ultricies euismod purus. 
+                    </div>
+                    <div class="faq_container">
+                        <h4>Aenean in tellus in nisl euismod imperdiet vitae sit amet mi.</h4>
+                        Vestibulum pellentesque consequat lorem, quis blandit dui pretium vitae. Curabitur at dolor in quam imperdiet suscipit. Nulla facilisi.
+                    </div>
                 </div>
             </div>
             <br/>
+            <div class="text_align_center"><h4>Still have questions? Send us an email at <a class="email_link" href="mailto:hello@qhacks.ca">hello@qhacks.ca</a></h4></div>
+        </div>
+
+        <div class="header_wrapper sponsor_section">            
+            <h2 class="header_title" id="sponsor_header">SPONSORS</h2>
+        </div>
+        <div class="container text text_align_center"><h4 style="font-weight:normal;">Interested in sponsoring QHacks? Let us know at <a class="email_link" href="mailto:sponsor@qhacks.ca">sponsor@qhacks.ca</a></h4></div>
+        <br/>
+        <div class="container text">
+            <div class="row">
+                <div class="col-md-4 sponsorimage_contianer">
+                    <img src="http://placehold.it/310x150">
+                </div>
+                <div class="col-md-4 sponsorimage_contianer">
+                    <img src="http://placehold.it/310x150">
+                </div>
+                <div class="col-md-4 sponsorimage_contianer">
+                    <img src="http://placehold.it/310x150">
+                </div>
+            </div>
+
             <br/>
             <div class="row">
                 <div class="col-md-3 sponsorimage_contianer">
@@ -120,6 +145,12 @@
         <div class="footer">
             <div class="container" id="footer_container">
                 <h1>QHacks 2016</h1>
+                <div class="icon_bar">
+                    <a href=""><i class="fa fa-envelope"></i></a>
+                    <a href=""><i class="fa fa-twitter-square"></i></a>
+                    <a href=""><i class="fa fa-facebook-square"></i></a>
+                    <a href=""><i class="fa fa-slack"></i></a>
+                </div>
                 <a class="email_link" href="mailto:hello@qhacks.ca">hello@qhacks.ca</a>
                 <br/>
                 <br/>
@@ -137,7 +168,7 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script type="text/javascript">
-            // $('#parallax_scene1').parallax(); 
+            // $('#parallax_scene1').parallax();  //
             // $('#parallax_scene2').parallax({
             //     limitX: 8,
             //     limitY: 8

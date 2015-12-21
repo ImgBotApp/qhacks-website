@@ -5,15 +5,7 @@ html, body{
 	display: none;
 }
 
-.email_link{
-	color:#eee;
-}
-.email_link:hover{
-	color:#eee;
-}
-.email_link:visited{
-	color:#eee;
-}
+
 .talk_to_us{
 	font-family: 'Lato', sans-serif;
 	font-size: 115%;
@@ -21,6 +13,7 @@ html, body{
 .text_align_center{
 	text-align: center;
 }
+
 
 /*===== first section =====*/
 #first_section{
@@ -30,7 +23,12 @@ html, body{
 	position: relative;
     overflow:hidden;
 }
-
+#first_section .email_link,#first_section .email_link:visited{
+	color:#eee;
+}
+#first_section .email_link:hover{
+	color:white;
+}
 
 #logo_and_title{
 	margin-top: 20px; 
@@ -165,9 +163,10 @@ html, body{
 	height: 100%;
 }
 
-#parallax_scene1 {
+
+/*#parallax_scene1 {
 	z-index: 50
-}
+}*/
 #parallax_scene2 {
 	z-index: 51
 }
@@ -198,7 +197,9 @@ html, body{
 .about_section{
 	margin-bottom: 20px;
 }
-
+.sponsor_section{
+	margin-top: 35px;
+}
 
 .footer{
 	background: #47A97C;
@@ -210,12 +211,37 @@ html, body{
 	font-family: 'Lato', sans-serif;
 	text-align: center;
 }
+#footer_container .icon_bar{
+	margin-bottom: 8px;
+}
+#footer_container .icon_bar a{
+	color: #eee;
+	font-size: 2.8em;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+#footer_container .icon_bar a:hover{
+	color:white!important;
+}
+#footer_container .icon_bar a:visited,#footer_container .icon_bar a:active{
+	color:  #eee;
+}
+
+#footer_container .email_link,#footer_container .email_link:visited{
+	color:#eee;
+}
+#footer_container .email_link:hover{
+	color:white;
+}
 
 .sponsorimage_contianer{
 	text-align: center;
 	margin-top: 5px;
 }
 
+.faq_container{
+	margin-top: 20px;
+}
 
 /*  media queries  */
 

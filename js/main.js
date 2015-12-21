@@ -11,14 +11,15 @@ $(document).ready(function(){
 	var cloud3 = $('#first_section .cloud_3');
 	var cloud4 = $('#first_section .cloud_4');
 
-	setupClouds(cloud2);
-	setupClouds(cloud3);
-	setupClouds(cloud4);
-	setupClouds(cloud1);
-	
+	// setupClouds(cloud2);
+	// setupClouds(cloud3);
+	// setupClouds(cloud4);
+	// setupClouds(cloud1);
+
 
 	function setupClouds(cloud){
-		var randVal = Math.floor(Math.random() * 100000) + 1  
+
+		var randVal = Math.floor(Math.random() * 100000) + 1;
 		cloud.animate({
 			left: "+=130%"
 		},{
@@ -57,13 +58,42 @@ $(document).ready(function(){
 	var hillLeft = $("#first_section .hill_left");
 	var hillRight = $("#first_section .hill_right");
 	var logoAndTitle = $("#first_section #logo_and_title");
-
+	var clouds = [cloud1,cloud2,cloud3,cloud4];
 
 	hillLeft.fadeIn(1200).removeClass('hidden');
 	hillRight.fadeIn(800).removeClass('hidden');
 	tower.fadeIn(1600).removeClass('hidden');
 	buildings.fadeIn(1600).removeClass('hidden');
 	logoAndTitle.fadeIn(1800).removeClass('hidden');
+
+	clouds.forEach(function(c){
+		// console.log(c)
+
+		var perc = Math.floor(Math.random() * 100) + 1;
+		console.log(perc) 
+		c.css("left",perc+"%");
+
+		c.fadeIn(1800).removeClass('hidden');
+		setupClouds(c);
+
+
+	});
+
+	// hide mlh badge
+	var hidden = false;
+	$(document).scroll(function(){
+    if($(this).scrollTop()>=$('#about_header').position().top){
+        if (!hidden) {
+        	$("#mlh-trust-badge").hide();
+        	hidden = true;
+   		}
+    }else{
+        if (hidden) {
+        	$("#mlh-trust-badge").show();
+        	hidden = false;
+        }
+    }
+})
 
 
 });
