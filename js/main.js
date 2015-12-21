@@ -11,16 +11,18 @@ $(document).ready(function(){
 	var cloud3 = $('#first_section .cloud_3');
 	var cloud4 = $('#first_section .cloud_4');
 
-	// setupClouds(cloud1);
-	// setupClouds(cloud2);
-	// setupClouds(cloud3);
-	// setupClouds(cloud4);
+	setupClouds(cloud2);
+	setupClouds(cloud3);
+	setupClouds(cloud4);
+	setupClouds(cloud1);
+	
 
 	function setupClouds(cloud){
+		var randVal = Math.floor(Math.random() * 100000) + 1  
 		cloud.animate({
 			left: "+=130%"
 		},{
-			duration:130000,
+			duration:130000+randVal,
 			specialEasing: easing,
 			step: function(now,fx) {
 				if (now>=100){

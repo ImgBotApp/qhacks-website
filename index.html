@@ -24,17 +24,21 @@
 
         <div id="first_section"> 
             <img src="img/gradient.png" class="circle_gradient">
-
             <img src="img/tower.png" class="clock_tower hidden">
-            <img class="cloud cloud_1" src="img/cloud.png">
-            <img class="cloud cloud_2" src="img/cloud.png">
-            <img class="cloud cloud_3" src="img/cloud.png">
-            <img class="cloud cloud_4" src="img/cloud.png">
 
-            <img src="img/buildings.png" class="buildings hidden">
+            <div id="parallax_scene1" class="scene_container">                
+                <div class="layer" data-depth="0.00"><img class="cloud cloud_1" src="img/cloud.png"></div>
+                <div class="layer" data-depth="0.10"><img class="cloud cloud_2" src="img/cloud.png"></div>
+                <div class="layer" data-depth="0.20"><img class="cloud cloud_3" src="img/cloud.png"></div>
+                <div class="layer" data-depth="0.30"><img class="cloud cloud_4" src="img/cloud.png"></div>
+            </div>
 
-            <img src="img/hill_left.png" class="hill_left hidden">
-            <img src="img/hill_right.png" class="hill_right hidden">
+            <div id="parallax_scene2" class="scene_container">                
+                <div class="layer" data-depth="0.40"><img src="img/buildings.png" class="buildings hidden"></div>
+
+                <div class="layer" data-depth="0.50"><img src="img/hill_left.png"  class="hill_left hidden"></div>
+                <div class="layer" data-depth="0.60"><img src="img/hill_right.png"  class="hill_right hidden"></div>
+            </div>
 
 
             <div id="logo_and_title" class="hidden">
@@ -126,9 +130,19 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/requestAnimationFrame.js"></script>
+        <script src="js/jquery.parallax.js"></script>
+
         <script src="js/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script type="text/javascript">
+            // $('#parallax_scene1').parallax(); 
+            // $('#parallax_scene2').parallax({
+            //     limitX: 8,
+            //     limitY: 8
+            // });
+        </script>
         <script>
             // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
