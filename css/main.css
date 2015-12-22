@@ -85,11 +85,12 @@ html, body{
 
 
 #first_section .clock_tower{
-	width: 11%;
+	width: 10%;
 	margin-left: 60px;
 	margin-top: 40px;
 	z-index: 20!important;
 	position: absolute;
+	bottom: 20%;
 }
 
 #first_section .buildings{
@@ -103,14 +104,14 @@ html, body{
 
 #first_section .hill_left{
 	position: absolute;
-	bottom: -210px;
+	bottom: -230px;
 	left: -60px;
 	width:80%;
 	z-index: 60;
 }
 #first_section .hill_right{
 	position: absolute;
-	bottom: -380px;
+	bottom: -390px;
 	right: -180px;
 	width:130%;
 	z-index: 70;
@@ -244,10 +245,24 @@ html, body{
 }
 
 /*  media queries  */
-
+@media only screen and (min-width : 1600px) { 
+	#first_section .clock_tower{
+		bottom:10%;
+		width: 10%;
+	}
+	#first_section .buildings{
+		bottom:-50px;
+	}
+	#first_section .hill_left{
+		bottom: -400px;
+	}
+	#first_section .hill_right{
+		bottom: -600px;
+	}
+}
 @media only screen and (max-width : 1290px) { 
 	#first_section .clock_tower{
-		bottom:20%;
+		bottom:16%;
 	}
 	#first_section .buildings{
 		bottom:0;
@@ -256,10 +271,10 @@ html, body{
 
 @media only screen and (max-width : 1175px) { 
 	#first_section .clock_tower{
-		bottom:10%;
+		bottom:8%;
 	}
 	#first_section .buildings{
-		bottom:0;
+		bottom:-30px;
 	}
 	#first_section .hill_right{
 		bottom: -350px;
@@ -313,7 +328,9 @@ html, body{
 }
 
 @media (max-height: 700px) { 
-
+	#first_section .clock_tower{
+		width: 8%;
+	}
 	#logo_and_title{
 		margin-top: 10px; 
 		top: 0%!important;

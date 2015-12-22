@@ -11,12 +11,6 @@ $(document).ready(function(){
 	var cloud3 = $('#first_section .cloud_3');
 	var cloud4 = $('#first_section .cloud_4');
 
-	// setupClouds(cloud2);
-	// setupClouds(cloud3);
-	// setupClouds(cloud4);
-	// setupClouds(cloud1);
-
-
 	function setupClouds(cloud){
 
 		var randVal = Math.floor(Math.random() * 100000) + 1;
@@ -41,16 +35,6 @@ $(document).ready(function(){
 		});
 	}
 
-
-	// setup scroll buttons
-	$("#btn_learnmore").click(function(){
-		$("html, body").animate({ scrollTop: $('#about_header').offset().top-20 }, 600);
-	});
-	$("#btn_sponsorship").click(function(){
-		$("html, body").animate({ scrollTop: $('#sponsor_header').offset().top-20 }, 600);
-	});
-
-
 	// setup fade in
 
 	var tower = $("#first_section .clock_tower");
@@ -67,16 +51,20 @@ $(document).ready(function(){
 	logoAndTitle.fadeIn(1800).removeClass('hidden');
 
 	clouds.forEach(function(c){
-		// console.log(c)
-
 		var perc = Math.floor(Math.random() * 100) + 1;
 		console.log(perc) 
 		c.css("left",perc+"%");
 
 		c.fadeIn(1800).removeClass('hidden');
 		setupClouds(c);
+	});
 
-
+	// setup scroll buttons
+	$("#btn_learnmore").click(function(){
+		$("html, body").animate({ scrollTop: $('#about_header').offset().top-20 }, 600);
+	});
+	$("#btn_sponsorship").click(function(){
+		$("html, body").animate({ scrollTop: $('#sponsor_header').offset().top-20 }, 600);
 	});
 
 	// hide mlh badge
