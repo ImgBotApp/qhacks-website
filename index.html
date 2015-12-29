@@ -22,149 +22,336 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
         <a id="mlh-trust-badge" style="position:fixed;top:0;right:50px;max-width:100px;width:10%;min-width: 60px;display:block;z-index:10000" href="https://mlh.io/?utm_campaign=Trust%20Badge" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/s2016.png" alt="MLH Official - Spring 2016" style="width:100%;" ></a>
 
-        <div id="first_section"> 
-            <img src="img/gradient.png" class="circle_gradient">
-            <img src="img/tower.png" class="clock_tower hidden">
+        <!-- SCENERY INTRO -->
+
+        <div id="scenery_intro"> 
+            <img src="img/gradient.svg" class="circle_gradient">
+            <img src="img/tower.svg" class="clock_tower hidden">
 
             <div id="parallax_scene1" class="scene_container">                
-                <div class="layer" data-depth="0.00"><img class="cloud cloud_1 hidden" src="img/cloud.png"></div>
-                <div class="layer" data-depth="0.10"><img class="cloud cloud_2 hidden" src="img/cloud.png"></div>
-                <div class="layer" data-depth="0.20"><img class="cloud cloud_3 hidden" src="img/cloud.png"></div>
-                <div class="layer" data-depth="0.30"><img class="cloud cloud_4 hidden" src="img/cloud.png"></div>
+                <div class="layer" data-depth="0.00"><img class="cloud cloud_1 hidden" src="img/cloud.svg"></div>
+                <div class="layer" data-depth="0.10"><img class="cloud cloud_2 hidden" src="img/cloud.svg"></div>
+                <div class="layer" data-depth="0.20"><img class="cloud cloud_3 hidden" src="img/cloud.svg"></div>
+                <div class="layer" data-depth="0.30"><img class="cloud cloud_4 hidden" src="img/cloud.svg"></div>
             </div>
 
             <div id="parallax_scene2" class="scene_container">                
-                <div class="layer" data-depth="0.40"><img src="img/buildings.png" class="buildings hidden"></div>
-                <div class="layer" data-depth="0.50"><img src="img/hill_left.png"  class="hill_left hidden"></div>
-                <div class="layer" data-depth="0.60"><img src="img/hill_right.png"  class="hill_right hidden"></div>
+                <div class="layer" data-depth="0.40"><img src="img/buildings.svg" class="buildings hidden"></div>
+                <div class="layer" data-depth="0.50"><img src="img/hill_left.svg"  class="hill_left hidden"></div>
+                <div class="layer" data-depth="0.60"><img src="img/hill_right.svg"  class="hill_right hidden"></div>
             </div>
 
 
-            <div id="logo_and_title" class="hidden">
-                <img class="logo hvr-buzz-out" src="img/paw_logo.png">
-                <h1>QHacks</h1>
-                <h2 class="wide_total">Queen's University | Spring 2016</h2>
-                <div class="narrow_total"><h2>Queen's University</h2><h3>Spring 2016</h3></div>
-                <span class="talk_to_us">Talk to us at</span>
-                <h3><a class="email_link" href="mailto:hello@qhacks.ca">hello@qhacks.ca</a></h3>
-                <div class="row btn_row">
-                    <div class="col-md-6">
-                        <button class="btn btn-warning btn-block btn_custom hvr-grow" id="btn_learnmore">LEARN MORE</button>
-                    </div>
-                    <div class="col-md-6">
-                        <button class="btn btn-warning btn-block btn_custom hvr-grow" id="btn_sponsorship">SPONSORSHIP</button>
-                    </div>
-                </div>       
+            <div id="header-title" class="hidden">
+                <img class="logo" src="img/paw_logo.png">
+                <div class="sm-margin"></div>
+                <h1 class="main_title">QHacks</h1>
+                <h2 class="sub_title">Queen's University | Spring 2016</h2>
+                <div class="md-margin"></div>
+                <div class="col-md-6">
+                	<button class="btn btn_main orange_btn" id="btn_login">login</button>
+                </div>
+                <div class="col-md-6">
+                	<button class="btn btn_main yellow_btn" id="btn_register">register</button>
+                </div>
+   
             </div>
 
-   <!--          <div class="green_bar">
-                &nbsp;
-            </div> -->
         </div>
-        <br/>
+
+        <!-- SCENERY END -->
+
+        <div class="lg-margin2x"></div>
+
+        <!-- ABOUT SECTION -->
+
         <div class="header_wrapper">            
-            <h2 class="header_title" id="about_header">ABOUT</h2>
+            <h2 class="header_title" id="about_header">about</h2>
         </div>
 
-        <div class="container text about_section">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed neque cursus, facilisis mi vel, facilisis libero. In eget ante maximus, sodales lorem eu, lobortis ipsum. Proin hendrerit tortor in quam fringilla, non auctor massa maximus. Sed sit amet placerat erat, nec tristique massa. Vestibulum lectus dui, dignissim pharetra arcu malesuada, pharetra tempor ex. Donec imperdiet ut leo in efficitur. Aliquam in aliquet ante.
+        <div class="md-margin"></div>
 
+        <div class="container">
+
+        <div class="row">
+  			<div class="col-md-6">
+
+  			 	<h3 class="sub-title">Main Title That Says Something</h3>
+        	
+            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed neque cursus, facilisis mi vel, facilisis libero. In eget ante maximus, sodales lorem eu, lobortis ipsum. Proin hendrerit tortor in quam fringilla, non auctor massa maximus. Sed sit amet placerat erat, nec tristique massa. Vestibulum lectus dui, dignissim pharetra arcu malesuada, pharetra tempor ex. Donec imperdiet ut leo in efficitur. Aliquam in aliquet ante.</p>
+  				
+  			</div>
+ 			<div class="col-md-6">
+ 				
+ 				<h3 class="sub-title">Main Title That Says Something</h3>
+        	
+            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed neque cursus, facilisis mi vel, facilisis libero. In eget ante maximus, sodales lorem eu, lobortis ipsum. Proin hendrerit tortor in quam fringilla, non auctor massa maximus. Sed sit amet placerat erat, nec tristique massa. Vestibulum lectus dui, dignissim pharetra arcu malesuada, pharetra tempor ex. Donec imperdiet ut leo in efficitur. Aliquam in aliquet ante.</p>
+
+ 			</div>
+		</div>
+		</div>
+
+		<div class="lg-margin2x"></div>
+
+		<!-- ABOUT SECTION -->
+
+        <div class="header_wrapper">            
+            <h2 class="header_title" id="about_header">schedule</h2>
+        </div>
+
+        <div class="md-margin"></div>
+
+		<div class="container">
+
+        <div class="panel-group" id="accordion">
+          <div class="panel">
+
+            <a class="panel-heading text-center" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+              <h4 class="panel-title">
+                September 9th, 2015
+              </h4>
+            </a>
+
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <table class="table">
+                <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Event</th>
+                  <th>Location</th>
+                </tr>
+                </thead>
+                <tr>
+                  <td>09:00AM - 11:30PM</td>
+                  <td>Welcome Forum</td> 
+                  <td>Chernoff Auditorium</td>
+                </tr>
+                <tr>
+                  <td>11:30AM - 12:30PM</td>
+                  <td>Lunch With Leaders</td> 
+                  <td>Ban Righ Dining Hall</td>
+                </tr>
+                <tr>
+                  <td>01:00PM - 03:00PM</td>
+                  <td>Course Confirmation/Rotations</td> 
+                  <td>Goodwin Hall</td>
+                </tr>
+                <tr>
+                  <td>03:00PM - 04:00PM</td>
+                  <td>Queen's In The Park</td> 
+                  <td>City Park</td>
+                </tr>
+                <tr>
+                  <td>04:00PM - 10:40PM</td>
+                  <td>Wolfe Island Corn Maze</td> 
+                  <td>Wolfe Island</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel">
+
+            <a class="panel-heading text-center" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+              <h4 class="panel-title">
+				September 10th, 2015
+              </h4>
+            </a>
+
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                    <th>Location</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>09:00AM - 09:30AM</td>
+                  <td>Prof Talks</td> 
+                  <td>Dunning Auditorium</td>
+                </tr>
+                <tr>
+                  <td>09:45AM - 10:30AM</td>
+                  <td>Academic Success</td> 
+                  <td>Dunning Auditorium</td>
+                </tr>
+                <tr>
+                  <td>10:45AM - 01:00PM</td>
+                  <td>Get the NACS of ACS</td> 
+                  <td>Dunning Auditorium</td>
+                </tr>
+                <tr>
+                  <td>01:15PM - 02:30PM</td>
+                  <td>Lunch With Leaders</td> 
+                  <td>Ban Righ Dining Hall</td>
+                </tr>
+                <tr>
+                  <td>02:30PM - 07:30PM</td>
+                  <td>Summerhill Barbecue</td> 
+                  <td>Upper Summerhill Field</td>
+                </tr>
+                <tr>
+                          <td>07:50PM - 11:30PM</td>
+                    <td>CompSci Idol</td> 
+                          <td>MacGillivray-Brown Hall</td>
+                        </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel">
+
+            <a class="panel-heading text-center" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+            	<h4 class="panel-title">
+            		September 11th, 2015
+            	</h4>
+            </a>
+
+            <div id="collapseThree" class="panel-collapse collapse">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                    <th>Location</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>09:00AM - 11:30AM</td>
+                  <td>Sidewalk Sale</td> 
+                  <td>University Avenue</td>
+                </tr>
+                <tr>
+                  <td>11:30AM - 12:30PM</td>
+                  <td>Lunch With Leaders</td> 
+                  <td>Ban Righ Dining Hall</td>
+                </tr>
+                <tr>
+                  <td>12:30PM - 02:30PM</td>
+                  <td>Where the Snap is That?</td> 
+                  <td>Queen's University</td>
+                </tr>
+                <tr>
+                  <td>03:00PM - 05:30PM</td>
+                  <td>Coverall Painting</td> 
+                  <td>Breakwater Park</td>
+                </tr>
+                <tr>
+                  <td>08:00PM - 11:00PM</td>
+                  <td>CompSci Night In/ORT Mystery Concert presented by Campus Dentist</td> 
+                  <td>Dupuis Auditorium</td>
+                </tr>
+              </table>
+
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+
+        <!-- END ABOUT SECTION -->
+
+        <div class="lg-margin2x"></div>
+
+        <!-- SPONSORS SECTION -->
+
+        <div class="header_wrapper">            
+            <h2 class="header_title" id="sponsor_header">sponsors</h2>
+        </div>
+
+        <div class="md-margin"></div>
+
+        <div class="container sponsor_section">
+
+        <div class="btn_center">
+        	<button class="btn btn_large green_btn" id="btn_sponsorship">become a sponsor</button>
+        </div>
+
+        <div class="md-margin"></div>
+        
             <div class="row">
-                <div class="col-md-6">
-                    <div class="faq_container">
-                        <h4>Curabitur vulputate sem pharetra, eleifend ligula vel, semper urna?</h4>
-                        Duis bibendum convallis risus non tempor. In laoreet est viverra enim rutrum, eget laoreet velit posuere. Aenean pulvinar nulla ac mauris lobortis lacinia.
-                    </div>
-                    <div class="faq_container">
-                        <h4>Phasellus a nulla egestas, placerat mauris eget, iaculis turpis?</h4>
-                        Fusce convallis nunc rhoncus, pulvinar libero vehicula, gravida nunc. Morbi id accumsan est. Nulla vestibulum leo et semper ornare.
-                    </div>
-                    <div class="faq_container">
-                        <h4>Nulla luctus commodo ipsum, in porta mi aliquam non?</h4>
-                        Mauris consectetur odio consectetur tempor dignissim. Phasellus aliquam eu turpis id dignissim. Nulla commodo lacus quis ultrices viverra.
-                    </div>
+                <div class="col-md-4 hvr-grow">
+                    <img src="img/sponsors/google_block.svg" width="310px">
                 </div>
-                <div class="col-md-6">
-                    <div class="faq_container">
-                        <h4>Fusce enim nunc, vestibulum convallis rutrum eget, porttitor non nisl?</h4>
-                        Donec est quam, mollis in libero et, molestie cursus ante. Morbi condimentum pulvinar augue, et suscipit enim tempor at. Fusce sed aliquam justo. Phasellus imperdiet sollicitudin erat, non tempus augue congue posuere.
-                    </div>
-                    <div class="faq_container">
-                        <h4>Aenean hendrerit nibh eu nulla accumsan bibendum?</h4>
-                         Suspendisse at eros finibus, ornare augue ac, sodales lacus. Vivamus est metus, fringilla sit amet velit eget, ultricies euismod purus. 
-                    </div>
-                    <div class="faq_container">
-                        <h4>Aenean in tellus in nisl euismod imperdiet vitae sit amet mi?</h4>
-                        Vestibulum pellentesque consequat lorem, quis blandit dui pretium vitae. Curabitur at dolor in quam imperdiet suscipit. Nulla facilisi.
-                    </div>
+                <div class="col-md-4 hvr-grow">
+                    <img src="img/sponsors/microsoft_block.svg" width="310px">
+                </div>
+                <div class="col-md-4 hvr-grow">
+                    <img src="img/sponsors/paypal_block.svg" width="310px">
                 </div>
             </div>
-            <br/>
-            <div class="text_align_center"><h4>Still have questions? Send us an email at <a class="email_link" href="mailto:hello@qhacks.ca">hello@qhacks.ca</a></h4></div>
-        </div>
 
-        <div class="header_wrapper sponsor_section">            
-            <h2 class="header_title" id="sponsor_header">SPONSORS</h2>
-        </div>
-        <div class="container text text_align_center"><h4 style="font-weight:normal;">Interested in sponsoring QHacks? Let us know at <a class="email_link" href="mailto:sponsor@qhacks.ca">sponsor@qhacks.ca</a></h4></div>
-        <br/>
-        <div class="container text">
             <div class="row">
-                <div class="col-md-4 sponsorimage_contianer hvr-grow">
-                    <img src="http://placehold.it/310x150">
+                <div class="col-md-3 hvr-grow">
+                    <img src="img/sponsors/slack_block.svg" width="215px">
                 </div>
-                <div class="col-md-4 sponsorimage_contianer hvr-grow">
-                    <img src="http://placehold.it/310x150">
+                <div class="col-md-3 hvr-grow">
+                    <img src="img/sponsors/uber_block.svg" width="215px">
                 </div>
-                <div class="col-md-4 sponsorimage_contianer hvr-grow">
-                    <img src="http://placehold.it/310x150">
+                <div class="col-md-3 hvr-grow">
+                    <img src="img/sponsors/shopify_block.svg" width="215px">
+                </div>
+                <div class="col-md-3 hvr-grow">
+                    <img src="img/sponsors/tesla_block.svg" width="215px">
                 </div>
             </div>
 
-            <br/>
             <div class="row">
-                <div class="col-md-3 sponsorimage_contianer hvr-grow">
-                    <img src="http://placehold.it/215x140">
+                <div class="col-md-2 hvr-grow">
+                    <img src="img/sponsors/wish_block.svg" width="120px">
                 </div>
-                <div class="col-md-3 sponsorimage_contianer hvr-grow">
-                    <img src="http://placehold.it/215x140">
+                <div class="col-md-2 hvr-grow">
+                    <img src="img/sponsors/pebble_block.svg" width="120px">
                 </div>
-                <div class="col-md-3 sponsorimage_contianer hvr-grow">
-                    <img src="http://placehold.it/215x140">
+                <div class="col-md-2 hvr-grow">
+                    <img src="img/sponsors/dropbox_block.svg" width="120px">
                 </div>
-                <div class="col-md-3 sponsorimage_contianer hvr-grow">
-                    <img src="http://placehold.it/215x140">
+                <div class="col-md-2 hvr-grow">
+                    <img src="img/sponsors/facebook_block.svg" width="120px">
+                </div>
+                <div class="col-md-2 hvr-grow">
+                    <img src="img/sponsors/kik_block.svg" width="120px">
+                </div>
+                <div class="col-md-2 hvr-grow">
+                    <img src="img/sponsors/twitter_block.svg" width="120px">
                 </div>
             </div>
+
         </div>
-        <br/>
-        <br/>
 
+        <!-- END SPONSORS SECTION -->
 
+        <div class="lg-margin2x"></div>
+
+        <!-- START FOOTER SECTION -->
+
+        <div class="grass-border"></div>
         <div class="footer">
             <div class="container" id="footer_container">
-                <h1>QHacks 2016</h1>
-                <div class="icon_bar">
-                    <a href="" ><i class="fa fa-envelope"></i></a>
-                    <a href="" ><i class="fa fa-twitter-square"></i></a>
-                    <a href="" ><i class="fa fa-facebook-square"></i></a>
-                    <a href="" ><i class="fa fa-slack"></i></a>
+                <img src="img/bone.svg" class="bone">
+                <div class="button-area btn_placement_1">
+                	<button class="btn btn_sub blue_btn" id="btn_contact_us">contact us</button>
                 </div>
-                <a class="email_link" href="mailto:hello@qhacks.ca">hello@qhacks.ca</a>
-                <br/>
-                <br/>
-                <br/>
-            </div>
+                <div class="button-area btn_placement_2">
+                	<button class="btn btn_sub red_btn" id="btn_subscribe">subscribe</button>
+                	<input id="subscribe-form" placeholder="enter your email address">
+                </div>
+        	</div>
         </div>
+
+        <!-- END FOOTER SECTION -->
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/requestAnimationFrame.js"></script>
         <script src="js/jquery.parallax.js"></script>
-
         <script src="js/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

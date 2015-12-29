@@ -6,10 +6,10 @@ $(document).ready(function(){
       left: "linear"
     };
 
-	var cloud1 = $('#first_section .cloud_1');
-	var cloud2 = $('#first_section .cloud_2');
-	var cloud3 = $('#first_section .cloud_3');
-	var cloud4 = $('#first_section .cloud_4');
+	var cloud1 = $('#scenery_intro .cloud_1');
+	var cloud2 = $('#scenery_intro .cloud_2');
+	var cloud3 = $('#scenery_intro .cloud_3');
+	var cloud4 = $('#scenery_intro .cloud_4');
 
 	function setupClouds(cloud){
 
@@ -37,11 +37,11 @@ $(document).ready(function(){
 
 	// setup fade in
 
-	var tower = $("#first_section .clock_tower");
-	var buildings = $("#first_section .buildings");
-	var hillLeft = $("#first_section .hill_left");
-	var hillRight = $("#first_section .hill_right");
-	var logoAndTitle = $("#first_section #logo_and_title");
+	var tower = $("#scenery_intro .clock_tower");
+	var buildings = $("#scenery_intro .buildings");
+	var hillLeft = $("#scenery_intro .hill_left");
+	var hillRight = $("#scenery_intro .hill_right");
+	var logoAndTitle = $("#scenery_intro #header-title");
 	var clouds = [cloud1,cloud2,cloud3,cloud4];
 
 	hillLeft.fadeIn(1200).removeClass('hidden');
