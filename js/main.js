@@ -63,9 +63,9 @@ $(document).ready(function(){
 	$("#btn_learnmore").click(function(){
 		$("html, body").animate({ scrollTop: $('#about_header').offset().top-20 }, 600);
 	});
-	$("#btn_sponsorship").click(function(){
-		$("html, body").animate({ scrollTop: $('#sponsor_header').offset().top-20 }, 600);
-	});
+	// $("#btn_sponsorship").click(function(){
+	// 	$("html, body").animate({ scrollTop: $('#sponsor_header').offset().top-20 }, 600);
+	// });
 
 	// hide mlh badge
 	var hidden = false;
@@ -81,6 +81,10 @@ $(document).ready(function(){
 	        	hidden = false;
 	        }
 	    }
+	});
+
+	$(function () {
+  		$('[data-toggle="tooltip"]').tooltip()
 	});
 
 

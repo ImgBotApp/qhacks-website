@@ -18,6 +18,15 @@ html, body {
 	text-align: center;
 }
 
+.front_contact_link{
+	color:white;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.front_contact_link:hover{
+	color:white;
+}
+
 /* Scenery  */
 
 #scenery_intro {
@@ -116,7 +125,7 @@ html, body {
 /* Titles */
 
 .logo{
-	width: 125px;
+	width: 260px;
 }
 
 #header-title{
@@ -128,15 +137,21 @@ html, body {
 	left: 50%;
 	transform: translate(-50%, -60%);
 	z-index: 100;
+	width: 100%;
 }
 
 #header-title .btn_row{
 	margin-top: 45px;
 }
 
+#header-title .main_btn{
+	margin-bottom: 10px;
+}
+
+
 h1.main_title{
 	font-weight: 700;
-	font-size: 4.2em;
+	font-size: 4.3em;
 	color: #fff;
 	margin-bottom: 10px;
 	margin-top: 5px;
@@ -144,7 +159,7 @@ h1.main_title{
 
 h2.sub_title{
 	font-weight: 400;
-	font-size: 2em;
+	font-size: 2.1em;
 	letter-spacing: 0.5px;
 	color: #ededed;
 	margin-bottom: 10px;
@@ -155,6 +170,20 @@ h2.sub_title{
 	color: #464646;
 	font-weight: 400;
 	letter-spacing: 0.5px;
+}
+.alt_sub_title{
+	color: #ededed;
+	width: 100%;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	display: none;
+}
+
+#btn_learnmore{
+	float:right;
+}
+#btn_register{
+	float:left;
 }
 
 /* END Titles */
@@ -322,11 +351,11 @@ h2.header_title {
 /* START Footer Sections */
 
 .grass-border {
-	background-image: url("../img/grass_border.svg");
+	background-image: url("../img/grass_border.png");
 	background-repeat: repeat-x;
 	background-size: 1000px;
 	padding-top: 30px;
-	margin-bottom: -10px;
+	margin-bottom: -20px;
 }
 
 .footer, .sponsor_section:after {
@@ -351,28 +380,28 @@ h2.header_title {
 	position: absolute;
 	transform: translate(-335%, 50%);
 }
-
 /* START Subscribe form */
 
 .button-area{
 	padding-top: 20px;
 }
 
-.btn_placement_1 {
+/*.btn_placement_1 {
     position: absolute;
     right: 355px;
-}
+}*/
 
 .btn_placement_2 {
-    position: absolute;
-    right: 340px;
+    /*position: absolute;*/
+    float:right;
+    /*right: 340px;*/
 }
 
-#btn_subscribe, #subscribe-form {
+/*#btn_subscribe, #subscribe-form {
 	position: absolute;
-}
+}*/
 
-#subscribe-form {
+/*#subscribe-form {
 	height: 34px;
 	width: 200px;
 	border-top-right-radius: 3px;
@@ -386,7 +415,7 @@ h2.header_title {
 
 #btn_subscribe{
 	z-index: 2;
-}
+}*/
 
 /* END Subscribe form */
 
@@ -478,3 +507,114 @@ a.panel-heading:hover {
 }
 
 /* END panel */
+
+
+/*  media queries  */
+@media only screen and (min-width : 1600px) { 
+/*	#scenery_intro .clock_tower{
+		bottom:10%;
+		width: 10%;
+	}
+	#scenery_intro .buildings{
+		bottom:-50px;
+	}
+	#scenery_intro .hill_left{
+		bottom: -400px;
+	}
+	#scenery_intro .hill_right{
+		bottom: -600px;
+	}*/
+}
+@media only screen and (max-width : 1290px) { 
+/*	#scenery_intro .clock_tower{
+		bottom:16%;
+	}
+	#scenery_intro .buildings{
+		bottom:0;
+	}*/
+}
+
+@media only screen and (max-width : 1175px) { 
+/*	#scenery_intro .clock_tower{
+		bottom:8%;
+	}
+	#scenery_intro .buildings{
+		bottom:-30px;
+	}
+	#scenery_intro .hill_right{
+		bottom: -350px;
+	}
+	#logo_and_title button{
+		margin-top: 5px;
+	}*/
+}
+
+@media only screen and (max-width : 960px) { 
+/*	#scenery_intro .clock_tower{
+		bottom:0%;
+	}
+	#scenery_intro .buildings{
+		display: none!important;
+	}
+	#scenery_intro .hill_right{
+		bottom: -300px;
+	}*/
+	.logo{
+		width: 200px;
+	}
+}
+
+@media only screen and (max-width : 850px) { 
+/*	#logo_and_title .wide_total{
+		display: none;
+	}
+	#logo_and_title .narrow_total{
+		display: block;
+	}
+	#scenery_intro .hill_left{
+		bottom: -180px;
+	}
+	#scenery_intro .hill_right{
+		bottom: -260px;
+	}*/
+}
+
+@media only screen and (max-width : 700px) { 
+/*	#scenery_intro .clock_tower{
+		display: none!important;
+	}
+	#scenery_intro .hill_left{
+		bottom: -70px;
+	}
+	#scenery_intro .hill_right{
+		bottom: -140px;
+		right: -80px;
+	}
+	#logo_and_title{
+		width: 90%!important;
+	}*/
+	#btn_learnmore{
+		float:none;
+	}
+	#btn_register{
+		float:none;
+	}
+	.sub_title{
+		display: none;
+	}
+	.alt_sub_title{
+		display: block;
+		width: 100%;
+	}
+}
+
+@media (max-height: 700px) { 
+/*	#scenery_intro .clock_tower{
+		width: 8%;
+	}
+	#logo_and_title{
+		margin-top: 10px; 
+		top: 0%!important;
+		transform: translate(-50%, 0%)!important;
+	}*/
+}
