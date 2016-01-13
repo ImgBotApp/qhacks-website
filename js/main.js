@@ -44,6 +44,12 @@ $(document).ready(function(){
 	var logoAndTitle = $("#scenery_intro #header-title");
 	var clouds = [cloud1,cloud2,cloud3,cloud4];
 
+	// hillLeft.removeClass('hidden');
+	// hillRight.removeClass('hidden');
+	// tower.removeClass('hidden');
+	// buildings.removeClass('hidden');
+	// logoAndTitle.removeClass('hidden');
+
 	hillLeft.fadeIn(1200).removeClass('hidden');
 	hillRight.fadeIn(800).removeClass('hidden');
 	tower.fadeIn(1600).removeClass('hidden');
@@ -60,12 +66,23 @@ $(document).ready(function(){
 	});
 
 	// setup scroll buttons
-	$("#btn_learnmore").click(function(){
-		$("html, body").animate({ scrollTop: $('#about_header').offset().top-20 }, 600);
-	});
-	// $("#btn_sponsorship").click(function(){
-	// 	$("html, body").animate({ scrollTop: $('#sponsor_header').offset().top-20 }, 600);
+	// $("#btn_learnmore").click(function(){
+	// 	$("html, body").animate({ scrollTop: $('#about_header').offset().top-20 }, 600);
 	// });
+	$("#btn_sponsorship").click(function(){
+		$("html, body").animate({ scrollTop: $('#sponsor_header').offset().top-20 }, 600);
+	});
+
+	$("#btn_register, #btn_register_footer").click(function(){
+		$("#subscription_overlay").fadeIn();
+	});
+	$("#subscription_overlay").click(function(){
+		$("#subscription_overlay").fadeOut();
+	});
+	$("#subscription_overlay .signup_container").click(function(e) {
+	   e.stopPropagation();
+	})
+
 
 	// hide mlh badge
 	var hidden = false;
