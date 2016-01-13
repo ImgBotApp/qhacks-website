@@ -2,15 +2,6 @@
 $(document).ready(function(){
 
 	// setup clouds
-	var easing = {
-      left: "linear"
-    };
-
-	var cloud1 = $('#scenery_intro .cloud_1');
-	var cloud2 = $('#scenery_intro .cloud_2');
-	var cloud3 = $('#scenery_intro .cloud_3');
-	var cloud4 = $('#scenery_intro .cloud_4');
-
 	function setupClouds(cloud){
 
 		var randVal = Math.floor(Math.random() * 100000) + 1;
@@ -18,7 +9,9 @@ $(document).ready(function(){
 			left: "+=130%"
 		},{
 			duration:130000+randVal,
-			specialEasing: easing,
+			specialEasing: {
+		      left: "linear"
+		    },
 			step: function(now,fx) {
 				if (now>=100){
 					cloud.stop();
@@ -42,33 +35,43 @@ $(document).ready(function(){
 	var hillLeft = $("#scenery_intro .hill_left");
 	var hillRight = $("#scenery_intro .hill_right");
 	var logoAndTitle = $("#scenery_intro #header-title");
-	var clouds = [cloud1,cloud2,cloud3,cloud4];
+	var sceneryIntro = $("#scenery_intro");
 
-	// hillLeft.removeClass('hidden');
-	// hillRight.removeClass('hidden');
-	// tower.removeClass('hidden');
-	// buildings.removeClass('hidden');
-	// logoAndTitle.removeClass('hidden');
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		// hillLeft.removeClass('hidden');
+		// hillRight.removeClass('hidden');
+		// tower.removeClass('hidden');
+		// buildings.removeClass('hidden');
+		// logoAndTitle.removeClass('hidden');
 
-	hillLeft.fadeIn(1200).removeClass('hidden');
-	hillRight.fadeIn(800).removeClass('hidden');
-	tower.fadeIn(1600).removeClass('hidden');
-	buildings.fadeIn(1600).removeClass('hidden');
-	logoAndTitle.fadeIn(1800).removeClass('hidden');
+		clouds.forEach(function(c){
+			c.remove();
+		});
+	}else{
+		// hillLeft.fadeIn(1200).removeClass('hidden');
+		// hillRight.fadeIn(800).removeClass('hidden');
+		// tower.fadeIn(1600).removeClass('hidden');
+		// buildings.fadeIn(1600).removeClass('hidden');
+		// logoAndTitle.fadeIn(1800).removeClass('hidden');
 
-	clouds.forEach(function(c){
-		var perc = Math.floor(Math.random() * 100) + 1;
-		console.log(perc) 
-		c.css("left",perc+"%");
+		var cloud1 = $('<img class="cloud cloud_1" src="img/cloud.png">');
+		var cloud2 = $('<img class="cloud cloud_2" src="img/cloud.png">');
+		var cloud3 = $('<img class="cloud cloud_3" src="img/cloud.png">');
+		var cloud4 = $('<img class="cloud cloud_4" src="img/cloud.png">');
+		var clouds = [cloud1,cloud2,cloud3,cloud4];
 
-		c.fadeIn(1800).removeClass('hidden');
-		setupClouds(c);
-	});
+		clouds.forEach(function(c){
+			var perc = Math.floor(Math.random() * 100) + 1;
+			console.log(perc) 
+			c.css("left",perc+"%");
+
+			sceneryIntro.append(c);
+			// c.fadeIn(1800).removeClass('hidden');
+			setupClouds(c);
+		});
+	}
 
 	// setup scroll buttons
-	// $("#btn_learnmore").click(function(){
-	// 	$("html, body").animate({ scrollTop: $('#about_header').offset().top-20 }, 600);
-	// });
 	$("#btn_sponsorship").click(function(){
 		$("html, body").animate({ scrollTop: $('#sponsor_header').offset().top-20 }, 600);
 	});

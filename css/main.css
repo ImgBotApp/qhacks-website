@@ -45,6 +45,7 @@ html, body {
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -60%);
+	-webkit-transform: translate(-50%, -60%);
 	z-index: 5;
 }
 
@@ -62,6 +63,7 @@ html, body {
 	bottom: -6%;
 	left: 48%;
 	transform: translate(-50%, 0%);
+	-webkittransform:  translate(-50%, 0%);
 	z-index: 2;
 }
 
@@ -126,6 +128,7 @@ html, body {
 
 .logo{
 	margin-bottom: 10px;
+	margin-top: 10px;
 	width: 280px;
 }
 
@@ -137,6 +140,8 @@ html, body {
 	top: 44%;
 	left: 50%;
 	transform: translate(-50%, -60%);
+	-webkit-transform: translate(-50%, -60%);
+
 	z-index: 100;
 	width: 100%;
 	font-size: 120%;
@@ -244,11 +249,13 @@ h2.sub_title{
 .btn_main.orange_btn:hover {
 	box-shadow: 0px 3px 0px #c17b1e;
 	transform: translate(0px, 2px);
+	webkit-transform:  translate(0px, 2px);
 }
 
 .btn_main.orange_btn:active {
 	box-shadow: 0px 0px 0px;
 	transform: translate(0px, 5px);
+	webkit-transform:  translate(0px, 5px);
 }
 
 .yellow_btn {
@@ -259,11 +266,13 @@ h2.sub_title{
 .btn_main.yellow_btn:hover {
 	box-shadow: 0px 3px 0px #B7943D;
 	transform: translate(0px, 2px);
+	webkit-transform:  translate(0px, 2px);
 }
 
 .btn_main.yellow_btn:active {
 	box-shadow: 0px 0px 0px;
 	transform: translate(0px, 5px);
+	webkit-transform:  translate(0px, 5px);
 }
 
 .blue_btn {
@@ -274,11 +283,13 @@ h2.sub_title{
 .btn_sub.blue_btn:hover {
 	box-shadow: 0px 3px 0px #407c8e;
 	transform: translate(0px, 2px);
+	webkit-transform:  translate(0px, 2px);
 }
 
 .btn_sub.blue_btn:active {
 	box-shadow: 0px 0px 0px;
 	transform: translate(0px, 5px);
+	webkit-transform:  translate(0px, 5px);
 }
 
 .red_btn {
@@ -289,11 +300,13 @@ h2.sub_title{
 .btn_sub.red_btn:hover {
 	box-shadow: 0px 3px 0px #7f2621;
 	transform: translate(0px, 2px);
+	webkit-transform:  translate(0px, 2px);
 }
 
 .btn_sub.red_btn:active {
 	box-shadow: 0px 0px 0px;
 	transform: translate(0px, 5px);
+	webkit-transform:  translate(0px, 5px);
 }
 
 .green_btn {
@@ -304,11 +317,13 @@ h2.sub_title{
 .btn_large.green_btn:hover {
 	box-shadow: 0px 3px 0px #337252;
 	transform: translate(0px, 2px);
+	webkit-transform:  translate(0px, 2px);
 }
 
 .btn_large.green_btn:active {
 	box-shadow: 0px 0px 0px;
 	transform: translate(0px, 5px);
+	webkit-transform:  translate(0px, 5px);
 }
 
 /* END Buttons */
@@ -383,6 +398,7 @@ h2.header_title {
 	top:20px;
 	left:30%;
 	/*transform: translate(-335%, 50%);*/
+	-webkittransform:  translate(-335%, 50%);*/
 }
 /* START Subscribe form */
 
@@ -418,6 +434,7 @@ h2.header_title {
 	border: 0px;
 	color: #a5a5a5;
 	transform: translate(117px, 5px);
+	webkit-transform:  translate(117px, 5px);
 	z-index: 1;
 }
 
@@ -475,6 +492,7 @@ a.panel-heading:hover {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
 	border-radius: 2px;
     box-shadow: 1px 1px 3px 1px #333;
 }
@@ -592,8 +610,6 @@ a.panel-heading:hover {
 }
 
 @media only screen and (max-width : 700px) { 
-
-
 	.sub_title{
 		display: none;
 	}
@@ -605,9 +621,39 @@ a.panel-heading:hover {
 		bottom: 8%;
 	}
 }
+@media only screen and (max-width : 400px) { 
+
+	.logo{
+		margin-top: 0px;
+	}
+	#header-title {
+		font-size: 80%;
+	}
+	#header-title .logo{
+		width:200px;
+	}
+	#header-title .h1{
+	}
+	#header-title{
+		width: 100%;
+	}
+
+	#header-title .sub_title{
+		display: none;
+	}
+	#header-title .alt_sub_title{
+		display: block;
+		width: 100%;
+	}
+}
 
 @media (max-height: 700px) { 
-
+	#header-title{
+		top: 50%;
+	}
+	#header-title .btn_row{
+		margin-top: 25px;
+	}
 }
 
 @media (min-height: 1200px) { 
