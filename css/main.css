@@ -63,7 +63,7 @@ html, body {
 	bottom: -6%;
 	left: 48%;
 	transform: translate(-50%, 0%);
-	-webkittransform:  translate(-50%, 0%);
+	-webkit-transform:  translate(-50%, 0%);
 	z-index: 2;
 }
 
@@ -395,10 +395,10 @@ h2.header_title {
 #footer_container .bone{
 	width:4%;
 	position: absolute;
-	top:20px;
-	left:30%;
-	/*transform: translate(-335%, 50%);*/
-	-webkittransform:  translate(-335%, 50%);*/
+	top:10px;
+	left:20%;
+	transform: translate(-335%, 50%);
+	-webkit-transform:  translate(-335%, 50%);*/
 }
 /* START Subscribe form */
 
@@ -510,8 +510,9 @@ a.panel-heading:hover {
 	font-weight: bold;
 }
 
-.logos_row .col-md-4{
+.logos_row .col-md-6, .logos_row .col-md-4{
 	text-align: center;
+	padding-top: 15px;
 }
 
 /*  media queries  */
@@ -647,6 +648,10 @@ a.panel-heading:hover {
 	#header-title .alt_sub_title{
 		display: block;
 		width: 100%;
+	}
+	.signup_container{
+		padding-left: 2px!important;
+		padding-right: 2px!important;
 	}
 }
 

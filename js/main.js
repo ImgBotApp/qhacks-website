@@ -37,6 +37,12 @@ $(document).ready(function(){
 	var logoAndTitle = $("#scenery_intro #header-title");
 	var sceneryIntro = $("#scenery_intro");
 
+	var cloud1 = $('<img class="cloud cloud_1" src="img/cloud.png">');
+	var cloud2 = $('<img class="cloud cloud_2" src="img/cloud.png">');
+	var cloud3 = $('<img class="cloud cloud_3" src="img/cloud.png">');
+	var cloud4 = $('<img class="cloud cloud_4" src="img/cloud.png">');
+	var clouds = [cloud1,cloud2,cloud3,cloud4];
+
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		// hillLeft.removeClass('hidden');
 		// hillRight.removeClass('hidden');
@@ -53,12 +59,6 @@ $(document).ready(function(){
 		// tower.fadeIn(1600).removeClass('hidden');
 		// buildings.fadeIn(1600).removeClass('hidden');
 		// logoAndTitle.fadeIn(1800).removeClass('hidden');
-
-		var cloud1 = $('<img class="cloud cloud_1" src="img/cloud.png">');
-		var cloud2 = $('<img class="cloud cloud_2" src="img/cloud.png">');
-		var cloud3 = $('<img class="cloud cloud_3" src="img/cloud.png">');
-		var cloud4 = $('<img class="cloud cloud_4" src="img/cloud.png">');
-		var clouds = [cloud1,cloud2,cloud3,cloud4];
 
 		clouds.forEach(function(c){
 			var perc = Math.floor(Math.random() * 100) + 1;
