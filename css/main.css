@@ -510,6 +510,9 @@ a.panel-heading:hover {
 	font-weight: bold;
 }
 
+.logos_row .col-md-4{
+	text-align: center;
+}
 
 /*  media queries  */
 @media only screen and (min-width : 1900px) { 

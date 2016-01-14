@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
 	// setup clouds
-	function setupClouds(cloud){
+	function setupCloudAnimation(cloud){
 
 		var randVal = Math.floor(Math.random() * 100000) + 1;
 		cloud.animate({
@@ -21,7 +21,7 @@ $(document).ready(function(){
 			always:function(now,fx){
 				setTimeout(function(){
 					cloud.css("left","-20%");
-					setupClouds(cloud);
+					setupCloudAnimation(cloud);
 				},100)
 				
 			}
@@ -66,8 +66,8 @@ $(document).ready(function(){
 			c.css("left",perc+"%");
 
 			sceneryIntro.append(c);
-			// c.fadeIn(1800).removeClass('hidden');
-			setupClouds(c);
+			c.fadeIn(1800).removeClass('hidden');
+			setupCloudAnimation(c);
 		});
 	}
 
@@ -77,6 +77,7 @@ $(document).ready(function(){
 	});
 
 	$("#btn_register, #btn_register_footer").click(function(){
+		console.log("sdf");
 		$("#subscription_overlay").fadeIn();
 	});
 	$("#subscription_overlay").click(function(){
