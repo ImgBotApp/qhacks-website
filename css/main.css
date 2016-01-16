@@ -188,6 +188,7 @@ h2.sub_title{
 	width: 100%;
 	font-weight: 400;
 	letter-spacing: 0.5px;
+	line-height: 42px;
 	display: none;
 }
 
@@ -400,7 +401,7 @@ h2.header_title {
 	top:10px;
 	left:20%;
 	transform: translate(-335%, 50%);
-	-webkit-transform:  translate(-335%, 50%);*/
+	-webkit-transform:  translate(-335%, 50%);
 }
 /* START Subscribe form */
 
@@ -486,7 +487,7 @@ a.panel-heading:hover {
 }	
 #subscription_overlay .signup_container{
     background: white;
-    padding: 40px;
+    padding: 20px;
     width: 100%;
     max-width: 500px;
     text-align: center;
@@ -510,6 +511,7 @@ a.panel-heading:hover {
 
 #subscription_overlay .signup_container .sendgrid-subscription-widget input[type=submit]{
 	font-weight: bold;
+
 }
 
 .logos_row .col-md-6, .logos_row .col-md-4{

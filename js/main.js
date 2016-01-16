@@ -76,8 +76,11 @@ $(document).ready(function(){
 		$("html, body").animate({ scrollTop: $('#sponsor_header').offset().top-20 }, 600);
 	});
 
+
 	$("#btn_register, #btn_register_footer").click(function(){
 		console.log("sdf");
+		$("#subscription_overlay .signup_container .sendgrid-subscription-widget input[type=submit]")
+			.addClass("btn btn_main orange_btn main_btn");
 		$("#subscription_overlay").fadeIn();
 	});
 	$("#subscription_overlay").click(function(){
