@@ -316,14 +316,17 @@ h2.sub_title{
 	background-color: #47a97c;
 	box-shadow: 0px 5px 0px #337252;
 }
+a.green_btn {
+	padding-top: 10px;
+}
 
-.btn_large.green_btn:hover {
+.btn_large.green_btn:hover , .btn_main.green_btn:hover {
 	box-shadow: 0px 3px 0px #337252;
 	transform: translate(0px, 2px);
 	webkit-transform:  translate(0px, 2px);
 }
 
-.btn_large.green_btn:active {
+.btn_large.green_btn:active , .btn_main.green_btn:active {
 	box-shadow: 0px 0px 0px;
 	transform: translate(0px, 5px);
 	webkit-transform:  translate(0px, 5px);
