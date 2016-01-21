@@ -260,6 +260,9 @@ h2.sub_title{
 	transform: translate(0px, 5px);
 	webkit-transform:  translate(0px, 5px);
 }
+a.btn_main {
+	padding-top: 8px;
+}
 
 .yellow_btn {
 	background-color: #EFBF37;

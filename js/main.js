@@ -77,12 +77,12 @@ $(document).ready(function(){
 	});
 
 
-	$("#btn_register, #btn_register_footer").click(function(){
-		console.log("sdf");
-		$("#subscription_overlay .signup_container .sendgrid-subscription-widget input[type=submit]")
-			.addClass("btn btn_main orange_btn main_btn");
-		$("#subscription_overlay").fadeIn();
-	});
+	// $("#btn_register, #btn_register_footer").click(function(){
+	// 	console.log("sdf");
+	// 	$("#subscription_overlay .signup_container .sendgrid-subscription-widget input[type=submit]")
+	// 		.addClass("btn btn_main orange_btn main_btn");
+	// 	$("#subscription_overlay").fadeIn();
+	// });
 	$("#subscription_overlay").click(function(){
 		$("#subscription_overlay").fadeOut();
 	});
