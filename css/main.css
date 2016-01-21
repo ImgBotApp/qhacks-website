@@ -414,8 +414,9 @@ h2.header_title {
 .button-area{
 	padding-top: 20px;
 }
-.button-area button{
+.button-area button,.button-area a{
 	float:right;
+	color:white;
 	margin-left: 5px;
 }
 
