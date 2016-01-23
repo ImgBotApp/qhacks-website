@@ -406,8 +406,11 @@ h2.header_title {
 	position: absolute;
 	top:10px;
 	left:20%;
-	transform: translate(-335%, 50%);
-	-webkit-transform:  translate(-335%, 50%);
+}
+#footer_container .social_icon{
+	float:left;
+	margin-top: 14px;
+	margin-right: 6px;
 }
 /* START Subscribe form */
 
@@ -521,9 +524,15 @@ a.panel-heading:hover {
 
 }
 
-.logos_row .col-md-6, .logos_row .col-md-4{
+.logos_row .col-md-6, .logos_row .col-md-4, .logos_row .col-md-12{
 	text-align: center;
 	padding-top: 15px;
+}
+.logo_platinum{
+	width:100%;
+}
+.logo_bronze{
+	width:70%;
 }
 
 /*  media queries  */
