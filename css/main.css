@@ -613,8 +613,10 @@ a.panel-heading:hover {
 	.logo{
 		width: 200px;
 	}
+	.logos_row{
+		text-align: center;
+	}
 }
-
 @media only screen and (max-width : 850px) { 
 	#scenery_intro .clock_tower{
 		display: none;
@@ -644,6 +646,7 @@ a.panel-heading:hover {
 	#scenery_intro .buildings{
 		bottom: 8%;
 	}
+
 }
 @media only screen and (max-width : 400px) { 
 
@@ -673,9 +676,7 @@ a.panel-heading:hover {
 		padding-left: 2px!important;
 		padding-right: 2px!important;
 	}
-	.logos_row .col-md-6, .logos_row .col-md-4{
-		width: 100%;
-	}
+
 
 }
 
