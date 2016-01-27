@@ -524,15 +524,18 @@ a.panel-heading:hover {
 
 }
 
-.logos_row .col-md-6, .logos_row .col-md-4, .logos_row .col-md-12{
+.logos_row .col-md-6, .logos_row .col-md-4, .logos_row .col-md-12, .logos_row .col-md-3{
 	text-align: center;
 	padding-top: 15px;
+	margin-top: 10px;
 }
 .logo_platinum{
 	width:100%;
 }
 .logo_bronze{
 	width:70%;
+}
+.sponsor_logo_poor{
 }
 
 /*  media queries  */
@@ -615,6 +618,9 @@ a.panel-heading:hover {
 	}
 	.logos_row{
 		text-align: center;
+	}
+	.logos_row .sponsor_logo_poor{
+		margin: 20px;
 	}
 }
 @media only screen and (max-width : 850px) { 
