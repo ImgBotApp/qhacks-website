@@ -150,7 +150,8 @@ html, body {
 }
 
 #header-title .btn_row{
-	margin-top: 45px;
+	margin-top: 40px;
+	margin-bottom: 5px;
 }
 
 #header-title .main_btn{
@@ -160,7 +161,9 @@ html, body {
 	margin-left: 2px;
 	margin-right: 2px;
 }
-
+.talk_to_us{
+	font-size: 80%;
+}
 h1.main_title{
 	font-weight: 700;
 	font-size: 4.3em;
