@@ -72,9 +72,9 @@ $(document).ready(function(){
 	}
 
 	// setup scroll buttons
-	$("#btn_sponsorship").click(function(){
-		$("html, body").animate({ scrollTop: $('#sponsor_header').offset().top-20 }, 600);
-	});
+	// $("#btn_sponsorship").click(function(){
+	// 	$("html, body").animate({ scrollTop: $('#sponsor_header').offset().top-20 }, 600);
+	// });
 
 
 	// $("#btn_register, #btn_register_footer").click(function(){
