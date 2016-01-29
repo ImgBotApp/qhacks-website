@@ -150,7 +150,7 @@ html, body {
 }
 
 #header-title .btn_row{
-	margin-top: 40px;
+	margin-top: 30px;
 	margin-bottom: 5px;
 }
 
@@ -164,6 +164,16 @@ html, body {
 .talk_to_us{
 	font-size: 80%;
 }
+.interested_volunteer{
+	font-size: 80%;
+	margin-top: 20px;
+}
+.interested_volunteer .front_contact_link{	
+	font-weight: normal!important;
+	line-height: 90%;
+}
+
+
 h1.main_title{
 	font-weight: 700;
 	font-size: 4.3em;
