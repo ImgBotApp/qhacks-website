@@ -162,12 +162,12 @@ html, body {
 	margin-right: 2px;
 }
 .talk_to_us{
-	font-size: 80%;
+	margin-top: 25px;
 }
 .interested_volunteer{
 	/*font-size: 80%;*/
-	margin-top: 25px;
-}
+/*	margin-top: 25px;
+*/}
 /*.interested_volunteer .front_contact_link{	
 	font-weight: normal!important;
 	line-height: 90%;
