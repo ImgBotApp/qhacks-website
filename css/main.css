@@ -165,13 +165,13 @@ html, body {
 	font-size: 80%;
 }
 .interested_volunteer{
-	font-size: 80%;
-	margin-top: 20px;
+	/*font-size: 80%;*/
+	margin-top: 25px;
 }
-.interested_volunteer .front_contact_link{	
+/*.interested_volunteer .front_contact_link{	
 	font-weight: normal!important;
 	line-height: 90%;
-}
+}*/
 
 
 h1.main_title{
@@ -333,7 +333,7 @@ a.btn_main {
 	box-shadow: 0px 5px 0px #337252;
 }
 a.green_btn {
-	padding-top: 10px;
+	padding-top: 8px;
 }
 
 .btn_large.green_btn:hover , .btn_main.green_btn:hover {
