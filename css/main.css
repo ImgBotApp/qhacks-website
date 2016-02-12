@@ -536,19 +536,31 @@ a.panel-heading:hover {
 	font-weight: bold;
 
 }
-
+.logos_row {
+	margin-top: 35px;
+}
 .logos_row .col-md-6, .logos_row .col-md-4, .logos_row .col-md-12,.logos_row .col-md-2, .logos_row .col-md-3{
 	text-align: center;
 	padding-top: 0px;
 	margin-top: 0px;
 }
 .logo_platinum{
-	width:100%;
+	width:90%;
 }
-.logo_bronze{
+.logo_gold{
+	width:80%;
+}
+.logo_silver{
 	width:70%;
 }
+.logo_bronze{
+	width:60%;
+}
 .sponsor_logo_poor{
+	width:50%;
+}
+.poor_row{
+	margin-top: 0px;
 }
 
 /*  media queries  */
@@ -664,6 +676,14 @@ a.panel-heading:hover {
 	}
 	#scenery_intro .buildings{
 		bottom: 8%;
+	}
+	.logos_row .sponsor_logo_poor{
+		margin-top: -10px;
+		margin-bottom: -10px;
+		width: 35%;
+	}
+	.logos_row .col-md-2{
+		width:100%;
 	}
 
 }
