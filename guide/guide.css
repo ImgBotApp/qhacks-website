@@ -1,0 +1,16 @@
+.venue_image {
+	height: 200px;
+	width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;	
+}
+.thumbnail .caption{
+	height: 100px;
+}
+.thumbnail .caption h3{
+	margin-top: 0px;
+	margin-bottom: 4px;
+}
+.thumbnail .caption p{
+	margin-bottom: 0px;
+}
