@@ -1,5 +1,5 @@
 body{
-	font-size: 105%;
+	font-size: 110%;
 }
 
 .venue_image {
@@ -9,7 +9,7 @@ body{
     background-repeat: no-repeat;	
 }
 .thumbnail .caption{
-	height: 100px;
+	height: 110px;
 }
 .thumbnail .caption h3{
 	margin-top: 0px;

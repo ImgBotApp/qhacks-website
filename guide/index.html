@@ -50,8 +50,15 @@
 
             </p>
 
-            <h4 style="margin-top:18px">Rules, guidelines, code of conduct ...</h4>
+            <h4 style="margin-top:18px">Code of Conduct</h4>
             <p>dfhjksdgfhjklsdgfhjklsdgfhjkil </p>
+
+            <h4>Rules, Guidelines and Submissions</h4>
+            <p>
+                <a href="http://qhacks2016.devpost.com" type="button" class="btn btn-primary">QHacks 2016 Devpost</a>
+
+            </p>
+
 
         </div>
 
@@ -321,7 +328,7 @@
         </div>
 
         <div class="container">        
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=zNZwmwYDr0B4.kJOwQ5TM0Tkk" style="width:100%;height: 500px;"></iframe>
+            <div id="map" style="width:100%;height: 500px;"></div>
         </div>
 
 
@@ -331,17 +338,151 @@
             <h2 class="header_title" id="mentors_header">mentors</h2>
         </div>
         <div class="container">
-            info about mentors and shit
+            
         </div>
-        <br/>
-        <br/>
-        <br/>
 
 
+        <div class="lg-margin"></div>
+        <div class="header_wrapper">
+            <h2 class="header_title" id="exec_header">qhacks exec team</h2>
+        </div>
+        <div class="container">
+            <h4>The best way to contact us during the event is on Slack. Message the <b>@qhacks</b> user or anyone of the following people</h4>
+
+            <table class="table table-bordered">
+                <thead>
+                    <th colspan="2">Name</th>
+                    <th>Slack username</th>
+                </thead>
+                <tr>
+                    <td>Alex Audusei</td>
+                    <td>Co-chair</td>
+                    <td>@alexadusei</td>
+                </tr>
+                <tr>
+                    <td>Micheal Molyneaux</td>
+                    <td>Co-chair</td>
+                    <td>@molyneauxm</td>
+                </tr>
+                <tr>
+                    <td>Rakan Al-Shawaf</td>
+                    <td>Co-chair</td>
+                    <td>@rakansays</td>
+                </tr>
+
+
+                <tr>
+                    <td>Jennifer Nguyen</td>
+                    <td>Marketing &amp; Hackers Coordination</td>
+                    <td>@jennifernguyen</td>
+                </tr>
+                <tr>
+                    <td>Alice Ma</td>
+                    <td>Marketing Logistics</td>
+                    <td>@alice</td>
+                </tr>
+                <tr>
+                    <td>Ankur Gupta</td>
+                    <td>Marketing Coordinator</td>
+                    <td>@jennifernguyen</td>
+                </tr>
+                <tr>
+                    <td>Stefan Sokic</td>
+                    <td>Volunteer Coordinator</td>
+                    <td>@stefansokic</td>
+                </tr>
+                <tr>
+                    <td>Valentino Muiruri</td>
+                    <td>Volunteer Coordinator</td>
+                    <td>@vmuiruri</td>
+                </tr>
+                <tr>
+                    <td>Alex Amos</td>
+                    <td>Volunteer &amp; Logistics Coordinator</td>
+                    <td>@alexanderamos</td>
+                </tr>
+                <tr>
+                    <td>Anthony Scheeren</td>
+                    <td>Volunteer Coordinator</td>
+                    <td>@anthonyscheeren</td>
+                </tr>
+
+                <tr>
+                    <td>Vibhor Mathur</td>
+                    <td>Sponsorship Coordinator</td>
+                    <td>@vibhormathur</td>
+                </tr>
+                <tr>
+                    <td>AJ Arora</td>
+                    <td>Sponsorship Coordinator</td>
+                    <td>@anujarora</td>
+                </tr>
+
+                <tr>
+                    <td>Enoch Tam</td>
+                    <td>Web Developer</td>
+                    <td>@enoch</td>
+                </tr>
+                <tr>
+                    <td>Adam Perron</td>
+                    <td>Designer</td>
+                    <td>@adamqhacks</td>
+                </tr>
+
+
+            </table>
+
+
+        </div>
+
+
+        <br/>
+        <br/>
+        <br/>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="../js/bootstrap.min.js"></script>
         <!-- <script src="js/main.js"></script> -->
+        <script type="text/javascript">
+            function initMap() {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: 44.22625, lng: -76.49374},
+                    scrollwheel: false,
+                    zoom: 4
+                });
+ 
+                var marker;
+                marker = new google.maps.Marker({
+                    map: map,
+                    position: {lat: 44.2245, lng: -76.49832},
+                    title: 'Chernoff Hall Auditorium'
+                });
+                marker = new google.maps.Marker({
+                    map: map,
+                    position: {lat: 44.22584, lng: -76.49527},
+                    title: 'Grant Hall'
+                });
+                marker = new google.maps.Marker({
+                    map: map,
+                    position: {lat: 44.22567, lng: -76.49465},
+                    title: 'Kingston Hall'
+                });
+                marker = new google.maps.Marker({
+                    map: map,
+                    position: {lat: 44.22625, lng: -76.49374},
+                    title: 'SparQ Studios Carruthers Hall'
+                });
+                marker = new google.maps.Marker({
+                    map: map,
+                    position: {lat: 44.22814, lng: -76.49269},
+                    title: 'Beamish-Munro Hall'
+                });
+                   
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcOdn0sI_T-vOIhmP4KSJ-5fqEPXJq6Y0&       callback=initMap" async defer></script>
+
+
     </body>
 </html>
