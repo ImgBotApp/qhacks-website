@@ -53,19 +53,28 @@
             <h4 style="margin-top:18px">Code of Conduct</h4>
             <p>dfhjksdgfhjklsdgfhjklsdgfhjkil </p>
 
-            <h4>Rules, Guidelines and Submissions</h4>
-            <p>
-                <a href="http://qhacks2016.devpost.com" type="button" class="btn btn-primary">QHacks 2016 Devpost</a>
-
-            </p>
 
 
         </div>
 
 
+        <div class="lg-margin2x"></div>
+        <div class="header_wrapper">
+            <h2 class="header_title" id="rules_header">Rules and Guidelines</h2>
+        </div>
+        <div class="container">
+            dgfbhjkl adgfbhj ladbgfjkl dgfanjkl adgf uiaegr bui 
+            <br/>
+
+            <h4>Submissions</h4>
+            <a href="http://qhacks2016.devpost.com" type="button" class="btn btn-primary">QHacks 2016 Devpost</a>
+
+            
+
+        </div>
 
 
-        <div class="lg-margin"></div>
+        <div class="lg-margin2x"></div>
         <div class="header_wrapper">
             <h2 class="header_title" id="schedule_header">schedule</h2>
         </div>
@@ -280,7 +289,7 @@
         </div>
 
 
-        <div class="lg-margin"></div>
+        <div class="lg-margin2x"></div>
         <div class="header_wrapper">
             <h2 class="header_title" id="campusguide_header">Campus Guide</h2>
         </div>
@@ -333,16 +342,44 @@
 
 
 
-        <div class="lg-margin"></div>
+        <div class="lg-margin2x"></div>
         <div class="header_wrapper">
             <h2 class="header_title" id="mentors_header">mentors</h2>
         </div>
         <div class="container">
-            
+            <h4>We've brought a variety of mentors to help you with your hacks during the weekend. Feel free to reach out to them on the mentors slack channel.</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <th>Name</th>
+                    <th></th>
+                    <th></th>
+                </thead>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+            </table>
+
+
+
+
         </div>
 
 
-        <div class="lg-margin"></div>
+        <div class="lg-margin2x"></div>
         <div class="header_wrapper">
             <h2 class="header_title" id="exec_header">qhacks exec team</h2>
         </div>
@@ -449,10 +486,32 @@
                 var map = new google.maps.Map(document.getElementById('map'), {
                     center: {lat: 44.22625, lng: -76.49374},
                     scrollwheel: false,
-                    zoom: 4
+                    zoom: 16
                 });
  
+
+                // Try HTML5 geolocation.
+                if (navigator.geolocation) {
+                    var findLocation = function(){
+                        navigator.geolocation.getCurrentPosition(function(position) {
+                            var pos = {
+                                lat: position.coords.latitude,
+                                lng: position.coords.longitude
+                            };
+
+                            marker = new google.maps.Marker({
+                                map: map,
+                                icon:"../img/blue_dot.png",
+                                position: pos,
+                            });
+                        }, function() {
+                        });    
+                    }
+                    findLocation();
+                } 
+
                 var marker;
+
                 marker = new google.maps.Marker({
                     map: map,
                     position: {lat: 44.2245, lng: -76.49832},
@@ -481,7 +540,7 @@
                    
             }
         </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL51wQrDSpkyI5bueYmQTYNbPqrerbVFQ&callback=initMap" async defer></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL51wQrDSpkyI5bueYmQTYNbPqrerbVFQ&amp;callback=initMap" async defer></script>
 
 
     </body>
