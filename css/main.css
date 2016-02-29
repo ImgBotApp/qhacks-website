@@ -537,7 +537,7 @@ a.panel-heading:hover {
 
 }
 .logos_row {
-	margin-top: 35px;
+	margin-top: 10px;
 }
 .logos_row .col-md-6, .logos_row .col-md-4, .logos_row .col-md-12,.logos_row .col-md-2, .logos_row .col-md-3{
 	text-align: center;
@@ -548,7 +548,7 @@ a.panel-heading:hover {
 	width:85%;
 }
 .logo_gold{
-	width:80%;
+	width:90%;
 }
 .logo_silver{
 	width:70%;
