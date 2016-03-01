@@ -1,9 +1,22 @@
 
 $(document).ready(function(){
 
-	// $(".thumbnail").click(function(){
-	// 	$(this).find(".bio").fadeIn();
-	// });
+	$(".thumbnail").click(function(){
+		$(this).find(".bio").fadeIn();
+	});
+
+	$(".thumbnail .close, .thumbnail .bio").click(function(event){
+	    event.stopPropagation();
+  		event.preventDefault();
+		$(".thumbnail .bio").fadeOut();
+		return false;
+	});
+
+	$(".thumbnail .bio div.tehactualbio").click(function(event){
+	    event.stopPropagation();
+  		event.preventDefault();
+		return false;
+	});
 
 
 	// setup clouds

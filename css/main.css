@@ -570,7 +570,7 @@ a.panel-heading:hover {
 }
 .thumbnail {
 	border: none;
-	/*cursor: pointer;*/
+	cursor: pointer;
 }
 .thumbnail .caption h3{
 	margin-top: 4px;
@@ -589,14 +589,42 @@ a.panel-heading:hover {
 .thumbnail .bio{
 	display: none;
 	position:fixed;
-	top:5%;
-	left:5%;
-	right:5%;
-	bottom:5%;
-	background:rgba(50,50,50,0.8);
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	background:rgba(50,50,50,0.6);
 	z-index: 100;
 }
-
+.thumbnail .close{
+	position: absolute;
+	top:5%;
+	right: 5%;
+	font-size: 30px;
+	color:white;
+}
+.thumbnail div.tehactualbio{
+	width:50%;
+	max-width: 600px;
+	background: white;
+	padding: 20px;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	font-size:110%;
+  	max-height: 600px;
+  	overflow: auto;
+  	border-radius: 9px;
+}
+.thumbnail div.tehactualbio img{
+	width:250px;
+	height: 250px;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
 /*  media queries  */
 @media only screen and (min-width : 1900px) { 
@@ -701,6 +729,9 @@ a.panel-heading:hover {
 	#scenery_intro .hill_right {
 		bottom: 0%;
 		width: 120%!important;
+	}
+	.thumbnail div.tehactualbio{
+		width:90%;
 	}
 }
 
