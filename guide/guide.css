@@ -18,3 +18,7 @@ body{
 .thumbnail .caption p{
 	margin-bottom: 0px;
 }
+
+.floor_plan_img{
+	width: 100%;
+}
