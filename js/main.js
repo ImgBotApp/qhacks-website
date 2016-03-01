@@ -1,6 +1,11 @@
 
 $(document).ready(function(){
 
+	// $(".thumbnail").click(function(){
+	// 	$(this).find(".bio").fadeIn();
+	// });
+
+
 	// setup clouds
 	function setupCloudAnimation(cloud){
 

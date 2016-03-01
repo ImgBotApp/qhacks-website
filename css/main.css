@@ -565,14 +565,36 @@ a.panel-heading:hover {
 
 
 .judges_row{
-	margin-left: 120px;
-	margin-right: 120px;
+	margin-left: 140px;
+	margin-right: 140px;
 }
 .thumbnail {
 	border: none;
+	/*cursor: pointer;*/
 }
 .thumbnail .caption h3{
 	margin-top: 4px;
+	text-align: center;
+}
+.thumbnail .caption h4.first_row{
+	margin-bottom: 0px;
+	text-align: center;
+}
+.thumbnail .caption h4.second_row{
+	margin-top: 0px;
+	font-size:95%;
+	text-align: center;
+}
+
+.thumbnail .bio{
+	display: none;
+	position:fixed;
+	top:5%;
+	left:5%;
+	right:5%;
+	bottom:5%;
+	background:rgba(50,50,50,0.8);
+	z-index: 100;
 }
 
 
