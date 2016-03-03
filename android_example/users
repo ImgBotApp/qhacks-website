@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "name": "Alex Adusei",
+        "position": "Co-Chair",
+        "phone": "121-343-5678",
+        "email": "alex.is.cool@gmail.com"
+    },
+    {
+        "id":2,
+        "name": "Rakan Al-Shawaf",
+        "position": "Co-Chair",
+        "phone": "444-444-4454",
+        "email": "lol@rakan.com"
+    },
+    {
+        "id":3,
+        "name": "Michael Molyneaux",
+        "position": "Co-Chair",
+        "phone": "987-654-3210",
+        "email": "michael@qhacks.io"
+    }
+]
