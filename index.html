@@ -35,7 +35,7 @@
         <img src="img/gradient.png" class="circle_gradient">
         <img src="img/tower.png" class="clock_tower">
 
-        <!-- <img src="img/buildings.png" class="buildings"> -->
+        <img src="img/moon.png" class="moon">
         <img src="img/hill_left.png"  class="hill_left">
         <img src="img/hill_right.png"  class="hill_right">
 
@@ -73,6 +73,13 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/vendor/snowstorm-min.js"></script>
+    <script>
+        snowStorm.flakesMaxActive = 120;    // show more snow on screen at once
+        snowStorm.useTwinkleEffect = false; // let the snow flicker in and out of view
+        snowStorm.followMouse = false;
+        // snowStorm.freezeOnBlur = false;
+    </script>
     <script>
 
         // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
