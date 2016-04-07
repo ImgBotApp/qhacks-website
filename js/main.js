@@ -78,15 +78,15 @@ $(document).ready(function(){
 		// buildings.fadeIn(1600).removeClass('hidden');
 		// logoAndTitle.fadeIn(1800).removeClass('hidden');
 
-		clouds.forEach(function(c){
-			var perc = Math.floor(Math.random() * 100) + 1;
-			console.log(perc) 
-			c.css("left",perc+"%");
+		// clouds.forEach(function(c){
+		// 	var perc = Math.floor(Math.random() * 100) + 1;
+		// 	console.log(perc) 
+		// 	c.css("left",perc+"%");
 
-			sceneryIntro.append(c);
-			c.fadeIn(1800).removeClass('hidden');
-			setupCloudAnimation(c);
-		});
+		// 	sceneryIntro.append(c);
+		// 	c.fadeIn(1800).removeClass('hidden');
+		// 	setupCloudAnimation(c);
+		// });
 	}
 
 	// setup scroll buttons
