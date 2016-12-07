@@ -94,7 +94,7 @@ $(document).ready(function(){
 	// 	$("html, body").animate({ scrollTop: $('#sponsor_header').offset().top-20 }, 600);
 	// });
 
-
+/*
 	$("#signup_to_be_emailed").click(function(){
 		console.log("sdf");
 		$("#subscription_overlay .signup_container .sendgrid-subscription-widget input[type=submit]")
@@ -107,7 +107,7 @@ $(document).ready(function(){
 	$("#subscription_overlay .signup_container").click(function(e) {
 	   e.stopPropagation();
 	})
-
+*/
 
 	// hide mlh badge
 	var hidden = false;
