@@ -1,0 +1,22 @@
+.submission-time-wrapper{
+	background-color: #8A0808;
+	padding: 10px 15px;
+}
+.submission-time-text{
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+.submission-link{
+	color: white;
+	text-decoration: underline;
+}
+.submission-link:hover{
+	color: white;
+	text-decoration: underline;
+}
+.submission-time-help-text{
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+}
