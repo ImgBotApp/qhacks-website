@@ -1,645 +1,114 @@
-<!DOCTYPE html>
-<html class="no-js" lang="">
-    <!--  QHACKS MAIN WEBSITE  -->
-    <!--  Author: enoch <et.enoch@gmail.com> -->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>QHacks | Queen's University | March 4th-6th, 2016</title>
-        <meta name="description" content="The QHacks Hacker Guide">
-        <meta name="keywords" content="Hackathon, Queen's University, Kingston, QHacks, Queensu, Guide">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-        <link rel="shortcut icon" href="../favicon.ico" />
-        <meta name="theme-color" content="#3f976f">
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/main.css" rel="stylesheet">
-        <link rel="stylesheet" href="guide.css">
-        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-        <meta property="og:image" content="../img/ogimage.png" />
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="container">
-            <div class="text_align_center">
-                <img src="../img/logo.png" style="margin-top:10px;width:200px;">
-                <h2>QHacks Guide</h2>
-                <br/>
-            </div>
-        </div>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="./css/main/navbar.css"/>
+<link rel="stylesheet" href="./css/main/main.css"/>
+<link rel="stylesheet" href="./css/main/first.css"/>
+<link rel="stylesheet" href="./css/main/wifi.css"/>
+<link rel="stylesheet" href="./css/main/second.css"/>
+<link rel="stylesheet" href="./css/main/countdown.css"/>
+
+<title>QHacks</title>
+
+</head>
+<body>
+
+<div class="navbar-wrapper">
+	<div class="container-fluid">
+		<div class="row navbar-row">
+			<div class="col-sm-12">
+
+				<img src="../img/logo.png" class="navbar-logo">
+
+				<p class="navbar-item-wrapper">
+					<a href="./" class="navbar-item">Dashboard</a>
+					<a href="https://qhacks17.slack.com/" target="_blank" class="navbar-item">Slack</a>
+					<a href="https://www.facebook.com/groups/1317363491653433/" target="_blank" class="navbar-item">Facebook Group</a>
+					<!-- <a href="#" class="navbar-item">Dev Post Submissions</a> -->
+					<a href="#" class="navbar-item">HELPq</a>
+					<a href="./mentors" class="navbar-item">Mentors</a>
+					<a href="./schedule" class="navbar-item">Schedule</a>
+					<a href="./rules-and-guidelines" class="navbar-item">Rules and Guidelines</a>
+				</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--
+font-family: 'Roboto Condensed', sans-serif;
+-->
+<div class="container">
+	<div class="row first-row">
+		<div class="col-sm-7 col-sm-offset-1">
+			<h1 class="main-title">Welcome to QHacks!</h1>
+			<p class="main-intro-text">
+				Welcome to the hacker dashboard! We hope you'll have a fantastic weekend of hacking here at Queen's University! We have added a bunch of information on this page. We will also continue to update this page with relevant information and links through the weekend. 
+			</p>
+		</div>
+		<div class="col-sm-3">
+			<h2 class="wifi-title">Wifi Access</h2>
+			<p class="wifi-text">Network: QueensuSecure_WPA2</p>
+			<p class="wifi-text">Username: <code>confgues</code></p>
+			<p class="wifi-text">Password: <code>Viot2+xi4</code></p>
+			<p class="wifi-text additional-wifi-message">If you need alternate WIFI access for specific hardware, let us know.</p>
+		</div>
+	</div>
+	<div class="row second-row">
+		<div class="col-sm-7 col-sm-offset-1">
+			<h2>Schedule</h2>
+			<br/>
+			<span id="schedule-content"></span>
+			<p class="schedule-text"><a href="#" class="schedule-link-text">View Full Schedule</a></p>
+		</div>
+		<div class="col-sm-3">
+			<h2>Quick Links</h2>
+			<a href="#" class="quick-link">
+				<div class="quick-link-wrapper">
+					<p class="quick-link-text-title">Slack</p>
+					<p class="quick-link-text-about">Chat with fellow hackers, mentors, and exec.</p>
+				</div>
+			</a>
+			<a href="#" class="quick-link">
+				<div class="quick-link-wrapper">
+					<p class="quick-link-text-title">HELPq</p>
+					<p class="quick-link-text-about">Connect and get help from mentors.</p>
+				</div>
+			</a>
+			<br/>
+			<h2 class="wifi-title">Contacting Campus Security</h2>
+			<p class="wifi-text">For general inquires: <code>613-533-6733</code></p>
+			<p class="wifi-text">For emergencies only: <code>613-533-6111</code></p>
+			<br/>
+			<h2 class="wifi-title">Contacting QHacks Exec</h2>
+			<p class="wifi-text" id="contacting-qhacks-exec">
+				
+
+			</p>
+		</div>
+	</div>
+</div>
 
 
-        <div class="lg-margin"></div>
-        <div class="header_wrapper">
-            <h2 class="header_title" id="overview_header">overview</h2>
-        </div>
-        <div class="container">
-            <h3>Welcome to QHacks!</h3>
-            <h4 style="margin-top:18px">We hope you'll have a fantastic weekend of hacking here at Queen's University!</h4>
-
-            <h4 style="margin-top:18px">Have Questions?</h4>
-            <p>
-                We'll be happy to answer them at <a href="mailto:hello@qhacks.io">hello@qhacks.io</a><br/>
-                If you haven't already, make sure to join our Facebook group and our Slack Team. You'll get a much quicker response from us on Slack!
-                <br/><br/>
-                <a href="https://www.facebook.com/groups/1299364016747493/" type="button" class="btn btn-primary">Facebook Group</a>
-                <a href="http://qhacks.slack.com/" type="button" class="btn btn-primary">Slack Team</a>
-
-            </p>
-
-            <h4 style="margin-top:18px">Wifi Access</h4>
-            <p>
-
-                Network: QueensuSecure_WPA2<br/>
-                Username: confgues<br/>
-                Password: Viot2+xi4<br/>
-                <br/>
-                If you need alternate WIFI access for specific hardware, let us know.
-            </p>
+<div class="countdown-wrapper">
+	<p class="countdown-time">
+		
+	</p>
+	<p class="countdown-remaining-text">
+		Finding time left...
+	</p>
+</div>
 
 
-
-
-
-        </div>
-
-
-        <div class="lg-margin2x"></div>
-        <div class="header_wrapper">
-            <h2 class="header_title" id="rules_header">Rules and Guidelines</h2>
-        </div>
-        <div class="container">
-
-            <h4 style="margin-top:18px">Code of Conduct</h4>
-            <p>We expect all hackers to abide by the <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a></p>
-            There will be a maximum of 4 members on each team.
-            <br/><br/>
-            Info about hardware can be found here: <a href="http://qhacks.io/hardware">qhacks.io/hardware</a>
-            <br/>
-            Info about challenges can be found here: <a href="http://qhacks.io/challenges">qhacks.io/challenges</a>
-
-            <h4>Submissions</h4>
-            <a href="http://qhacks2016.devpost.com" type="button" class="btn btn-primary">QHacks 2016 Devpost</a>
-
-            
-
-        </div>
-
-
-        <div class="lg-margin2x"></div>
-        <div class="header_wrapper">
-            <h2 class="header_title" id="schedule_header">schedule</h2>
-        </div>
-
-
-        <div class="container">
-            <div class="panel-group" id="accordion">
-                <div class="panel">
-                    <a class="panel-heading text-center" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                        <h4 class="panel-title">
-                            Friday, March 4th, 2016
-                        </h4>
-                    </a>
-                    <div id="collapseOne" class="panel-collapse collapse in">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Time</th>
-                                    <th>Duration</th>
-                                    <th>Event</th>
-                                    <th>Location</th>
-                                </tr>
-                            </thead>
-                            <tr>
-                                <td>6:00pm</td>
-                                <td>2.5h</td>
-                                <td>Registration &amp; Dinner</td>
-                                <td>Chernoff Hall</td>
-                            </tr>
-                            <tr>
-                                <td>8:30pm</td>
-                                <td>1h</td>
-                                <td>Opening Ceremony</td>
-                                <td>Chernoff Hall</td>
-                            </tr>
-                            <tr>
-                                <td>9:30pm</td>
-                                <td>1h</td>
-                                <td>Team Formation &amp; Registration</td>
-                                <td>Chernoff Hall</td>
-                            </tr>
-                            <tr>
-                                <td>10:30pm</td>
-                                <td>36h</td>
-                                <td>Hacking Begins!</td>
-                                <td>BMH</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="panel">
-                    <a class="panel-heading text-center" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                        <h4 class="panel-title">
-                            Saturday, March 5th, 2016
-                        </h4>
-                    </a>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Time</th>
-                                    <th>Duration</th>
-                                    <th>Event</th>
-                                    <th>Location</th>
-                                </tr>
-                            </thead>
-                            <tr>
-                                <td>12:00am</td>
-                                <td>1h</td>
-                                <td>Predicting the Future with Machine Learning</td>
-                                <td>BMH Rm313</td>
-                            </tr>
-                            <tr>
-                                <td>1:00am</td>
-                                <td>1h</td>
-                                <td>How to get started with 3D printing workshop</td>
-                                <td>SparQ Studios</td>
-                            </tr>
-                            <tr>
-                                <td>1:00am</td>
-                                <td>1h</td>
-                                <td>HTML/CSS/JavaScript/Meteor 101</td>
-                                <td>BMH Rm313</td>
-                            </tr>
-                            <tr>
-                                <td>2:00am</td>
-                                <td>1h</td>
-                                <td>Android 101</td>
-                                <td>BMH Rm313</td>
-                            </tr>
-                            <tr>
-                                <td>2:00am</td>
-                                <td>1h</td>
-                                <td>CAD for 3D Prin ng Workshop</td>
-                                <td>BMH Rm313</td>
-                            </tr>
-                            <tr>
-                                <td>3:00am</td>
-                                <td>1h</td>
-                                <td>Intro to Ruby on Rails Workshop</td>
-                                <td>SparQ Studios</td>
-                            </tr>
-                            <tr>
-                                <td>8:00am</td>
-                                <td>1h</td>
-                                <td>Breakfast</td>
-                                <td>BMH</td>
-                            </tr>
-                            <tr>
-                                <td>10:00am</td>
-                                <td>1h</td>
-                                <td>Morning Yoga</td>
-                                <td>SparQ Studios</td>
-                            </tr>
-                            <tr>
-                                <td>12:00pm</td>
-                                <td>1h</td>
-                                <td>Lunch</td>
-                                <td>BMH</td>
-                            </tr>
-                            <tr>
-                                <td>1:00pm</td>
-                                <td>0.5h</td>
-                                <td>Challenges of Hardware Hacking by Mosaic</td>
-                                <td>DUP Rm215</td>
-                            </tr>
-                            <tr>
-                                <td>2:00pm</td>
-                                <td>0.5h</td>
-                                <td>Tech Talk by RL</td>
-                                <td>DUP Rm215</td>
-                            </tr>
-                            <tr>
-                                <td>3:00pm</td>
-                                <td>0.5h</td>
-                                <td>Soylent Bottle Design Contest</td>
-                                <td>DUP Rm215</td>
-                            </tr>
-                            <tr>
-                                <td>4:30pm</td>
-                                <td>1h</td>
-                                <td>Mini Event: Cup Stacking (MLH)</td>
-                                <td>BMH Rm313</td>
-                            </tr>
-                            <tr>
-                                <td>6:00pm</td>
-                                <td>1h</td>
-                                <td>Dinner</td>
-                                <td>BMH</td>
-                            </tr>
-                            <tr>
-                                <td>8:30pm</td>
-                                <td>1h</td>
-                                <td>Tech Developing for Social Impact by Phil Frei</td>
-                                <td>DUP Rm215</td>
-                            </tr>
-                            <tr>
-                                <td>9:30pm</td>
-                                <td>1h</td>
-                                <td>Mini Event: Code in the Dark (MLH)</td>
-                                <td>DUP Rm215</td>
-                            </tr>
-                       </table>
-                    </div>
-                </div>
-                <div class="panel">
-                    <a class="panel-heading text-center" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                        <h4 class="panel-title">
-                            Sunday, March 6th, 2016
-                        </h4>
-                    </a>
-                    <div id="collapseThree" class="panel-collapse collapse">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Time</th>
-                                    <th>Duration</th>
-                                    <th>Event</th>
-                                    <th>Location</th>
-                                </tr>
-                            </thead>
-                            <tr>
-                                <td>1:00am</td>
-                                <td>5h</td>
-                                <td>Chill Zone -Smash Bros, board games, etc</td>
-                                <td>KH Red Room &amp; BMH Rm313</td>
-                            </tr>
-                            <tr>
-                                <td>8:00am</td>
-                                <td>1h</td>
-                                <td>Breakfast</td>
-                                <td>BMH</td>
-                            </tr>
-                            <tr>
-                                <td>11:00am</td>
-                                <td></td>
-                                <td>Hacking Ends - Devpost Submission Due</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>11:30am</td>
-                                <td>2h</td>
-                                <td>Judging Expo</td>
-                                <td>Grant Hall</td>
-                            </tr>
-                            <tr>
-                                <td>1:00pm</td>
-                                <td>.5h</td>
-                                <td>Lunch</td>
-                                <td>Grant Hall</td>
-                            </tr>
-                            <tr>
-                                <td>2:00pm</td>
-                                <td>1.5h</td>
-                                <td>Closing Ceremony</td>
-                                <td>Grant Hall</td>
-                            </tr>
-                            <tr>
-                                <td>3:45pm</td>
-                                <td></td>
-                                <td>Externals Board Busses</td>
-                                <td>Grant Hall</td>
-                            </tr>
-                            
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="lg-margin2x"></div>
-        <div class="header_wrapper">
-            <h2 class="header_title" id="map_header">Campus Map</h2>
-        </div>
-
-<!--         <div class="container">
-            
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <div class="venue_image" style="background-image:url('http://qhacks.io/venue_pics/chernoff_hall.jpg')" >&nbsp;</div>
-                        <div class="caption">
-                            <h3>Chernoff Hall</h3>
-                            <p>Registration, Dinner and Opening Ceremonies will take place in the Auditorium</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <div class="venue_image" style="background-image:url('http://qhacks.io/venue_pics/beamish_munro.jpg')" >&nbsp;</div>
-                        <div class="caption">
-                            <h3>Beamish-Munro Hall</h3>
-                            <p>Abbreviated as BMH (Also referred to as the ILC)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <div class="venue_image" style="background-image:url('http://qhacks.io/venue_pics/kingston_hall.jpg')" >&nbsp;</div>
-                        <div class="caption">
-                            <h3>Kingston Hall</h3>
-                            <p>Abbreviated as KH</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <div class="venue_image" style="background-image:url('http://qhacks.io/venue_pics/grant_hall.jpg')" >&nbsp;</div>
-                        <div class="caption">
-                            <h3>Grant Hall</h3>
-                            <p>The judging expo and closing ceremonies will take place in the Grant Hall</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-        <div class="container">        
-            <div id="map" style="width:100%;height: 500px;"></div>
-            <br/>
-
-<!--             <h3>Kingston Hall (KH)</h3>
-            <div class="row">
-                <div class="col-md-4"><img class='floor_plan_img' src="../img/floorplans/kingston-first-floor.png" alt="Kingston Hall Floor Plan"/></div>
-                <div class="col-md-4"><img class='floor_plan_img' src="../img/floorplans/kingston-second-floor.png" alt="Kingston Hall Floor Plan"/></div>
-                <div class="col-md-4"><img class='floor_plan_img' src="../img/floorplans/kingston-third-floor.png" alt="Kingston Hall Floor Plan"/></div>
-            </div> -->
-
-            <h3>Beamish-Munro Hall (BMH)</h3>
-            <div class="row">
-                <div class="col-md-4"><img class='floor_plan_img' src="../img/floorplans/first-floor.png" alt="BMH Floor Plan"/></div>
-                <div class="col-md-4"><img class='floor_plan_img' src="../img/floorplans/second-floor.png" alt="BMH Floor Plan"/></div>
-                <div class="col-md-4"><img class='floor_plan_img' src="../img/floorplans/third-floor.png" alt="BMH Floor Plan"/></div>
-            </div>
-
-        </div>
-
-
-
-        <div class="lg-margin2x"></div>
-        <div class="header_wrapper">
-            <h2 class="header_title" id="mentors_header">mentors</h2>
-        </div>
-        <div class="container">
-            <h4>We've brought a variety of mentors to help you with your hacks during the weekend. Feel free to reach out to them on the mentors slack channel.</h4>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Peihong Li</h4>
-                        Pei is an Engineering Science student at the University of Toronto. He is the founder of Hack The 6ix, an entertainment hackathon attended by more than 200 students. Pei’s previous work experience includes internships at Shopify, Dynadot, and IBM. If you have questions about Ruby on Rails or general web development, he's your man.
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Julia Canella</h4>
-                        Julia graduated from the Software Design program at the Queen's School of Computing in 2013. She loved her time at Queen's. From being on the Tech Committee for Frosh week to being part of COMPSA, Julia was always a proud member of the School of Computing family. After her third year in the SODE program, she completed her Professional Internship at IBM. Once she returned to Queen's for her final year, she accepted a job within Deloitte's Technology Consulting practice in Toronto and has been there ever since.
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Joshua Fletcher</h4>
-                        Josh has a strong background in delivering ERP solutions focused in the Financial Services Industry. After receiving an undergraduate degree from Queen's University in Biomedical Computing he has had a variety of roles on large scale systems implementations at various global FSI clients, as well as clients in the insurance and retail industries. Through his experience, Josh has built a knowledge base focused on the analysis of impacts systems and technology have on businesses.<br/>Currently, he is working as a Manager at Deloitte Consulting LLP. At Deloitte, his focus has been as a functional consultant working on global financial services ERP projects. His primary roles include a variety of tasks surrounding the Systems Development Life Cycle including project management, operational readiness, cutover planning, business process design, functional & technical workshop facilitation, training & business readiness.
-                    </div>
-
-                </div>
-                    
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Roger Bowes</h4>
-                        Roger graduated from Queen’s University with a B.Sc. Hon. in Electrical Engineering in 1992.  He joined Queen’s technology spin-out and start-up ESG Solutions in 1993 managing engineering and product development before taking on the role of CEO from 2006 to 2010.  The company was acquired by Spectris plc (LSE:SXS) in 2014 for $64M.  In 2012 Roger co-found Laser Depth Dynamics, also a Queen’s technology spin-out and is currently CEO.  Other business ventures include BGM Metalworks, Next Urban Group and Annapurna Research.  He is also a member of the South-Eastern Ontario Angel Network.
-                    </div>
-                </div>
-                    
-                    <td</td>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Brendan Coady</h4>
-                        OEM Hardware Lead
-                        <br/>LinkedIn: https://ca.linkedin.com/in/brendancoady
-                        <br/>Previously Co-Founder at Boogaloo Bunks (boogaloobunks.com, https://www.youtube.com/watch?v=0xRkTEBbAXE), internships with Clearpath Robotics, Baylis Medical, ELWEMA Automotive GmbH (Germany)
-                        <br/>Mech Eng from UW specializing in mechanical design and robotics
-                        <br/>Current Venture for Canada Fellow
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Tiffany Hu</h4>
-                        I'm an associate in TD Technology Solutions Associate program and I'm currently in my second rotation working in Workspace Engineering, Infrastructure Technology Solutions. My team leads the design, proof-of-concept, and pilot projects for new capabilities and technologies. Prior to TD, I worked at a green tech start up and led the University of Toronto solar racing team.
-                    </div>
-                    
-                </div>
-    
-
-
-
-        </div>
-
-
-        <div class="lg-margin2x"></div>
-        <div class="header_wrapper">
-            <h2 class="header_title" id="exec_header">qhacks exec team</h2>
-        </div>
-        <div class="container">
-            <h4>The best way to contact us during the event is on Slack. Message the <b>@qhacks</b> user or anyone of the following people</h4>
-
-            <table class="table table-bordered">
-                <thead>
-                    <th colspan="2">Name</th>
-                    <th>Slack username</th>
-                </thead>
-                <tr>
-                    <td>Alex Adusei</td>
-                    <td>Co-chair</td>
-                    <td>@alexadusei</td>
-                </tr>
-<!--                 <tr>
-                    <td>...</td>
-                    <td></td>
-                    <td></td>
-                </tr> -->
-   <!--              <tr>
-                    <td>Micheal Molyneaux</td>
-                    <td>Co-chair</td>
-                    <td>@molyneauxm</td>
-                </tr>
-                <tr>
-                    <td>Rakan Al-Shawaf</td>
-                    <td>Co-chair</td>
-                    <td>@rakansays</td>
-                </tr>
-
-
-                <tr>
-                    <td>Jennifer Nguyen</td>
-                    <td>Marketing &amp; Hackers Coordination</td>
-                    <td>@jennifernguyen</td>
-                </tr>
-                <tr>
-                    <td>Alice Ma</td>
-                    <td>Marketing Logistics</td>
-                    <td>@alice</td>
-                </tr>
-                <tr>
-                    <td>Ankur Gupta</td>
-                    <td>Marketing Coordinator</td>
-                    <td>@jennifernguyen</td>
-                </tr>
-                <tr>
-                    <td>Stefan Sokic</td>
-                    <td>Volunteer Coordinator</td>
-                    <td>@stefansokic</td>
-                </tr>
-                <tr>
-                    <td>Valentino Muiruri</td>
-                    <td>Volunteer Coordinator</td>
-                    <td>@vmuiruri</td>
-                </tr>
-                <tr>
-                    <td>Alex Amos</td>
-                    <td>Volunteer &amp; Logistics Coordinator</td>
-                    <td>@alexanderamos</td>
-                </tr>
-                <tr>
-                    <td>Anthony Scheeren</td>
-                    <td>Volunteer Coordinator</td>
-                    <td>@anthonyscheeren</td>
-                </tr>
-
-                <tr>
-                    <td>Vibhor Mathur</td>
-                    <td>Sponsorship Coordinator</td>
-                    <td>@vibhormathur</td>
-                </tr>
-                <tr>
-                    <td>AJ Arora</td>
-                    <td>Sponsorship Coordinator</td>
-                    <td>@anujarora</td>
-                </tr>
-
-                <tr>
-                    <td>Enoch Tam</td>
-                    <td>Web Developer</td>
-                    <td>@enoch</td>
-                </tr>
-                <tr>
-                    <td>Adam Perron</td>
-                    <td>Designer</td>
-                    <td>@adamqhacks</td>
-                </tr> -->
-
-            </table>
-
-
-        </div>
-
-
-        <br/>
-        <br/>
-        <br/>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="../js/bootstrap.min.js"></script>
-        <!-- <script src="js/main.js"></script> -->
-        <script type="text/javascript">
-            function initMap() {
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {lat: 44.22625, lng: -76.49374},
-                    scrollwheel: false,
-                    zoom: 16
-                });
- 
-
-                // Try HTML5 geolocation.
-                if (false/*navigator.geolocation*/) {
-                    var findLocation = function(){
-                        navigator.geolocation.getCurrentPosition(function(position) {
-                            var pos = {
-                                lat: position.coords.latitude,
-                                lng: position.coords.longitude
-                            };
-
-                            var m = new google.maps.Marker({
-                                map: map,
-                                icon:"../img/blue_dot.png",
-                                position: pos,
-                            });
-                        }, function() {
-                        });    
-                    }
-                    findLocation();
-                } 
-                var infowindow = new google.maps.InfoWindow({
-                    content:""
-                });
-                
-
-                var marker1 = new google.maps.Marker({
-                    map: map,
-                    position: {lat: 44.2245, lng: -76.49832},
-                    title: 'Chernoff Hall Auditorium'
-                });
-                marker1.addListener('click', function() {
-                    infowindow.setContent("<h3>Chernoff Hall Auditorium</h3>");                
-                    infowindow.open(map,marker1); 
-                });
-                var marker2 = new google.maps.Marker({
-                    map: map,
-                    position: {lat: 44.22584, lng: -76.49527},
-                    title: 'Grant Hall'
-                });
-                marker2.addListener('click', function() {
-                    infowindow.setContent("<h3>Grant Hall</h3>");
-                    infowindow.open(map,marker2); 
-                });
-                var marker3 = new google.maps.Marker({
-                    map: map,
-                    position: {lat: 44.22567, lng: -76.49465},
-                    title: 'Kingston Hall'
-                });
-                marker3.addListener('click', function() {
-                    infowindow.setContent("<h3>Kingston Hall</h3>");
-                    infowindow.open(map,marker3); 
-                });
-                var marker4 = new google.maps.Marker({
-                    map: map,
-                    position: {lat: 44.22625, lng: -76.49374},
-                    title: 'SparQ Studios Carruthers Hall'
-                });
-                marker4.addListener('click', function() {
-                    infowindow.setContent("<h3>SparQ Studios Carruthers Hall</h3>");
-                    infowindow.open(map,marker4); 
-                });
-                var marker5 = new google.maps.Marker({
-                    map: map,
-                    position: {lat: 44.22814, lng: -76.49269},
-                    title: 'Beamish-Munro Hall'
-                });
-                marker5.addListener('click', function() {
-                    infowindow.setContent("<h3>Beamish-Munro Hall</h3>");
-                    infowindow.open(map,marker5); 
-                });
-                   
-            }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL51wQrDSpkyI5bueYmQTYNbPqrerbVFQ&amp;callback=initMap" async defer></script>
-
-
-    </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="./js/main/data.js"></script>
+<script src="./js/main/schedule.js"></script>
+<script src="./js/main/countdown.js"></script>
+<script src="./js/main/qhacks-exec-list.js"></script>
+</body>
 </html>

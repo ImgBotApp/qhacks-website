@@ -1,0 +1,33 @@
+.schedule-row{
+	padding-top: 60px;
+}
+.upcoming-row{
+	padding-top: 10px;
+}
+.past-row{
+	padding-top: 40px;
+}
+.schedule-title{
+	padding-bottom: 10px;
+}
+.schedule-table th{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color: #A4A4A4;
+}
+.schedule-table td{
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	color: #585858;
+}
+.schedule-link-text{
+}
+.schedule-link-text:hover{
+}
+.schedule-text{
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	color: #585858;
+
+	margin-top: -5px;
+}

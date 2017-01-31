@@ -1,0 +1,48 @@
+.navbar-wrapper{
+	width: 100%;
+
+	border-bottom-color: #f1f1f1;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+
+
+}
+.navbar-row{
+	padding-top: 10px;
+	
+}
+.navbar-logo{
+	height: 25px;
+	display: inline-block;
+
+	vertical-align: top;
+}
+.navbar-item-wrapper{
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	padding-top: 0px;
+}
+.navbar-item{
+
+	padding: 5px 5px;
+
+	border-bottom-color: #ffffff;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+
+	display: inline-block;
+
+
+}
+.navbar-item:hover{
+	border-bottom-color: #476d99;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+
+	text-decoration: none;
+}

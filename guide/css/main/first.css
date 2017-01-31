@@ -1,0 +1,16 @@
+.first-row{
+	padding-top: 50px;
+}
+.main-title{
+	padding-bottom: 8px;
+}
+.main-sub-title{
+	padding-bottom: 5px;
+}
+.main-intro-text{
+	padding-top: 10px;
+	padding-bottom: 15px;
+
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
