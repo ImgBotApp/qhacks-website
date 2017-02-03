@@ -77,7 +77,7 @@ var schedule = [
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
-		"name" : "Afraj Gill: Startup Failures & How to Avoid Them",
+		"name" : "Afraj Gill: Most Common Mistakes by Founders, and How to Avoid Them",
 		"location" : "Ellis Hall Auditorium",
 		"eventEndTime" : "02-04-2017 16:05:00",
 		"timeDisplayed" : "3:00 PM",
