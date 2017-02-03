@@ -200,4 +200,9 @@ var qhacksExecSlack = [
 		"name" : "nicole",
 		"link" : "https://qhacks17.slack.com/messages/@nicole/"
 	}
+	,
+	{
+		"name" : "kamil",
+		"link" : "https://qhacks17.slack.com/messages/@kamil/"
+	}
 ];
