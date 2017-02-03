@@ -10,7 +10,7 @@ var schedule = [
 		"name" : "Opening Ceremony",
 		"location" : "Dunning Hall",
 		"eventEndTime" : "02-03-2017 22:05:00",
-		"timeDisplayed" : "9:00 PM",
+		"timeDisplayed" : "8:30 PM",
 		"dateDisplayed" : "Friday Feb 3"
 	},
 	{
