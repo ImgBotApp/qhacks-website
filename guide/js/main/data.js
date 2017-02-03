@@ -28,7 +28,7 @@ var schedule = [
 		"dateDisplayed" : "Friday Feb 3"
 	},
 	{
-		"name" : "RBC: Thinking About Design Thinking",
+		"name" : "RBC: Design Thinking",
 		"location" : "",
 		"eventEndTime" : "02-04-2017 00:35:00",
 		"timeDisplayed" : "11:30 PM",
