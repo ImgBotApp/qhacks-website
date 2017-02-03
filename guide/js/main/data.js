@@ -42,7 +42,7 @@ var schedule = [
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
-		"name" : "TD: Mobile App Development",
+		"name" : "Mobile App Development at TD",
 		"location" : "324 Ellis Hall",
 		"eventEndTime" : "02-04-2017 2:35:00",
 		"timeDisplayed" : "1:30am",
@@ -81,6 +81,13 @@ var schedule = [
 		"location" : "Ellis Hall Auditorium",
 		"eventEndTime" : "02-04-2017 16:05:00",
 		"timeDisplayed" : "3:00 PM",
+		"dateDisplayed" : "Saturday Feb 4"
+	},
+	{
+		"name" : "Mini-Event: Lost in the Sauce Coding Challenge",
+		"location" : "327 Ellis Hall",
+		"eventEndTime" : "02-04-2017 17:05:00",
+		"timeDisplayed" : "4:00 PM",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
