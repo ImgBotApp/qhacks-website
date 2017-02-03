@@ -1,112 +1,112 @@
 var schedule = [
 	{
 		"name" : "Registration & Dinner",
-		"location" : "",
+		"location" : "Dunning Hall",
 		"eventEndTime" : "02-03-2017 21:05:00",
 		"timeDisplayed" : "6:00 PM",
 		"dateDisplayed" : "Friday Feb 3"
 	},
 	{
 		"name" : "Opening Ceremony",
-		"location" : "",
+		"location" : "Dunning Hall",
 		"eventEndTime" : "02-03-2017 22:05:00",
 		"timeDisplayed" : "9:00 PM",
 		"dateDisplayed" : "Friday Feb 3"
 	},
 	{
 		"name" : "Team Formation",
-		"location" : "",
+		"location" : "Dunning Hall",
 		"eventEndTime" : "02-03-2017 22:35:00",
 		"timeDisplayed" : "10:00 PM",
 		"dateDisplayed" : "Friday Feb 3"
 	},
 	{
 		"name" : "Hacking Begins!",
-		"location" : "",
+		"location" : "Ellis Hall & Jeffrey Hall",
 		"eventEndTime" : "02-03-2017 22:35:00",
 		"timeDisplayed" : "10:30 PM",
 		"dateDisplayed" : "Friday Feb 3"
 	},
 	{
 		"name" : "RBC: Design Thinking",
-		"location" : "",
+		"location" : "324 Ellis Hall",
 		"eventEndTime" : "02-04-2017 00:35:00",
 		"timeDisplayed" : "11:30 PM",
 		"dateDisplayed" : "Friday Feb 3"
 	},
 	{
-		"name" : "Ratehub: Web Development With Widgets",
-		"location" : "",
+		"name" : "Ratehub: Web Widgets with React and Webpack",
+		"location" : "327 Ellis Hall",
 		"eventEndTime" : "02-04-2017 1:35:00",
 		"timeDisplayed" : "12:30am",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
 		"name" : "TD: Mobile App Development",
-		"location" : "",
+		"location" : "324 Ellis Hall",
 		"eventEndTime" : "02-04-2017 2:35:00",
 		"timeDisplayed" : "1:30am",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
 		"name" : "Lani Labs: The Internet Of Things",
-		"location" : "",
+		"location" : "327 Ellis Hall",
 		"eventEndTime" : "02-04-2017 3:35:00",
 		"timeDisplayed" : "2:30am",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
 		"name" : "Breakfast",
-		"location" : "",
+		"location" : "Ellis Hall Auditorium",
 		"eventEndTime" : "02-04-2017 09:05:00",
 		"timeDisplayed" : "8:00 AM",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
 		"name" : "Yoga",
-		"location" : "",
+		"location" : "319 Ellis Hall",
 		"eventEndTime" : "02-04-2017 11:05:00",
 		"timeDisplayed" : "10:00 AM",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
 		"name" : "Lunch",
-		"location" : "",
+		"location" : "Ellis Hall Auditorium",
 		"eventEndTime" : "02-04-2017 13:05:00",
 		"timeDisplayed" : "12:00 PM",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
 		"name" : "Afraj Gill: Startup Failures & How to Avoid Them",
-		"location" : "",
+		"location" : "Ellis Hall Auditorium",
 		"eventEndTime" : "02-04-2017 16:05:00",
 		"timeDisplayed" : "3:00 PM",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
 		"name" : "Dinner",
-		"location" : "",
+		"location" : "Leonard Hall Cafe",
 		"eventEndTime" : "02-04-2017 18:05:00",
 		"timeDisplayed" : "6:00 PM",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
 		"name" : "Mosaic Manufacturing: Intro to 3D Printing",
-		"location" : "",
+		"location" : "324 Ellis Hall",
 		"eventEndTime" : "02-04-2017 23:35:00",
 		"timeDisplayed" : "10:30 PM",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
 		"name" : "Microsoft: Intro to Microsoft Azure",
-		"location" : "",
+		"location" : "327 Ellis Hall",
 		"eventEndTime" : "02-05-2017 00:35:00",
 		"timeDisplayed" : "12:30 PM",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
 		"name" : "Breakfast",
-		"location" : "",
+		"location" : "Ellis Hall Auditorium",
 		"eventEndTime" : "02-05-2017 09:05:00",
 		"timeDisplayed" : "8:00 PM",
 		"dateDisplayed" : "Sunday Feb 5"
@@ -127,14 +127,14 @@ var schedule = [
 	},
 	{
 		"name" : "Lunch",
-		"location" : "",
+		"location" : "Ellis Hall Auditorium",
 		"eventEndTime" : "02-05-2017 13:05:00",
 		"timeDisplayed" : "12:00 PM",
 		"dateDisplayed" : "Sunday Feb 5"
 	},
 	{
 		"name" : "Closing Ceremony",
-		"location" : "",
+		"location" : "Grant Hall",
 		"eventEndTime" : "02-05-2017 14:05:00",
 		"timeDisplayed" : "1:00 PM",
 		"dateDisplayed" : "Sunday Feb 5"
@@ -184,6 +184,10 @@ var qhacksExecSlack = [
 	{
 		"name" : "graham",
 		"link" : "https://qhacks17.slack.com/messages/@graham/"
+	},
+	{
+		"name" : "april",
+		"link" : "https://qhacks17.slack.com/messages/@aprilye/"
 	}
 
 ];
