@@ -20,7 +20,7 @@ function getCurrentTimestamp(){
 $(document).ready(function(){
 	var s = getCurrentTimestamp();
 
-	s = "02-03-2017 23:05:00";
+	//s = "02-03-2017 23:05:00";
 
 	var pastEventsHTML = '';
 	var upcomingEventsHTML = '';
