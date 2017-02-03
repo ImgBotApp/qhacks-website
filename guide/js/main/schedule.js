@@ -30,7 +30,7 @@ $(document).ready(function(){
 		var scheduleItem = schedule[i];
 		//console.log(scheduleItem);
 		if(s < scheduleItem['eventEndTime']){
-			html += '<tr><td>' + scheduleItem['name'] + '</td><td>' + scheduleItem['timeDisplayed'] + '</td></tr>';
+			html += '<tr><td>' + scheduleItem['name'] + '</td><td>' + scheduleItem['location'] + '</td><td>' + scheduleItem['timeDisplayed'] + '</td></tr>';
 			
 			scheduleItems++;
 			if(scheduleItems == 5){
@@ -42,7 +42,7 @@ $(document).ready(function(){
 	if(html == ''){
 		html = '<p>No more upcoming events.</p>';
 	}else{
-		html = '<table class="table table-bordered schedule-table"><tr><th>Upcoming Event</th><th>Time</th></tr>' + html + '</table>';
+		html = '<table class="table table-bordered schedule-table"><tr><th>Upcoming Event</th><th>Location</th><th>Time</th></tr>' + html + '</table>';
 	}
 	$("#schedule-content").html(html);
 });
