@@ -63,6 +63,13 @@ var schedule = [
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
+		"name" : "Scrambled Scripts",
+		"location" : "327 Ellis Hall",
+		"eventEndTime" : "02-04-2017 12:05:00",
+		"timeDisplayed" : "11:00 AM",
+		"dateDisplayed" : "Saturday Feb 4"
+	},
+	{
 		"name" : "Lunch",
 		"location" : "Ellis Hall Auditorium",
 		"eventEndTime" : "02-04-2017 13:05:00",
