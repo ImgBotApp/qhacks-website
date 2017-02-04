@@ -29,7 +29,7 @@ var schedule = [
 	},
 	{
 		"name" : "RBC: Design Thinking",
-		"location" : "324 Ellis Hall",
+		"location" : "327 Ellis Hall",
 		"eventEndTime" : "02-04-2017 00:35:00",
 		"timeDisplayed" : "11:30 PM",
 		"dateDisplayed" : "Friday Feb 3"
@@ -43,7 +43,7 @@ var schedule = [
 	},
 	{
 		"name" : "Mobile App Development at TD",
-		"location" : "324 Ellis Hall",
+		"location" : "327 Ellis Hall",
 		"eventEndTime" : "02-04-2017 2:35:00",
 		"timeDisplayed" : "1:30am",
 		"dateDisplayed" : "Saturday Feb 4"
@@ -99,7 +99,7 @@ var schedule = [
 	},
 	{
 		"name" : "Mosaic Manufacturing: Intro to 3D Printing",
-		"location" : "324 Ellis Hall",
+		"location" : "327 Ellis Hall",
 		"eventEndTime" : "02-04-2017 23:35:00",
 		"timeDisplayed" : "10:30 PM",
 		"dateDisplayed" : "Saturday Feb 4"
