@@ -15,6 +15,17 @@ function getCurrentTimestamp(){
 		mm='0'+mm;
 	}
 
+	if(hh<10){
+		hh='0'+hh;
+	} 
+	if(ii<10){
+		ii='0'+ii;
+	}
+
+	if(ss<10){
+		ss='0'+ss;
+	}	
+	
 	return mm.valueOf() + "-" + dd.valueOf() + "-" + yyyy.valueOf() + " " + hh.valueOf() + ":" + ii.valueOf() + ":" + ss.valueOf();
 }
 $(document).ready(function(){
