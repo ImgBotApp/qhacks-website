@@ -86,7 +86,7 @@ var schedule = [
 
 	{
 		"name" : "Afraj Gill: Most Common Mistakes by Founders, and How to Avoid Them",
-		"location" : "Ellis Hall Auditorium",
+		"location" : "327 Ellis Hall",
 		"eventEndTime" : "02-04-2017 16:05:00",
 		"timeDisplayed" : "3:00 PM",
 		"dateDisplayed" : "Saturday Feb 4"
@@ -103,6 +103,13 @@ var schedule = [
 		"location" : "Leonard Hall Cafe",
 		"eventEndTime" : "02-04-2017 18:05:00",
 		"timeDisplayed" : "6:00 PM",
+		"dateDisplayed" : "Saturday Feb 4"
+	},
+	{
+		"name" : "Microsoft: Intro to Microsoft Azure",
+		"location" : "327 Ellis Hall",
+		"eventEndTime" : "02-04-2017 21:35:00",
+		"timeDisplayed" : "8:30 PM",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
@@ -126,13 +133,7 @@ var schedule = [
 		"timeDisplayed" : "",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
-	{
-		"name" : "Microsoft: Intro to Microsoft Azure",
-		"location" : "327 Ellis Hall",
-		"eventEndTime" : "02-05-2017 00:35:00",
-		"timeDisplayed" : "12:30 PM",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
+	
 	{
 		"name" : "Breakfast",
 		"location" : "Ellis Hall Auditorium",
