@@ -127,11 +127,18 @@ var schedule = [
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
+		"name" : "Mini Event: Cup Stack",
+		"location" : "Jeffrey Basement",
+		"eventEndTime" : "02-05-2017 01:35:00",
+		"timeDisplayed" : "10:30 PM",
+		"dateDisplayed" : "Saturday Feb 5"
+	},
+	{
 		"name" : "Quiet Rooms/Sleeping Area (Optional)",
 		"location" : "319 Ellis Hall & 234 Jeffrey Hall",
 		"eventEndTime" : "02-05-2017 7:35:00",
 		"timeDisplayed" : "",
-		"dateDisplayed" : "Saturday Feb 4"
+		"dateDisplayed" : "Saturday Feb 5"
 	},
 	
 	{

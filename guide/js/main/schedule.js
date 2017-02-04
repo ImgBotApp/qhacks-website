@@ -39,7 +39,7 @@ $(document).ready(function(){
 	var scheduleItems = 0;
 	for(var i = 0;i < schedule.length;i++){
 		var scheduleItem = schedule[i];
-		//console.log(scheduleItem);
+		console.log(scheduleItem);
 		if(s < scheduleItem['eventEndTime']){
 			html += '<tr><td>' + scheduleItem['name'] + '</td><td>' + scheduleItem['location'] + '</td><td>' + scheduleItem['timeDisplayed'] + '</td></tr>';
 			
@@ -47,6 +47,8 @@ $(document).ready(function(){
 			if(scheduleItems == 5){
 				break;
 			}
+		}else{
+			console.log("higher");
 		}
 	}
 
