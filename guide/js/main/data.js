@@ -49,13 +49,6 @@ var schedule = [
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
-		"name" : "Lani Labs: The Internet Of Things",
-		"location" : "327 Ellis Hall",
-		"eventEndTime" : "02-04-2017 3:35:00",
-		"timeDisplayed" : "2:30am",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
-	{
 		"name" : "Breakfast",
 		"location" : "Ellis Hall Auditorium",
 		"eventEndTime" : "02-04-2017 09:05:00",
@@ -76,6 +69,7 @@ var schedule = [
 		"timeDisplayed" : "12:00 PM",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
+
 	{
 		"name" : "Afraj Gill: Most Common Mistakes by Founders, and How to Avoid Them",
 		"location" : "Ellis Hall Auditorium",
@@ -95,6 +89,13 @@ var schedule = [
 		"location" : "Leonard Hall Cafe",
 		"eventEndTime" : "02-04-2017 18:05:00",
 		"timeDisplayed" : "6:00 PM",
+		"dateDisplayed" : "Saturday Feb 4"
+	},
+	{
+		"name" : "Lani Labs: The Internet Of Things",
+		"location" : "327 Ellis Hall",
+		"eventEndTime" : "02-04-2017 22:05:00",
+		"timeDisplayed" : "9:30 PM",
 		"dateDisplayed" : "Saturday Feb 4"
 	},
 	{
