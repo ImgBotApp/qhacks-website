@@ -1,6 +1,6 @@
 function getTimeRemainingForCountdown(){
 	var now = new Date();
-	var endOfHackathon = new Date(2017, 1, 5, 9, 30);
+	var endOfHackathon = new Date(2017, 1, 5, 10, 00);
 
 
 	var delta = Math.abs(endOfHackathon - now) / 1000;

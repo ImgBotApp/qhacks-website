@@ -152,7 +152,7 @@ var schedule = [
 		"name" : "Hacking Ends",
 		"location" : "",
 		"eventEndTime" : "02-05-2017 11:05:00",
-		"timeDisplayed" : "9:30 AM",
+		"timeDisplayed" : "10:00 AM",
 		"dateDisplayed" : "Sunday Feb 5"
 	},
 	{
