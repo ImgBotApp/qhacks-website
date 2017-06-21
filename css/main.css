@@ -794,6 +794,9 @@ a.panel-heading:hover {
 		padding-right: 2px!important;
 	}
 
+	#scenery_intro .cloud {
+		display: none;
+	}
 
 }
 
