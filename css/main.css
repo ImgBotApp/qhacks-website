@@ -42,6 +42,9 @@ html, body {
     overflow:hidden;
 }
 
+.snowfall-flakes{
+	opacity: 0.8;
+}
 /* SVG Images */
 
 #scenery_intro .circle_gradient {
@@ -99,27 +102,18 @@ html, body {
 #scenery_intro .cloud {
 	position: absolute;
 	opacity: 0.6;
+	z-index: 99;
 }
 #scenery_intro .cloud_1 {
 	width: 200px;
-	top: 22%;
-	left: 80%;
+	top: 15%;
+	left: 65%;
 }
 
 #scenery_intro .cloud_2 {
 	width: 150px;
 	top: 30%;
 	left: 20%;
-}
-#scenery_intro .cloud_3 {
-	width: 300px;
-	top: 3%;
-	left: 10%;
-}
-#scenery_intro .cloud_4 {
-	width: 240px;
-	top: 12%;
-	left: 60%;
 }
 
 #scenery_intro .layer {
