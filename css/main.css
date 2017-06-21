@@ -58,7 +58,7 @@ html, body {
 	position: absolute;
 	width: 20%;
 	left: -20px;
-	bottom: 20%;
+	bottom: 14%;
 	z-index: 1;
 }
 
@@ -83,7 +83,7 @@ html, body {
 #scenery_intro .hill_left {
 	position: absolute;
 	width: 80%;
-	bottom: -20%;
+	bottom: -14%;
 	left: -10%;
 	z-index: 3;
 }
@@ -91,7 +91,7 @@ html, body {
 #scenery_intro .hill_right {
 	position: absolute;
 	width: 100%;
-	bottom: -20%;
+	bottom: -14%;
 	right: -15%;
 	z-index: 4;
 }
@@ -665,17 +665,18 @@ a.panel-heading:hover {
 }
 @media only screen and (max-width : 1780px) {
 	#scenery_intro .clock_tower{
-		bottom: 15%;
+		/*bottom: 15%;*/
 	}
 	#scenery_intro .buildings{
 		/*bottom: -10%;*/
 	}
 	#scenery_intro .hill_left {
-		bottom: -18%;
+		bottom: -10%;
+		left: -10%;
 	}
 
 	#scenery_intro .hill_right {
-		bottom: -18%;
+		bottom: -10%;
 	}
 }
 
@@ -688,27 +689,27 @@ a.panel-heading:hover {
 		bottom: -3%;
 	}
 	#scenery_intro .hill_left {
-		bottom: -12%;
+		bottom: -6%;
 	}
 
 	#scenery_intro .hill_right {
-		bottom: -12%;
+		bottom: -8%;
 	}
 }
 
 @media only screen and (max-width : 1175px) {
 	#scenery_intro .clock_tower{
-		bottom: 5%;
+		bottom: 5%!important;
 	}
 	#scenery_intro .buildings{
 		bottom: 0%;
 	}
 	#scenery_intro .hill_left {
-		bottom: -8%;
+		bottom: -6%;
 	}
 
 	#scenery_intro .hill_right {
-		bottom: -8%;
+		bottom: -6%;
 	}
 }
 
@@ -726,6 +727,7 @@ a.panel-heading:hover {
 	.logos_row .sponsor_logo_poor{
 		margin: 20px;
 	}
+
 }
 @media only screen and (max-width : 850px) {
 	#scenery_intro .clock_tower{
@@ -735,12 +737,12 @@ a.panel-heading:hover {
 		bottom: 12%;
 	}
 	#scenery_intro .hill_left {
-		bottom: 2%;
+		bottom: 0%;
 		width: 90%;
 	}
 
 	#scenery_intro .hill_right {
-		bottom: 0%;
+		bottom: -4%;
 		width: 120%!important;
 	}
 	.thumbnail div.tehactualbio{
@@ -813,9 +815,15 @@ a.panel-heading:hover {
 	}
 }
 
-@media (min-height: 1200px) {
+@media (min-height: 700px) {
+	/*#scenery_intro .clock_tower{
+		bottom: 12%;
+	}*/
+}
+
+@media (min-height: 1100px) {
 	#scenery_intro .clock_tower{
-		bottom: 5%;
+		bottom: 8%;
 	}
 }
 
