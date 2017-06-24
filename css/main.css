@@ -51,7 +51,7 @@ html, body {
 	left: 50%;
 	transform: translate(-50%, -60%);
 	-webkit-transform: translate(-50%, -60%);
-	z-index: 5;
+	z-index: 0;
 }
 
 #scenery_intro .clock_tower {
@@ -100,7 +100,7 @@ html, body {
 	position: absolute;
 	opacity: 0.8;
 	animation-name: twinkle;
-  animation-timing-function: ease-out; 
+  animation-timing-function: ease-out;
   animation-iteration-count: infinite;
 }
 
