@@ -561,32 +561,25 @@ a.panel-heading:hover {
 
 }
 .logos_row {
-	margin-top: 10px;
+	margin-top: 40px;
 }
 .logos_row .col-md-6, .logos_row .col-md-4, .logos_row .col-md-12,.logos_row .col-md-2, .logos_row .col-md-3{
 	text-align: center;
 	padding-top: 0px;
 	margin-top: 0px;
 }
-.logo_platinum{
+.logo_tera {
 	width:85%;
 }
-.logo_gold{
+.logo_giga {
 	width:90%;
 }
-.logo_silver{
-	width:70%;
+.logo_mega {
+	width:80%;
 }
-.logo_bronze{
-	width:60%;
+.logo_startup {
+	width:75%;
 }
-.sponsor_logo_poor{
-	width:60%;
-}
-.poor_row{
-	margin-top: 0px;
-}
-
 
 .judges_row{
 	margin-left: 140px;

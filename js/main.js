@@ -12,7 +12,7 @@ $(document).ready(function(){
 		{ top: 45, left: 84 },{ top: 16, left: 43 }
 	]
 	positions.forEach(function(p) {
-		var star = $('<img src="img/star.png" class="star">');
+		var star = $('<img src="img/2018star.png" class="star">');
 		var twinkle_period = Math.floor(Math.random() * 4) + 2; // subtle star twinkling effect
 
 		star.css({
@@ -61,7 +61,7 @@ $(document).ready(function(){
 		{ width: '180px', top: '23%' }
 	]
 	clouds.forEach(function(sizes){
-		var cloud = $('<img src="img/cloud.png" class="cloud">')
+		var cloud = $('<img src="img/2018cloud.png" class="cloud">')
 		var perc = Math.floor(Math.random() * 100) + 1;
 		cloud.css({ left: perc + "%", width: sizes.width, top: sizes.top });
 
