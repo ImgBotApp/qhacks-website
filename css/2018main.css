@@ -580,6 +580,9 @@ a.panel-heading:hover {
 .logo_startup {
 	width:75%;
 }
+.height-fix{
+	height: 80px;
+}
 
 .judges_row{
 	margin-left: 140px;
