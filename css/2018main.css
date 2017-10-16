@@ -582,8 +582,13 @@ a.panel-heading:hover {
 }
 .height-fix{
 	height: 80px;
+	
 }
-
+.vertical-center{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .judges_row{
 	margin-left: 140px;
 	margin-right: 140px;
