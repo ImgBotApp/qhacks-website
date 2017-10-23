@@ -1,1 +1,1 @@
-# Repo for QHacks Landing Page
+# QHacks Website
