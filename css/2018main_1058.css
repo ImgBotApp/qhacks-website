@@ -309,6 +309,14 @@ h2.header_title {
 		position: relative;
 }
 
+.sponsor-giga-row-wrapper-wide {
+		max-width: 1000px;
+		font-size: 0.8em;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		width: 100%;
+}
+
 .sponsor-mega-row-wrapper-wide {
 		max-width: 1000px;
 		font-size: 0.8em;
@@ -324,13 +332,16 @@ h2.header_title {
 		width: 100%;
 }
 
+.sponsor-community-row-wrapper-wide {
+	max-width: 900px;
+	font-size: 0.8em;
+	margin: 0 auto;
+	width: 100%;
+}
+
 .sponsorship-logo img {
 		width: 100%;
 		height: 100%
-}
-
-.sponsor-logos-giga {
-		margin-bottom: 8em;
 }
 
 .sponsor-logos-giga .sponsorship-logo {
@@ -426,4 +437,16 @@ h2.header_title {
 .sponsor-logos-startup .sponsorship-logo--techdomains {
 		margin-left: 180px;
 		width: 120px
+}
+
+.sponsor-logos-community {
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center, baseline;
+}
+
+.sponsor-logos-community .sponsorship-logo--ams {
+		width: 220px
 }
