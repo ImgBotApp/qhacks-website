@@ -287,31 +287,41 @@ h2.header_title {
 	font-size: 22px;
 }
 
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
 /* SPONSORS */
 
-.section-wrapper {
+.sponsor-row-wrapper {
 		justify-content: center;
 		padding: 1em 2em;
 		position: relative;
 }
 
-.content-wrapper-wide {
-		max-width: 1200px;
+.sponsor-mega-row-wrapper-wide {
+		max-width: 1000px;
 		font-size: 0.8em;
 		margin: 0 auto;
+		margin-bottom: 20px;
 		width: 100%;
 }
 
-.content-wrapper-wide1 {
-		max-width: 800px;
+.sponsor-startup-row-wrapper-wide {
+		max-width: 900px;
 		font-size: 0.8em;
 		margin: 0 auto;
 		width: 100%;
-}
-
-
-.sponsorship-logo {
-		margin-bottom: 0.5em
 }
 
 .sponsorship-logo img {
@@ -335,15 +345,13 @@ h2.header_title {
 .sponsor-logos-mega {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0px 150px 100px 100px;
 		justify-content: space-around;
 		align-items: center;
-		margin-bottom: 1em;
 }
 
 .sponsor-logos-mega .sponsorship-logo {
 		width: 100px;
-		margin-bottom: 5em;
+		margin: 0px;
 }
 
 .sponsor-logos-mega .sponsorship-logo--rbc {
@@ -370,10 +378,6 @@ h2.header_title {
 		width: 240px
 }
 
-.sponsor-logos-mega .sponsorship-logo--techdomains {
-		width: 250px
-}
-
 .sponsor-logos-startup {
 		justify-content: center;
 		display: flex;
@@ -384,18 +388,18 @@ h2.header_title {
 
 .sponsor-logos-startup .sponsorship-logo {
 		width: 110px;
-		margin: 40px;
+		margin: 20px;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		align-items: center, baseline;
 }
 
 .sponsor-logos-startup .sponsorship-logo--1password {
-		width: 200px
+		width: 180px
 }
 
 .sponsor-logos-startup .sponsorship-logo--sketch {
-		width: 170px
+		width: 160px
 }
 
 .sponsor-logos-startup .sponsorship-logo--indico {
@@ -403,17 +407,23 @@ h2.header_title {
 }
 
 .sponsor-logos-startup .sponsorship-logo--communitech {
-		width: 200px
+		width: 210px
 }
 
 .sponsor-logos-startup .sponsorship-logo--stickermule {
-		width: 200px
+		margin-right: 180px;
+		width: 120px
 }
 
 .sponsor-logos-startup .sponsorship-logo--gocubes {
-		width: 200px
+		width: 180px
 }
 
-.sponsor-logos-startup .sponsorship-logo--mlh {
-		width: 200px
+.sponsor-logos-startup .sponsorship-logo--studentxel {
+		width: 170px
+}
+
+.sponsor-logos-startup .sponsorship-logo--techdomains {
+		margin-left: 180px;
+		width: 120px
 }
