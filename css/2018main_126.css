@@ -406,11 +406,11 @@ h2.header_title {
 }
 
 .sponsor-logos-startup .sponsorship-logo--1password {
-		width: 180px
+		width: 160px
 }
 
 .sponsor-logos-startup .sponsorship-logo--sketch {
-		width: 160px
+		width: 160px;
 }
 
 .sponsor-logos-startup .sponsorship-logo--indico {
@@ -418,11 +418,10 @@ h2.header_title {
 }
 
 .sponsor-logos-startup .sponsorship-logo--communitech {
-		width: 210px
+		width: 170px
 }
 
 .sponsor-logos-startup .sponsorship-logo--stickermule {
-		margin-right: 180px;
 		width: 120px
 }
 
@@ -431,11 +430,14 @@ h2.header_title {
 }
 
 .sponsor-logos-startup .sponsorship-logo--studentxel {
-		width: 170px
+		width: 160px
 }
 
 .sponsor-logos-startup .sponsorship-logo--techdomains {
-		margin-left: 180px;
+		width: 110px
+}
+
+.sponsor-logos-startup .sponsorship-logo--loopio {
 		width: 120px
 }
 
