@@ -1,0 +1,25 @@
+version: 2
+jobs:
+  deploy:
+    docker:
+      - image: google/cloud-sdk:latest
+    steps:
+      - checkout
+      - run:
+          name: Dump Google Cloud Credentials to file
+          command: echo ${GOOGLE_AUTH} > ${HOME}/gcp-key.json
+      - run:
+          name: Add Google Cloud Service Account credentials to GCloud SDK
+          command: gcloud auth activate-service-account --key-file ${HOME}/gcp-key.json
+      - deploy:
+          name: Deploy to Google App Engine
+          command: gsutil -m rsync -rd -x \.git ./public gs://${BUCKET_ID}
+
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: /^master$/
