@@ -441,6 +441,11 @@ h2.header_title {
 		width: 120px
 }
 
+.sponsor-logos-startup .sponsorship-logo--wakeups {
+		width: 120px
+}
+
+
 .sponsor-logos-community {
 	justify-content: center;
 	display: flex;
