@@ -2169,7 +2169,7 @@ a.underlined {
 
 img.desaturate {
     filter: grayscale(100%);
-    filter: url("/public/img/utils/desaturate.svg#greyscale")
+    filter: url("/img/utils/desaturate.svg#greyscale")
 }
 
 .primary-button {
@@ -2769,7 +2769,7 @@ iframe {
 }
 
 .uweng-quote-photo-alexis {
-    background-image: url("/public/img/alexis.jpg");
+    background-image: url("/img/alexis.jpg");
     background-position: 2px
 }
 
@@ -2802,7 +2802,7 @@ iframe {
 .techleaders {
     background-color: #374146;
     min-height: auto;
-    background: url("/public/img/bg-leaders.jpg");
+    background: url("/img/bg-leaders.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 30%;
@@ -3279,7 +3279,7 @@ iframe {
 .sponsor-quote {
     background-color: #374146;
     min-height: auto;
-    background: url("/public/img/bg-sponsorquotes.png");
+    background: url("/img/bg-sponsorquotes.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 30%;
@@ -3302,7 +3302,7 @@ iframe {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-image: url("/public/img/kory.png");
+    background-image: url("/img/kory.png");
     background-position: -4px center;
     background-size: 104%
 }
@@ -3629,15 +3629,15 @@ iframe {
 }
 
 .quote .quote-photo.quote-photo-altman {
-    background-image: url("/public/img/judges/altman.jpg")
+    background-image: url("/img/judges/altman.jpg")
 }
 
 .quote .quote-photo.quote-photo-strachman {
-    background-image: url("/public/img/judges/strachman.jpg")
+    background-image: url("/img/judges/strachman.jpg")
 }
 
 .quote .quote-photo.quote-photo-manalac {
-    background-image: url("/public/img/judges/manalac.jpg")
+    background-image: url("/img/judges/manalac.jpg")
 }
 
 .quote .quote-details {

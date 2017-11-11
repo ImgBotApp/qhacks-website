@@ -442,7 +442,11 @@ h2.header_title {
 }
 
 .sponsor-logos-startup .sponsorship-logo--wakeups {
-		width: 120px
+		width: 120px;
+}
+
+.sponsor-logos-startup .sponsorship-logo--mosaic {
+		width: 150px
 }
 
 
@@ -458,6 +462,10 @@ h2.header_title {
 		width: 200px
 }
 
+.sponsor-logos-community .sponsorship-logo--qic {
+		width: 370px
+}
+
 .sponsor-logos-community .sponsorship-logo--mmie {
-		width: 300px
+		width: 340px
 }
