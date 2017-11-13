@@ -455,6 +455,10 @@ h2.header_title {
 		width: 150px
 }
 
+.sponsor-logos-startup .sponsorship-logo--digitalocean {
+		width: 110px
+}
+
 
 .sponsor-logos-community {
 	justify-content: center;
