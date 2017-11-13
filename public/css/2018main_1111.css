@@ -366,15 +366,15 @@ h2.header_title {
 }
 
 .sponsor-logos-mega .sponsorship-logo--rbc {
-		width: 120px
+		width: 110px
 }
 
 .sponsor-logos-mega .sponsorship-logo--td {
-		width: 140px
+		width: 120px
 }
 
 .sponsor-logos-mega .sponsorship-logo--ibm {
-		width: 200px
+		width: 180px
 }
 
 .sponsor-logos-mega .sponsorship-logo--scotiabank {
@@ -388,6 +388,12 @@ h2.header_title {
 .sponsor-logos-mega .sponsorship-logo--microsoft {
 		width: 240px
 }
+
+.sponsor-logos-mega .sponsorship-logo--telus {
+		width: 260px;
+		margin-top: 20px;
+}
+
 
 .sponsor-logos-startup {
 		justify-content: center;
