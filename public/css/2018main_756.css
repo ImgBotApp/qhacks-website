@@ -336,6 +336,7 @@ h2.header_title {
 	max-width: 900px;
 	font-size: 0.8em;
 	margin: 0 auto;
+	margin-bottom: 20px;
 	width: 100%;
 }
 
@@ -459,6 +460,10 @@ h2.header_title {
 		width: 110px
 }
 
+.sponsor-logos-startup .sponsorship-logo--movember {
+		width: 90px
+}
+
 
 .sponsor-logos-community {
 	justify-content: center;
@@ -478,4 +483,16 @@ h2.header_title {
 
 .sponsor-logos-community .sponsorship-logo--mmie {
 		width: 340px
+}
+
+.sponsor-logos-community .sponsorship-logo--bloomberg {
+		width: 220px;
+}
+
+.sponsor-logos-community .sponsorship-logo--github {
+		width: 140px;
+}
+
+.sponsor-logos-community .sponsorship-logo--mlh {
+		width: 150px;
 }
