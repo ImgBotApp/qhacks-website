@@ -449,11 +449,11 @@ h2.header_title {
 }
 
 .sponsor-logos-startup .sponsorship-logo--wakeups {
-		width: 120px;
+		width: 110px;
 }
 
 .sponsor-logos-startup .sponsorship-logo--mosaic {
-		width: 150px
+		width: 140px
 }
 
 .sponsor-logos-startup .sponsorship-logo--digitalocean {
@@ -461,7 +461,11 @@ h2.header_title {
 }
 
 .sponsor-logos-startup .sponsorship-logo--movember {
-		width: 90px
+		width: 80px;
+}
+
+.sponsor-logos-startup .sponsorship-logo--nextcanada {
+		width: 160px;
 }
 
 
