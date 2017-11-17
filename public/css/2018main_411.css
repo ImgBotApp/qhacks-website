@@ -461,7 +461,7 @@ h2.header_title {
 }
 
 .sponsor-logos-startup .sponsorship-logo--movember {
-		width: 70px;
+		width: 75px;
 }
 
 .sponsor-logos-startup .sponsorship-logo--nextcanada {
@@ -471,6 +471,11 @@ h2.header_title {
 .sponsor-logos-startup .sponsorship-logo--wolfram {
 		width: 160px;
 }
+
+.sponsor-logos-startup .sponsorship-logo--ritual {
+		width: 140px;
+}
+
 
 
 .sponsor-logos-community {
