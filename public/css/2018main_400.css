@@ -457,14 +457,18 @@ h2.header_title {
 }
 
 .sponsor-logos-startup .sponsorship-logo--digitalocean {
-		width: 110px
+		width: 100px
 }
 
 .sponsor-logos-startup .sponsorship-logo--movember {
-		width: 80px;
+		width: 70px;
 }
 
 .sponsor-logos-startup .sponsorship-logo--nextcanada {
+		width: 140px;
+}
+
+.sponsor-logos-startup .sponsorship-logo--wolfram {
 		width: 160px;
 }
 
