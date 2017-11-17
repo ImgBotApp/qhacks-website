@@ -302,7 +302,9 @@ h2.header_title {
     transition-property: transform;
 }
 /* SPONSORS */
-
+.sponsors-wrap{
+	overflow: hidden;
+}
 .sponsor-row-wrapper {
 		justify-content: center;
 		padding: 1em 2em;
