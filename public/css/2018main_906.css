@@ -130,6 +130,28 @@ html, body {
 	left: 20%;
 }
 
+/* Media Queuries to remobe broken animating background on mobile */
+@media only screen and (max-width: 1000px) {
+	#scenery_intro .circle_gradient {
+		visibility: hidden;
+	}
+
+	#scenery_intro .clock_tower {
+			visibility: hidden;
+	}
+
+	#scenery_intro .buildings {
+			/*visibility: hidden;*/
+	}
+
+	#scenery_intro .hill_left {
+			visibility: hidden;
+	}
+
+	#scenery_intro .hill_right {
+			/*visibility: hidden;*/
+	}
+}
 /* END SVG Images */
 
 /* Titles */
