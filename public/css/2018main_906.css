@@ -170,7 +170,11 @@ html, body {
 	margin-right: 2px;
 }
 .talk_to_us{
-	margin-top: 25px;
+	color: #001e51;
+	margin-top: 15px;
+}
+.talk_to_us a{
+	color: #001e51;
 }
 
 h1.main_title{
@@ -187,11 +191,11 @@ h2.sub_title{
 	letter-spacing: 0.5px;
 	color: white;
 	margin-bottom: 15px;
-	margin-top: 15px;
+	margin-top: 30px;
 }
 
 .sub_title_date{
-	font-size: .85em;
+	font-size: .75em;
 }
 
 .sub-title{
@@ -328,8 +332,9 @@ h2.header_title {
 		max-width: 1000px;
 		font-size: 0.8em;
 		margin: 0 auto;
-		margin-bottom: 20px;
+		margin-bottom: 60px;
 		width: 100%;
+
 }
 
 .sponsor-startup-row-wrapper-wide {
@@ -375,6 +380,9 @@ h2.header_title {
 
 .sponsor-logos-mega .sponsorship-logo--rbc {
 		width: 110px
+}
+#rbc_logo{
+	margin-left: 30px;
 }
 
 .sponsor-logos-mega .sponsorship-logo--td {
@@ -522,8 +530,10 @@ h2.header_title {
 		width: 150px;
 }
 
-/* Media Queuries For Responsive Landing */
+
+/* Media Queuries For Responsive Landing Page */
 @media only screen and (max-width: 785px) {
+
 	.logo{
 		position: relative;
 		top:70px;
@@ -547,4 +557,230 @@ h2.header_title {
 		letter-spacing: 0.5px;
 	}
 
+}
+
+
+/* Media Queuries For Responsive Logo Stacking */
+@media only screen and (max-width: 875px) {
+	#rbc_logo{
+		margin-left: 0px;
+	}
+	.sponsor-row-wrapper {
+			justify-content: center;
+			padding: 1em 2em;
+			position: relative;
+	}
+
+	.sponsor-giga-row-wrapper-wide {
+			max-width: 1000px;
+			font-size: 0.8em;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			width: 100%;
+
+	}
+
+	.sponsor-mega-row-wrapper-wide {
+			max-width: 1000px;
+			font-size: 0.8em;
+			margin: 0 auto;
+			margin-bottom: 70px;
+			width: 100%;
+			margin-top: -90px;
+
+	}
+
+	.sponsor-startup-row-wrapper-wide {
+			max-width: 900px;
+			font-size: 0.8em;
+			margin: 0 auto;
+			width: 100%;
+	}
+
+	.sponsor-community-row-wrapper-wide {
+		max-width: 900px;
+		font-size: 0.8em;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	.sponsorship-logo img {
+			width: 100%;
+			height: 100%
+	}
+
+	.sponsor-logos-giga .sponsorship-logo {
+			width: 100%;
+			margin: auto
+	}
+
+	.sponsor-logos-giga .sponsorship-logo--sunlife {
+			max-width: 400px
+	}
+
+	.sponsor-logos-mega {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+	}
+
+	.sponsor-logos-mega .sponsorship-logo {
+			width: 100px;
+			margin: 0px;
+			margin-right: 20px;
+			margin-left: 20px;
+			margin-top: 40px;
+	}
+
+	.sponsor-logos-mega .sponsorship-logo--rbc {
+			width: 110px;
+			margin-right: 60px;
+			margin-left: 60px;
+	}
+
+	.sponsor-logos-mega .sponsorship-logo--td {
+			width: 120px;
+			margin-right: 60px;
+			margin-left: 60px;
+
+	}
+
+	.sponsor-logos-mega .sponsorship-logo--ibm {
+			width: 180px;
+			margin-right: 60px;
+			margin-left: 60px;
+	}
+
+	.sponsor-logos-mega .sponsorship-logo--scotiabank {
+			width: 300px
+	}
+
+	.sponsor-logos-mega .sponsorship-logo--ratehub {
+			width: 270px
+	}
+
+	.sponsor-logos-mega .sponsorship-logo--microsoft {
+			width: 240px
+	}
+
+	.sponsor-logos-mega .sponsorship-logo--telus {
+			width: 260px;
+			margin-top: 60px;
+	}
+
+	.sponsor-logos-startup {
+			justify-content: center;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center, baseline;
+	}
+
+	.sponsor-logos-startup .sponsorship-logo {
+			width: 110px;
+			margin: 20px;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center, baseline;
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--1password {
+			width: 160px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--sketch {
+			width: 160px;
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--indico {
+			width: 120px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--communitech {
+			width: 170px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--stickermule {
+			width: 120px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--gocubes {
+			width: 180px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--studentxel {
+			width: 160px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--techdomains {
+			width: 110px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--loopio {
+			width: 120px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--wakeups {
+			width: 110px;
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--mosaic {
+			width: 140px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--digitalocean {
+			width: 100px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--movember {
+			width: 75px;
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--nextcanada {
+			width: 140px;
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--wolfram {
+			width: 160px;
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--ritual {
+			width: 140px;
+	}
+
+
+
+	.sponsor-logos-community {
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center, baseline;
+	}
+
+	.sponsor-logos-community .sponsorship-logo--ams {
+			width: 200px
+	}
+
+	.sponsor-logos-community .sponsorship-logo--qic {
+			width: 370px
+	}
+
+	.sponsor-logos-community .sponsorship-logo--mmie {
+			width: 340px
+	}
+
+	.sponsor-logos-community .sponsorship-logo--bloomberg {
+			width: 220px;
+	}
+
+	.sponsor-logos-community .sponsorship-logo--github {
+			width: 140px;
+	}
+
+	.sponsor-logos-community .sponsorship-logo--mlh {
+			width: 150px;
+	}
 }
