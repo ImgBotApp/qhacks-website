@@ -21,12 +21,7 @@
 
 			<link rel="shortcut icon" href="img/favicon.ico" />
 			<link href="css/bootstrap.min.css" rel="stylesheet">
-<<<<<<< HEAD
 			<link rel="stylesheet" href="css/2018main_906.css">
-=======
-			<link rel="stylesheet" href="css/2018main_411.css">
-			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
->>>>>>> Added favicon; Removed duplicate IDs; Index now passes ww3 html doc checker; added facebook open graph meta tags; Front end checklist critical points covered except minification, linting, and page weights
 			<link rel="stylesheet" href="css/hover-min.css">
 			<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,100,300' rel='stylesheet' type='text/css'>
 	</head>
@@ -50,16 +45,16 @@
 				<img src="img/2018hill_left.png" class="hill_left">
 				<img src="img/2018hill_right.png" class="hill_right">
 				<div id="header-title">
-					<img class="logo" src="img/tricolor_logo.svg">
-					<div class="sm-margin"></div>
-
-					<h2 class="sub_title sub_title_small">Queen's University <br> <span class = "sub_title_date">February 2<sup>nd</sup> - 4<sup>th</sup></span></h2>
-					<h2 class="alt_sub_title">Queen's University | February 2nd - 4th</h2>
-					<div class="btn_row">
-							<a href="mailto:partnerships@qhacks.io" class="btn btn_main orange_btn main_btn" id="btn_sponsorship">Partner</a>
-							<a href="http://2017.qhacks.io" class="btn btn_main yellow_btn main_btn" id="btn_sponsorship">QHacks 2017</a>
-					</div>
-					<div class="talk_to_us">Talk to us at <a class="front_contact_link" href="mailto:hello@qhacks.io">hello@qhacks.io</a></div>
+						<img class="logo" src="img/2018logo.png" alt = "Qhacks Logo">
+						<div class="sm-margin"></div>
+						<h1 class="main_title">QHacks</h1>
+						<h2 class="sub_title">Queen's University | February 2<sup>nd</sup> - 4<sup>th</sup></h2>
+						<h2 class="alt_sub_title">Queen's University | February 2nd - 4th</h2>
+						<div class="btn_row">
+								<a href="mailto:partnerships@qhacks.io" class="btn btn_main orange_btn main_btn" id="btn_sponsorship_partner">Partner</a>
+								<a href="http://2017.qhacks.io" class="btn btn_main yellow_btn main_btn" id="btn_sponsorship_2017">QHacks 2017</a>
+						</div>
+						<div class="talk_to_us">Talk to us at <a class="front_contact_link" href="mailto:hello@qhacks.io">hello@qhacks.io</a></div>
 				</div>
 		</div>
 
@@ -178,14 +173,6 @@
 										<img src="./img/sponsors/td.svg" alt="TD Logo" class="hvr-grow" />
 								</a>
 					</div>
-					<div class="sponsorship-logo sponsorship-logo--rbc">
-							<a href="http://www.rbc.com/canada.html"
-								 target="_blank"
-								 onclick="ga('send', 'event', 'Partner Logos', 'RBC Logo Click');"
-								 rel="noopener noreferrer">
-									<img id = "rbc_logo" src="./img/sponsors/rbc.svg" alt="RBC Logo" class="hvr-grow"/>
-							</a>
-					</div>
 					<div class="sponsorship-logo sponsorship-logo--ibm">
 							<a href="https://www-03.ibm.com/employment/ca/en/entrylevel.html"
 								 target="_blank"
@@ -194,7 +181,14 @@
 									<img src="./img/sponsors/ibm.svg" alt="IBM Logo" class="hvr-grow"/>
 							</a>
 					</div>
-
+					<div class="sponsorship-logo sponsorship-logo--rbc">
+							<a href="http://www.rbc.com/canada.html"
+								 target="_blank"
+								 onclick="ga('send', 'event', 'Partner Logos', 'RBC Logo Click');"
+								 rel="noopener noreferrer">
+									<img src="./img/sponsors/rbc.svg" alt="RBC Logo" class="hvr-grow"/>
+							</a>
+					</div>
 				</div>
 			</div>
 
@@ -239,6 +233,9 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="md-margin"></div>
+			<div class="md-margin"></div>
 
 		<div class="sponsor-row-wrapper sponsor-startup-row-wrapper-wide">
 			<div class="sponsor-logos-startup">

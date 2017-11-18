@@ -130,7 +130,7 @@ html, body {
 	left: 20%;
 }
 
-/* Media Queuries to remobe broken animating background on mobile */
+/* Media Queuries to remove broken animating background on mobile */
 @media only screen and (max-width: 1000px) {
 	#scenery_intro .circle_gradient {
 		visibility: hidden;
