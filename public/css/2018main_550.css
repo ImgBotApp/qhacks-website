@@ -342,11 +342,20 @@ h2.header_title {
 		position: relative;
 }
 
+.sponsor-tera-row-wrapper-wide {
+		max-width: 1200px;
+		font-size: 0.8em;
+		margin: 0 auto;
+		margin-bottom: 70px;
+		margin-top: 30px;
+		width: 100%;
+}
+
 .sponsor-giga-row-wrapper-wide {
 		max-width: 1000px;
 		font-size: 0.8em;
 		margin: 0 auto;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 		width: 100%;
 }
 
@@ -354,7 +363,7 @@ h2.header_title {
 		max-width: 1000px;
 		font-size: 0.8em;
 		margin: 0 auto;
-		margin-bottom: 60px;
+		margin-bottom: 40px;
 		width: 100%;
 
 }
@@ -377,6 +386,15 @@ h2.header_title {
 .sponsorship-logo img {
 		width: 100%;
 		height: 100%
+}
+
+.sponsor-logos-tera .sponsorship-logo {
+		width: 100%;
+		margin: auto
+}
+
+.sponsor-logos-tera .sponsorship-logo--stdlib {
+		width: 520px
 }
 
 .sponsor-logos-giga .sponsorship-logo {
