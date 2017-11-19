@@ -12,94 +12,6 @@ html, body {
 	box-sizing: border-box;
 }
 
-/* SCENERY */
-
-#scenery_intro {
-	background: #000000; /* Old browsers */
-	background: -moz-linear-gradient(top,  #0e6379 0%, #90b7d2 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #0e6379 0%,#90b7d2 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  #0e6379 0%,#90b7d2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e6379', endColorstr='#90b7d2',GradientType=0 ); /* IE6-9 */
-	height: 100%;
-	min-height: 600px;
-	position: relative;
-	overflow:hidden;
-}
-
-/* SVG Images */
-
-#scenery_intro .circle_gradient {
-	position: absolute;
-	width:70%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -60%);
-	-webkit-transform: translate(-50%, -60%);
-	z-index: 0;
-}
-
-#scenery_intro .clock_tower {
-	position: absolute;
-	width: 20%;
-	left: -20px;
-	bottom: 14%;
-	z-index: 1;
-}
-
-#scenery_intro .moon {
-	position: absolute;
-	width: 70px;
-	top: 10%;
-	right: 15%;
-	z-index: 2;
-}
-
-#scenery_intro .buildings {
-	position: absolute;
-	width: 40%;
-	bottom: -6%;
-	left: 48%;
-	transform: translate(-50%, 0%);
-	-webkit-transform:  translate(-50%, 0%);
-	z-index: 2;
-}
-
-#scenery_intro .hill_left {
-	position: absolute;
-	width: 80%;
-	bottom: -14%;
-	left: -10%;
-	z-index: 3;
-}
-
-#scenery_intro .hill_right {
-	position: absolute;
-	width: 100%;
-	bottom: -14%;
-	right: -15%;
-	z-index: 4;
-}
-
-#scenery_intro .star {
-	position: absolute;
-	opacity: 0.8;
-	animation-name: twinkle;
-	animation-timing-function: ease-out;
-	animation-iteration-count: infinite;
-}
-
-@keyframes twinkle {
-	0% {
-		opacity: 0.9;
-	}
-	50% {
-		opacity: 0.4;
-	}
-	100% {
-		opacity: 0.9;
-	}
-}
-
 .text_align_center {
 	text-align: center;
 }
@@ -113,49 +25,97 @@ html, body {
 	color:white;
 }
 
-
-#scenery_intro .cloud {
-	position: absolute;
-	opacity: 0.6;
+/* Header Background Graphic */
+#header_landing{
+	height: 100vh;
+	min-height: 600px;
+	background-image: url("../img/Cover16х9.svg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	/*background-color: pink;*/
 }
-#scenery_intro .cloud_1 {
-	width: 200px;
-	top: 15%;
-	left: 65%;
-}
-
-#scenery_intro .cloud_2 {
-	width: 150px;
-	top: 30%;
-	left: 20%;
-}
-
-/* Media Queuries to remove broken animating background on mobile */
-@media only screen and (max-width: 1000px) {
-	#scenery_intro .circle_gradient {
-		visibility: hidden;
-	}
-
-	#scenery_intro .clock_tower {
-			visibility: hidden;
-	}
-
-	#scenery_intro .buildings {
-			/*visibility: hidden;*/
-	}
-
-	#scenery_intro .hill_left {
-			visibility: hidden;
-	}
-
-	#scenery_intro .hill_right {
-			/*visibility: hidden;*/
+/*ASPECT RATIO FALLBACKS*/
+/*MOBILE*/
+@media only screen and (min-aspect-ratio: 9/16){
+	#header_landing{
+		/*background-color: blue;*/
+		background-size:cover;
+		background-image: url("../img/Cover9х16.svg");
 	}
 }
-/* END SVG Images */
+/*SQUAREISH SCREENS*/
+@media only screen and (min-aspect-ratio: 4/3){
+	#header_landing{
+		/*background-color: green;*/
+		background-image: url("../img/Cover4х3.svg");
+	}
+}
+/*ULTRA-WIDE*/
+@media only screen and (min-aspect-ratio: 21/9){
+	#header_landing{
+		/*background-color: red;*/
+		background-image: url("../img/Cover21х9.svg");
+		background-size: cover;
+		background-position: center;
+	}
+}
+/*CUSTOM SCREEN SIZES (PX)*/
+/*MOBILE*/
+@media only screen and (min-width: 300px) and (max-width: 420px){
+	#header_landing{
+		/*background-color: brown;*/
+		background-size:100% 100%;
+		background-image: url("../img/Cover9х16.svg");
+	}
+}
+/*SQUARE SCREEN*/
+@media only screen and (min-width: 700px) and (max-width: 950px){
+	#header_landing{
+		/*background-color: beige;*/
+		background-image: url("../img/Cover4х3.svg");
+		background-size:cover;
+		background-position: center;
+	}
+}
+/*LAPTOPS*/
+@media only screen and (min-width: 1250px){
+	#header_landing{
+		/*background-color: yellow;*/
+		background-image: url("../img/Cover4х3.svg");
+		background-size:100% 100%;
+		background-position: center;
+	}
+}
+/* iPads specific ----------- */
+@media only screen and (device-width : 768px) and (device-height : 1024px){
+	#header_landing{
+		background-size:cover;
+		background-image: url("../img/Cover9х16.svg");
+	}
+}
+/*WIDESCREEN*/
+@media only screen and (min-width: 1350px) and (max-width: 1900px){
+	#header_landing{
+		background-color: orange;
+		background-image: url("../img/Cover21х9.svg");
+		background-size:100% 100%;
+	}
+}
+@media only screen and (min-width: 1900px){
+	#header_landing{
+		background-image: url("../img/Cover21х9.svg");
+		background-size:cover;
+		background-position: center;
+	}
+}
+
+
+
+/* End Header Background Graphic */
+
 
 /* Titles */
-
 .logo{
 	position: relative;
 	top:70px;
@@ -198,6 +158,12 @@ html, body {
 .talk_to_us a{
 	color: #001e51;
 }
+.talk_to_us a{
+	color: #001e51;
+}
+.talk_to_us a:hover{
+	color:#c61633;
+}
 
 h1.main_title{
 	font-weight: 700;
@@ -211,7 +177,7 @@ h2.sub_title{
 	font-weight: 400;
 	font-size: 2.1em;
 	letter-spacing: 0.5px;
-	color: white;
+	color: #001e51;
 	margin-bottom: 15px;
 	margin-top: 30px;
 }
@@ -572,7 +538,7 @@ h2.header_title {
 
 
 /* Media Queuries For Responsive Landing Page */
-@media only screen and (max-width: 785px) {
+@media only screen and (max-width: 950px) {
 
 	.logo{
 		position: relative;
@@ -586,7 +552,6 @@ h2.header_title {
 		font-weight: 400;
 		font-size: 1.5em;
 		letter-spacing: 0.5px;
-		color: white;
 		margin-bottom: 15px;
 		margin-top: 35px;
 	}
@@ -595,6 +560,39 @@ h2.header_title {
 		color: #464646;
 		font-weight: 400;
 		letter-spacing: 0.5px;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	.logo{
+		position: relative;
+		top:70px;
+		height: 100%;
+		width: 100%;
+		max-height: 200px;
+		max-width: 200px;
+	}
+	h2.sub_title{
+		font-weight: 400;
+		font-size: 1.4em;
+		letter-spacing: 0.5px;
+		margin-bottom: 10px;
+		margin-top: 50px;
+	}
+
+	.sub-title{
+		color: #464646;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+	}
+	#header-title .btn_row{
+		margin-top: 18px;
+		margin-bottom: 0px;
+	}
+	.talk_to_us{
+		margin-top: 15px;
 	}
 
 }
