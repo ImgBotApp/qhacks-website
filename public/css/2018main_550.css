@@ -27,38 +27,12 @@ html, body {
 
 /* Header Background Graphic */
 #header_landing{
-	height: 100vh;
+	height: 100%;
 	min-height: 600px;
 	background-image: url("../img/Cover16х9.svg");
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	background-size: cover;
 	background-position: center;
-	/*background-color: pink;*/
-}
-/*ASPECT RATIO FALLBACKS*/
-/*MOBILE*/
-@media only screen and (min-aspect-ratio: 9/16){
-	#header_landing{
-		/*background-color: blue;*/
-		background-size:cover;
-		background-image: url("../img/Cover9х16.svg");
-	}
-}
-/*SQUAREISH SCREENS*/
-@media only screen and (min-aspect-ratio: 4/3){
-	#header_landing{
-		/*background-color: green;*/
-		background-image: url("../img/Cover4х3.svg");
-	}
-}
-/*ULTRA-WIDE*/
-@media only screen and (min-aspect-ratio: 21/9){
-	#header_landing{
-		/*background-color: red;*/
-		background-image: url("../img/Cover21х9.svg");
-		background-size: cover;
-		background-position: center;
-	}
 }
 /*CUSTOM SCREEN SIZES (PX)*/
 /*MOBILE*/
@@ -106,6 +80,32 @@ html, body {
 	#header_landing{
 		background-image: url("../img/Cover21х9.svg");
 		background-size:cover;
+		background-position: center;
+	}
+}
+
+/*ASPECT RATIO FALLBACKS*/
+/*MOBILE*/
+@media only screen and (min-aspect-ratio: 9/16){
+	#header_landing{
+		/*background-color: blue;*/
+		background-size:cover;
+		background-image: url("../img/Cover9х16.svg");
+	}
+}
+/*SQUAREISH SCREENS*/
+@media only screen and (min-aspect-ratio: 4/3){
+	#header_landing{
+		/*background-color: green;*/
+		background-image: url("../img/Cover4х3.svg");
+	}
+}
+/*ULTRA-WIDE*/
+@media only screen and (min-aspect-ratio: 21/9){
+	#header_landing{
+		/*background-color: red;*/
+		background-image: url("../img/Cover21х9.svg");
+		background-size: cover;
 		background-position: center;
 	}
 }
