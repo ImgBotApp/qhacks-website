@@ -815,3 +815,174 @@ h2.header_title {
 	}
 
 }
+
+/* START Footer */
+footer{
+	width: 100%;
+	height: 7em;
+	overflow-y: hidden;
+}
+
+#footer-hr{
+	border: 1px solid #002469;
+	width: 90%; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+/*CUSTOM SCREEN SIZES 700 (PX)*/
+/*MOBILE*/
+@media(max-width: 800px){
+	footer{
+		text-align: center;		
+		height: 8em;
+	}
+	#right-links{
+		display: inline-block;
+	}
+		#right-links li{
+		font-size: .9em;
+	  }
+	ul.social-network{
+		margin-left: 0px;
+	}
+}
+
+/*CUSTOM SCREEN SIZES 460 (PX)*/
+/*MOBILE*/
+@media(max-width: 460px){
+	footer{
+		text-align: center;		
+		height: 9em;
+	}
+	#right-links{
+		display: inline-block;
+		width: 100%;
+	}
+	#right-links li{
+		font-size: .9em;
+	}
+	  footer #right-links li{
+		margin-right: -50px;
+	}
+	  	ul.social-network{
+		margin-left: 0px;
+	}
+}
+
+/* Social UL */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left: 60px;
+	padding: 0;
+	float: left;
+  }
+  
+  ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+	overflow-y: hidden;
+  }
+
+  footer #right-links{
+	margin-right: 60px;
+  }
+
+  footer #right-links li{
+	  float: right;
+	  display: inline-block;
+	  margin-right: 60px;
+	  list-style: none;
+	  font-family: 'Encode Sans', sans-serif;
+	}
+
+ #right-links a{
+	text-decoration: none;
+	color:  #002469;
+	font-size: 1.3em;
+  }
+  
+  /*  Social icons */
+  
+  .social-network a.icoRss:hover {
+	background-color: #F56505;
+  }
+  
+  .social-network a.icoFacebook:hover {
+	background-color: #3B5998;
+  }
+  
+  .social-network a.icoTwitter:hover {
+	background-color: #33ccff;
+  }
+  
+  .social-network a.icoGoogle:hover {
+	background-color: #BD3518;
+  }
+  
+  .social-network a.icoVimeo:hover {
+	background-color: #0590B8;
+  }
+  
+  .social-network a.icoLinkedin:hover {
+	background-color: #007bb7;
+  }
+  
+  .social-network a.icoRss:hover i,
+  .social-network a.icoFacebook:hover i,
+  .social-network a.icoTwitter:hover i,
+  .social-network a.icoGoogle:hover i,
+  .social-network a.icoVimeo:hover i,
+  .social-network a.icoLinkedin:hover i {
+	color: white;
+  }
+  
+  a.socialIcon:hover,
+  .socialHoverClass {
+	color: #44BCDD;
+  }
+  
+  .social-circle li a {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto 0 auto;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	color: #002469;
+  }
+  
+  .social-circle li i {
+	margin: 0;
+	line-height: 40px;
+	text-align: center;
+  }
+  
+  .social-circle li a:hover i,
+  .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+  }
+  
+  .social-circle i {
+	/* color: #fff; */
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+  }
+
+/* End Footer */
