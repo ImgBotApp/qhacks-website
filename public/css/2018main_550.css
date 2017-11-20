@@ -97,7 +97,7 @@ html, body {
 /*WIDESCREEN*/
 @media only screen and (min-width: 1350px) and (max-width: 1900px){
 	#header_landing{
-		background-color: orange;
+		/*background-color: orange;*/
 		background-image: url("../img/Cover21х9.svg");
 		background-size:100% 100%;
 	}
@@ -308,20 +308,11 @@ h2.header_title {
 		position: relative;
 }
 
-.sponsor-tera-row-wrapper-wide {
-		max-width: 1200px;
-		font-size: 0.8em;
-		margin: 0 auto;
-		margin-bottom: 70px;
-		margin-top: 30px;
-		width: 100%;
-}
-
 .sponsor-giga-row-wrapper-wide {
 		max-width: 1000px;
 		font-size: 0.8em;
 		margin: 0 auto;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 		width: 100%;
 }
 
@@ -329,7 +320,7 @@ h2.header_title {
 		max-width: 1000px;
 		font-size: 0.8em;
 		margin: 0 auto;
-		margin-bottom: 40px;
+		margin-bottom: 60px;
 		width: 100%;
 
 }
@@ -359,8 +350,8 @@ h2.header_title {
 		margin: auto
 }
 
-.sponsor-logos-tera .sponsorship-logo--stdlib {
-		width: 520px
+.sponsorship-logo--stdlib {
+		max-width: 500px
 }
 
 .sponsor-logos-giga .sponsorship-logo {
@@ -615,17 +606,11 @@ h2.header_title {
 			margin: 0 auto;
 			margin-bottom: 20px;
 			width: 100%;
-
 	}
 
 	.sponsor-mega-row-wrapper-wide {
-			max-width: 1000px;
-			font-size: 0.8em;
-			margin: 0 auto;
 			margin-bottom: 70px;
-			width: 100%;
 			margin-top: -90px;
-
 	}
 
 	.sponsor-startup-row-wrapper-wide {
