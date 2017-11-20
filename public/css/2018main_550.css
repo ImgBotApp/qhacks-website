@@ -30,7 +30,6 @@ html, body {
 	height: 100%;
 	min-height: 600px;
 	background-image: url("../img/Cover16х9.svg");
-	/*background-attachment: fixed;*/
 	background-size: cover;
 	background-position: center;
 }
@@ -110,6 +109,16 @@ html, body {
 	}
 }
 
+@media only screen and (min-width: 1281px){
+	#header_landing{
+		background-attachment: fixed;
+	}
+}
+@media only screen and (max-width: 1281px){
+	#header_landing{
+		background-attachment: scroll;
+	}
+}
 /* End Header Background Graphic */
 
 
@@ -811,7 +820,7 @@ h2.header_title {
 		margin-bottom: 50px;
 	}
 	.sponsor-logos-community .sponsorship-logo--mmie {
-		margin-bottom: 50px;		
+		margin-bottom: 50px;
 	}
 
 }
@@ -825,16 +834,16 @@ footer{
 
 #footer-hr{
 	border: 1px solid #002469;
-	width: 90%; 
-	margin-left: auto; 
-	margin-right: auto; 
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*CUSTOM SCREEN SIZES 700 (PX)*/
 /*MOBILE*/
 @media(max-width: 800px){
 	footer{
-		text-align: center;		
+		text-align: center;
 		height: 8em;
 	}
 	#right-links{
@@ -852,7 +861,7 @@ footer{
 /*MOBILE*/
 @media(max-width: 460px){
 	footer{
-		text-align: center;		
+		text-align: center;
 		height: 9em;
 	}
 	#right-links{
@@ -878,7 +887,7 @@ ul.social-network {
 	padding: 0;
 	float: left;
   }
-  
+
   ul.social-network li {
 	display: inline;
 	margin: 0 5px;
@@ -902,33 +911,33 @@ ul.social-network {
 	color:  #002469;
 	font-size: 1.3em;
   }
-  
+
   /*  Social icons */
-  
+
   .social-network a.icoRss:hover {
 	background-color: #F56505;
   }
-  
+
   .social-network a.icoFacebook:hover {
 	background-color: #3B5998;
   }
-  
+
   .social-network a.icoTwitter:hover {
 	background-color: #33ccff;
   }
-  
+
   .social-network a.icoGoogle:hover {
 	background-color: #BD3518;
   }
-  
+
   .social-network a.icoVimeo:hover {
 	background-color: #0590B8;
   }
-  
+
   .social-network a.icoLinkedin:hover {
 	background-color: #007bb7;
   }
-  
+
   .social-network a.icoRss:hover i,
   .social-network a.icoFacebook:hover i,
   .social-network a.icoTwitter:hover i,
@@ -937,12 +946,12 @@ ul.social-network {
   .social-network a.icoLinkedin:hover i {
 	color: white;
   }
-  
+
   a.socialIcon:hover,
   .socialHoverClass {
 	color: #44BCDD;
   }
-  
+
   .social-circle li a {
 	display: inline-block;
 	position: relative;
@@ -956,13 +965,13 @@ ul.social-network {
 	font-size: 20px;
 	color: #002469;
   }
-  
+
   .social-circle li i {
 	margin: 0;
 	line-height: 40px;
 	text-align: center;
   }
-  
+
   .social-circle li a:hover i,
   .triggeredHover {
 	-moz-transform: rotate(360deg);
@@ -975,7 +984,7 @@ ul.social-network {
 	-ms-transition: all 0.2s;
 	transition: all 0.2s;
   }
-  
+
   .social-circle i {
 	/* color: #fff; */
 	-webkit-transition: all 0.8s;
