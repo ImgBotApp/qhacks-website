@@ -64,7 +64,8 @@ html, body {
 @media only screen and (min-width: 300px) and (max-width: 420px){
 	#header_landing{
 		/*background-color: brown;*/
-		background-size:100% 100%;
+		background-size:cover;
+		background-position: 10% 50%;
 		background-image: url("../img/Cover9х16.svg");
 	}
 }
@@ -82,8 +83,7 @@ html, body {
 	#header_landing{
 		/*background-color: yellow;*/
 		background-image: url("../img/Cover4х3.svg");
-		background-size:100% 100%;
-		background-position: center;
+		background-size:cover;
 	}
 }
 /* iPads specific ----------- */
@@ -98,7 +98,7 @@ html, body {
 	#header_landing{
 		/*background-color: orange;*/
 		background-image: url("../img/Cover21х9.svg");
-		background-size:100% 100%;
+		background-size:cover;
 	}
 }
 @media only screen and (min-width: 1900px){
@@ -108,8 +108,6 @@ html, body {
 		background-position: center;
 	}
 }
-
-
 
 /* End Header Background Graphic */
 
