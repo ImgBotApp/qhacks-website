@@ -805,3 +805,13 @@ h2.header_title {
 			width: 150px;
 	}
 }
+
+@media(max-width: 460px){
+	.sponsor-logos-community .sponsorship-logo--github {
+		margin-bottom: 50px;
+	}
+	.sponsor-logos-community .sponsorship-logo--mmie {
+		margin-bottom: 50px;		
+	}
+
+}
