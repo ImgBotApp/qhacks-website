@@ -109,12 +109,12 @@ html, body {
 	}
 }
 
-@media only screen and (min-width: 1281px){
+@media only screen and (min-width: 1200px){
 	#header_landing{
 		background-attachment: fixed;
 	}
 }
-@media only screen and (max-width: 1281px){
+@media only screen and (max-width: 1200){
 	#header_landing{
 		background-attachment: scroll;
 	}
