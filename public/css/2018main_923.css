@@ -19,6 +19,18 @@ html, body {
 	height: 245px;
 }
 
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -245px;
+  /* equal to footer height */
+}
+.wrapper:after {
+  content: "";
+  display: block;
+  height: 245px;
+  /* must be the same height as footer */
+}
+
 h1,
 h2,
 h3,
@@ -71,10 +83,12 @@ a:focus {
 
 .btn_main.orange_btn:hover {
 	background-color: #0a205b;
+	color: #fff;
 }
 
 .btn_main.orange_btn:active {
 	background-color: #0a205b;
+	color: #fff;
 }
 a.btn_main {
 	padding-top: 8px;
@@ -86,10 +100,12 @@ a.btn_main {
 
 .btn_main.yellow_btn:hover {
 	background-color: #0a205b;
+	color: #fff;
 }
 
 .btn_main.yellow_btn:active {
 	background-color: #0a205b;
+	color: #fff;
 }
 
 .btn,
