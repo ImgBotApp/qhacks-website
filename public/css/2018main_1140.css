@@ -232,11 +232,14 @@ a.btn-cta-secondary:hover,
 	color: #b3b3b3;
 	font-size: 14px;
 	padding: 10px 0;
-	margin-top: 30px;
+	margin-top: 0px;
 }
 
 .footer .bottom-bar .copyright {
 	line-height: 1.6;
+}
+.footer .footer-content{
+	height:100%;
 }
 
 /* Features */
@@ -300,6 +303,7 @@ a.btn-cta-secondary:hover,
 
 .features-promo .features-video {
 	padding-top: 60px;
+	padding-bottom: 30px;
 }
 
 .features {
@@ -746,6 +750,7 @@ h2.header_title {
 }
 
 .sponsor-logos-community .sponsorship-logo--github {
+	margin-bottom: 14px;
 	width: 140px;
 }
 
@@ -831,8 +836,8 @@ h2.header_title {
 	}
 
 	.sponsor-mega-row-wrapper-wide {
-		margin-bottom: 70px;
-		margin-top: -90px;
+		margin-bottom: 20px;
+		margin-top: 20px;
 	}
 
 	.sponsor-startup-row-wrapper-wide {
@@ -889,6 +894,7 @@ h2.header_title {
 		width: 120px;
 		margin-right: 60px;
 		margin-left: 60px;
+
 
 	}
 
@@ -1030,10 +1036,16 @@ h2.header_title {
 
 @media(max-width: 460px){
 	.sponsor-logos-community .sponsorship-logo--github {
-		margin-bottom: 50px;
+		margin-bottom: 15px;
+		margin-right: 20px;
 	}
 	.sponsor-logos-community .sponsorship-logo--mmie {
 		margin-bottom: 50px;
+	}
+}
+@media(max-width: 425px){
+	.sponsor-logos-community .sponsorship-logo--github {
+		margin-bottom: 40px;
 	}
 }
 
@@ -1103,7 +1115,12 @@ h2.header_title {
 		background-position: center;
 	}
 }
-
+/*Reduce sub-title date size on stack*/
+@media (max-width: 500px) {
+#sub_date{
+	font-size: .8em;
+}
+}
 @media (max-width: 767px) {
 	.wrapper {
 		min-height: inherit;
@@ -1126,6 +1143,10 @@ h2.header_title {
 		float: left;
 		margin-left: 0;
 		margin-right: 10px;
+	}
+	.features-promo .features-video {
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 }
 
