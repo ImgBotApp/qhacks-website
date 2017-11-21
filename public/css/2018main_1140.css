@@ -1,5 +1,5 @@
 
-/* BASE IMPLEMETATION */
+/* Base Implementation */
 
 html, body {
 	height: 100%;
@@ -20,15 +20,14 @@ html, body {
 }
 
 .wrapper {
-  min-height: 100%;
-  margin-bottom: -245px;
-  /* equal to footer height */
+	min-height: 100%;
+	margin-bottom: -245px;
 }
+
 .wrapper:after {
-  content: "";
-  display: block;
-  height: 245px;
-  /* must be the same height as footer */
+	content: "";
+	display: block;
+	height: 245px;
 }
 
 h1,
@@ -63,7 +62,17 @@ a:focus {
 	text-decoration: none;
 }
 
-/* BUTTONS */
+/* Header Background Graphic */
+
+#header_landing{
+	height: 100%;
+	min-height: 600px;
+	background-image: url("../img/qhacksCover16x9.svg");
+	background-size: cover;
+	background-position: center;
+}
+
+/* Buttons */
 
 .btn_main {
 	font-family: 'Encode Sans', 'Lato', sans-serif;
@@ -82,14 +91,15 @@ a:focus {
 }
 
 .btn_main.orange_btn:hover {
-	background-color: #0a205b;
+	background-color: #c61633;
 	color: #fff;
 }
 
 .btn_main.orange_btn:active {
-	background-color: #0a205b;
+	background-color: #c61633;
 	color: #fff;
 }
+
 a.btn_main {
 	padding-top: 8px;
 }
@@ -99,12 +109,12 @@ a.btn_main {
 }
 
 .btn_main.yellow_btn:hover {
-	background-color: #0a205b;
+	background-color: #c61633;
 	color: #fff;
 }
 
 .btn_main.yellow_btn:active {
-	background-color: #0a205b;
+	background-color: #c61633;
 	color: #fff;
 }
 
@@ -150,9 +160,11 @@ a.btn-cta-secondary:hover,
 .signup {
 	padding: 60px 0;
 }
+
 .signup.has-bg-color {
 	background: #f5f5f5;
 }
+
 .signup .title {
 	font-size: 28px;
 	font-weight: bold;
@@ -166,42 +178,51 @@ a.btn-cta-secondary:hover,
 	font-size: 18px;
 }
 
-/* ======= Footer ======= */
+/* Footer */
 
 .footer {
 	background: #0a205b;
 	color: #fff;
 	padding: 15px 0;
 }
+
 .footer .footer-col.about .more .fa {
 	margin-left: 5px;
 	position: relative;
 	top: 1px;
 }
+
 .footer .footer-col.links .fa {
 	margin-right: 5px;
 }
+
 .footer .footer-col.links li {
 	margin-bottom: 10px;
 }
+
 .footer .footer-col.contact p {
 	color: #fff;
 }
+
 .footer .footer-col.contact .fa {
 	margin-right: 10px;
 	color: #fff;
 }
+
 .footer .footer-col .title {
 	color: #fff;
 	font-weight: normal;
 	font-size: 18px;
 }
+
 .footer .footer-col p {
 	color: #fff;
 }
+
 .footer .footer-col a {
 	color: #fff;
 }
+
 .footer .footer-col a:hover {
 	color: #c61633;
 }
@@ -213,6 +234,7 @@ a.btn-cta-secondary:hover,
 	padding: 10px 0;
 	margin-top: 30px;
 }
+
 .footer .bottom-bar .copyright {
 	line-height: 1.6;
 }
@@ -233,6 +255,7 @@ a.btn-cta-secondary:hover,
 	background-size: cover;
 	min-height: 520px;
 }
+
 .features-promo .bg-mask {
 	background: #0a205b;
 	-webkit-opacity: 0.9;
@@ -244,10 +267,12 @@ a.btn-cta-secondary:hover,
 	width: 100%;
 	height: 100%;
 }
+
 .features-promo .features-intro {
 	color: #fff;
-	padding-top: 70px;
+	padding-top: 90px;
 }
+
 .features-promo .features-intro .title {
 	color: #fff;
 	font-size: 32px;
@@ -256,25 +281,31 @@ a.btn-cta-secondary:hover,
 	font-weight: bold;
 	margin-bottom: 30px;
 }
+
 .features-promo .features-intro .features-list {
 	font-size: 18px;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 	margin-left: 0;
 }
+
 .features-promo .features-intro .features-list li {
 	margin-bottom: 15px;
 }
+
 .features-promo .features-intro .features-list li .fa {
 	margin-right: 10px;
 	color: #0a205b;
 	text-shadow: none;
 }
+
 .features-promo .features-video {
 	padding-top: 60px;
 }
+
 .features {
 	padding-top: 20px;
 }
+
 .features .item {
 	padding: 60px 0;
 }
@@ -284,52 +315,64 @@ a.btn-cta-secondary:hover,
 	color: #0a205b;
 	margin-top: 0;
 }
+
 .features .item .content p {
 	font-size: 16px;
 }
+
 .features .figure img {
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* ======= FAQ Section ======= */
+/* FAQ */
 
 .faq {
 	padding: 40px 0;
 }
+
 .faq.has-bg-color {
 	background: #f5f5f5;
 }
+
 .faq .title {
 	margin-bottom: 60px;
 	font-size: 28px;
 }
+
 .faq .panel {
 	background: #f0f0f0;
 }
+
 .faq .panel .panel-heading {
 	padding: 15px 30px;
 }
+
 .faq .panel .panel-body {
 	padding: 30px;
 	padding-top: 0;
 	color: #666;
 }
+
 .faq .panel .panel-title {
 	font-weight: normal;
 	color: #666;
 }
+
 .faq .panel .panel-title .active {
 	color: #408337;
 }
+
 .faq .panel .panel-title .panel-toggle .fa {
 	margin-right: 10px;
 	color: #0a205b;
 }
+
 .faq .more {
 	margin-top: 60px;
 }
+
 .faq .more .title {
 	margin-bottom: 15px;
 	color: #999;
@@ -346,94 +389,13 @@ a.btn-cta-secondary:hover,
 	font-weight: bold;
 	font-size: 1.3em;
 }
+
 .front_contact_link:hover{
 	color:white;
 }
 
-/* Header Background Graphic */
-
-#header_landing{
-	height: 100%;
-	min-height: 600px;
-	background-image: url("../img/qhacksCover16x9.svg");
-	background-size: cover;
-	background-position: center;
-}
-/*CUSTOM SCREEN SIZES (PX)*/
-/*MOBILE*/
-@media only screen and (min-width: 300px) and (max-width: 420px){
-	#header_landing{
-		background-size:cover;
-		background-position: 10% 50%;
-		background-image: url("../img/qhacksCover9x16.svg");
-	}
-}
-/*SQUARE SCREEN*/
-@media only screen and (min-width: 700px) and (max-width: 950px){
-	#header_landing{
-		background-image: url("../img/qhacksCover4x3.svg");
-		background-size:cover;
-		background-position: center;
-	}
-}
-/*LAPTOPS*/
-@media only screen and (min-width: 1250px){
-	#header_landing{
-		background-image: url("../img/qhacksCover4x3.svg");
-		background-size:cover;
-	}
-}
-
-/* iPads specific ----------- */
-@media only screen and (device-width : 768px) and (device-height : 1024px){
-	#header_landing{
-		background-size:cover;
-		background-image: url("../img/qhacksCover9x16.svg");
-	}
-}
-
-/*WIDESCREEN*/
-@media only screen and (min-width: 1350px) and (max-width: 1900px){
-	#header_landing{
-		background-image: url("../img/qhacksCover21x9.svg");
-		background-size:cover;
-	}
-}
-
-@media only screen and (min-width: 1900px){
-	#header_landing{
-		background-image: url("../img/qhacksCover21x9.svg");
-		background-size:cover;
-		background-position: center;
-	}
-}
-
-/*ASPECT RATIO FALLBACKS*/
-/*MOBILE*/
-@media only screen and (min-aspect-ratio: 9/16){
-	#header_landing{
-		background-size:cover;
-		background-image: url("../img/qhacksCover9x16.svg");
-	}
-}
-
-/*SQUAREISH SCREENS*/
-@media only screen and (min-aspect-ratio: 4/3){
-	#header_landing{
-		background-image: url("../img/qhacksCover4x3.svg");
-	}
-}
-
-/*ULTRA-WIDE*/
-@media only screen and (min-aspect-ratio: 21/9){
-	#header_landing{
-		background-image: url("../img/qhacksCover21x9.svg");
-		background-size: cover;
-		background-position: center;
-	}
-}
-
 /* Titles */
+
 .logo{
 	position: relative;
 	top:70px;
@@ -469,16 +431,20 @@ a.btn-cta-secondary:hover,
 	margin-left: 2px;
 	margin-right: 2px;
 }
+
 .talk_to_us{
 	color: #001e51;
 	margin-top: 15px;
 }
+
 .talk_to_us a{
 	color: #001e51;
 }
+
 .talk_to_us a{
 	color: #001e51;
 }
+
 .talk_to_us a:hover{
 	color:#c61633;
 }
@@ -544,24 +510,27 @@ h2.header_title {
 }
 
 .hvr-grow {
-		display: inline-block;
-		vertical-align: middle;
-		-webkit-transform: translateZ(0);
-		transform: translateZ(0);
-		box-shadow: 0 0 1px rgba(0,0,0,0);
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-transition-duration: .3s;
-		transition-duration: .3s;
-		-webkit-transition-property: transform;
-		transition-property: transform;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0,0,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
 }
-/* SPONSORS */
+
+/* Sponsors */
+
 .sponsors-wrap{
 	overflow: hidden;
 	padding: 40px 0;
 }
+
 .sponsor-row-wrapper {
 	justify-content: center;
 	padding: 1em 2em;
@@ -577,12 +546,11 @@ h2.header_title {
 	width: 100%;
 }
 
-
 .sponsor-giga-row-wrapper-wide {
 	max-width: 1000px;
 	font-size: 0.8em;
 	margin: 0 auto;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	width: 100%;
 }
 
@@ -610,72 +578,67 @@ h2.header_title {
 }
 
 .sponsorship-logo img {
-		width: 100%;
-		height: 100%
+	width: 100%;
+	height: 100%
 }
 
 .sponsor-logos-tera .sponsorship-logo {
-		width: 100%;
-		margin: auto
+	width: 100%;
+	margin: auto
 }
 
 .sponsorship-logo--stdlib {
-		max-width: 500px
+	max-width: 500px
 }
 
 .sponsor-logos-giga .sponsorship-logo {
-		width: 100%;
-		margin: auto
+	width: 100%;
+	margin: auto
 }
 
 .sponsor-logos-giga .sponsorship-logo--sunlife {
-		width: 420px
+	width: 420px
 }
 
 .sponsor-logos-mega {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .sponsor-logos-mega .sponsorship-logo {
-		width: 100px;
-		margin: 0px;
+	width: 100px;
+	margin: 0px;
 }
 
 .sponsor-logos-mega .sponsorship-logo--rbc {
-		width: 110px
-}
-#rbc_logo{
-	margin-left: 30px;
+	width: 110px
 }
 
 .sponsor-logos-mega .sponsorship-logo--td {
-		width: 120px
+	width: 120px
 }
 
 .sponsor-logos-mega .sponsorship-logo--ibm {
-		width: 180px
+	width: 180px
 }
 
 .sponsor-logos-mega .sponsorship-logo--scotiabank {
-		width: 300px
+	width: 300px
 }
 
 .sponsor-logos-mega .sponsorship-logo--ratehub {
-		width: 270px
+	width: 270px
 }
 
 .sponsor-logos-mega .sponsorship-logo--microsoft {
-		width: 240px
+	width: 240px
 }
 
 .sponsor-logos-mega .sponsorship-logo--telus {
-		width: 260px;
-		margin-top: 20px;
+	width: 260px;
 }
-
 
 .sponsor-logos-startup {
 		justify-content: center;
@@ -688,81 +651,75 @@ h2.header_title {
 .sponsor-logos-startup .sponsorship-logo {
 		width: 110px;
 		margin: 20px;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		align-items: center, baseline;
 }
 
 .sponsor-logos-startup .sponsorship-logo--1password {
-		width: 160px
+	width: 160px
 }
 
 .sponsor-logos-startup .sponsorship-logo--sketch {
-		width: 160px;
+	width: 160px;
 }
 
 .sponsor-logos-startup .sponsorship-logo--indico {
-		width: 120px
+	width: 120px
 }
 
 .sponsor-logos-startup .sponsorship-logo--communitech {
-		width: 170px
+	width: 170px
 }
 
 .sponsor-logos-startup .sponsorship-logo--stickermule {
-		width: 120px
+	width: 120px
 }
 
 .sponsor-logos-startup .sponsorship-logo--gocubes {
-		width: 180px
+	width: 180px
 }
 
 .sponsor-logos-startup .sponsorship-logo--studentxel {
-		width: 160px
+	width: 160px
 }
 
 .sponsor-logos-startup .sponsorship-logo--techdomains {
-		width: 110px
+	width: 110px
 }
 
 .sponsor-logos-startup .sponsorship-logo--loopio {
-		width: 120px
+	width: 120px
 }
 
 .sponsor-logos-startup .sponsorship-logo--wakeups {
-		width: 110px;
+	width: 110px;
 }
 
 .sponsor-logos-startup .sponsorship-logo--mosaic {
-		width: 140px
+	width: 140px
 }
 
 .sponsor-logos-startup .sponsorship-logo--digitalocean {
-		width: 100px
+	width: 100px
 }
 
 .sponsor-logos-startup .sponsorship-logo--movember {
-		width: 75px;
+	width: 75px;
 }
 
 .sponsor-logos-startup .sponsorship-logo--nextcanada {
-		width: 140px;
+	width: 140px;
 }
 
 .sponsor-logos-startup .sponsorship-logo--wolfram {
-		width: 160px;
+	width: 160px;
 }
 
 .sponsor-logos-startup .sponsorship-logo--ritual {
-		width: 140px;
+	width: 140px;
 }
 
 .sponsor-logos-startup .sponsorship-logo--balsamiq {
-		width: 140px;
+	width: 140px;
 }
-
-
-
 
 .sponsor-logos-community {
 	justify-content: center;
@@ -773,33 +730,32 @@ h2.header_title {
 }
 
 .sponsor-logos-community .sponsorship-logo--ams {
-		width: 200px
+	width: 200px
 }
 
 .sponsor-logos-community .sponsorship-logo--qic {
-		width: 370px
+	width: 370px
 }
 
 .sponsor-logos-community .sponsorship-logo--mmie {
-		width: 340px
+	width: 340px
 }
 
 .sponsor-logos-community .sponsorship-logo--bloomberg {
-		width: 220px;
+	width: 220px;
 }
 
 .sponsor-logos-community .sponsorship-logo--github {
-		width: 140px;
+	width: 140px;
 }
 
 .sponsor-logos-community .sponsorship-logo--mlh {
 		width: 150px;
 }
 
+/* Media Queries */
 
-/* Media Queuries For Responsive Landing Page */
 @media only screen and (max-width: 950px) {
-
 	.logo{
 		position: relative;
 		top:70px;
@@ -808,6 +764,7 @@ h2.header_title {
 		max-height: 250px;
 		max-width: 250px;
 	}
+
 	h2.sub_title{
 		font-weight: 400;
 		font-size: 1.5em;
@@ -821,11 +778,9 @@ h2.header_title {
 		font-weight: 400;
 		letter-spacing: 0.5px;
 	}
-
 }
 
 @media only screen and (max-width: 400px) {
-
 	.logo{
 		position: relative;
 		top:70px;
@@ -834,6 +789,7 @@ h2.header_title {
 		max-height: 200px;
 		max-width: 200px;
 	}
+
 	h2.sub_title{
 		font-weight: 400;
 		font-size: 1.4em;
@@ -847,46 +803,43 @@ h2.header_title {
 		font-weight: 400;
 		letter-spacing: 0.5px;
 	}
+
 	#header-title .btn_row{
 		margin-top: 18px;
 		margin-bottom: 0px;
 	}
+
 	.talk_to_us{
 		margin-top: 15px;
 	}
-
 }
 
-
-/* Media Queuries For Responsive Logo Stacking */
 @media only screen and (max-width: 875px) {
-	#rbc_logo{
-		margin-left: 0px;
-	}
 	.sponsor-row-wrapper {
-			justify-content: center;
-			padding: 1em 2em;
-			position: relative;
+		justify-content: center;
+		padding: 1em 2em;
+		position: relative;
 	}
+
 
 	.sponsor-giga-row-wrapper-wide {
-			max-width: 1000px;
-			font-size: 0.8em;
-			margin: 0 auto;
-			margin-bottom: 20px;
-			width: 100%;
+		max-width: 1000px;
+		font-size: 0.8em;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		width: 100%;
 	}
 
 	.sponsor-mega-row-wrapper-wide {
-			margin-bottom: 70px;
-			margin-top: -90px;
+		margin-bottom: 70px;
+		margin-top: -90px;
 	}
 
 	.sponsor-startup-row-wrapper-wide {
-			max-width: 900px;
-			font-size: 0.8em;
-			margin: 0 auto;
-			width: 100%;
+		max-width: 900px;
+		font-size: 0.8em;
+		margin: 0 auto;
+		width: 100%;
 	}
 
 	.sponsor-community-row-wrapper-wide {
@@ -898,128 +851,128 @@ h2.header_title {
 	}
 
 	.sponsorship-logo img {
-			width: 100%;
-			height: 100%
+		width: 100%;
+		height: 100%
 	}
 
 	.sponsor-logos-giga .sponsorship-logo {
-			width: 100%;
-			margin: auto
+		width: 100%;
+		margin: auto
 	}
 
 	.sponsor-logos-giga .sponsorship-logo--sunlife {
-			max-width: 400px
+		max-width: 400px
 	}
 
 	.sponsor-logos-mega {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around;
-			align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
 	}
 
 	.sponsor-logos-mega .sponsorship-logo {
-			width: 100px;
-			margin: 0px;
-			margin-right: 20px;
-			margin-left: 20px;
-			margin-top: 40px;
+		width: 100px;
+		margin: 0px;
+		margin-right: 20px;
+		margin-left: 20px;
+		margin-top: 40px;
 	}
 
 	.sponsor-logos-mega .sponsorship-logo--rbc {
-			width: 110px;
-			margin-right: 60px;
-			margin-left: 60px;
+		width: 110px;
+		margin-right: 60px;
+		margin-left: 60px;
 	}
 
 	.sponsor-logos-mega .sponsorship-logo--td {
-			width: 120px;
-			margin-right: 60px;
-			margin-left: 60px;
+		width: 120px;
+		margin-right: 60px;
+		margin-left: 60px;
 
 	}
 
 	.sponsor-logos-mega .sponsorship-logo--ibm {
-			width: 180px;
-			margin-right: 60px;
-			margin-left: 60px;
+		width: 180px;
+		margin-right: 60px;
+		margin-left: 60px;
 	}
 
 	.sponsor-logos-mega .sponsorship-logo--scotiabank {
-			width: 300px
+		width: 300px
 	}
 
 	.sponsor-logos-mega .sponsorship-logo--ratehub {
-			width: 270px
+		width: 270px
 	}
 
 	.sponsor-logos-mega .sponsorship-logo--microsoft {
-			width: 240px
+		width: 240px
 	}
 
 	.sponsor-logos-mega .sponsorship-logo--telus {
-			width: 260px;
-			margin-top: 60px;
+		width: 260px;
+		margin-top: 60px;
 	}
 
 	.sponsor-logos-startup {
-			justify-content: center;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around;
-			align-items: center, baseline;
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center, baseline;
 	}
 
 	.sponsor-logos-startup .sponsorship-logo {
-			width: 110px;
-			margin: 20px;
-			flex-wrap: wrap;
-			justify-content: space-around;
-			align-items: center, baseline;
+		width: 110px;
+		margin: 20px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center, baseline;
 	}
 
 	.sponsor-logos-startup .sponsorship-logo--1password {
-			width: 160px
+		width: 160px
 	}
 
 	.sponsor-logos-startup .sponsorship-logo--sketch {
-			width: 160px;
+		width: 160px;
 	}
 
 	.sponsor-logos-startup .sponsorship-logo--indico {
-			width: 120px
+		width: 120px
 	}
 
 	.sponsor-logos-startup .sponsorship-logo--communitech {
-			width: 170px
+		width: 170px
 	}
 
 	.sponsor-logos-startup .sponsorship-logo--stickermule {
-			width: 120px
+		width: 120px
 	}
 
 	.sponsor-logos-startup .sponsorship-logo--gocubes {
-			width: 180px
+		width: 180px
 	}
 
 	.sponsor-logos-startup .sponsorship-logo--studentxel {
-			width: 160px
+		width: 160px
 	}
 
 	.sponsor-logos-startup .sponsorship-logo--techdomains {
-			width: 110px
+		width: 110px
 	}
 
 	.sponsor-logos-startup .sponsorship-logo--loopio {
-			width: 120px
+		width: 120px
 	}
 
 	.sponsor-logos-startup .sponsorship-logo--wakeups {
-			width: 110px;
+		width: 110px;
 	}
 
 	.sponsor-logos-startup .sponsorship-logo--mosaic {
-			width: 140px
+		width: 140px
 	}
 
 	.sponsor-logos-startup .sponsorship-logo--digitalocean {
@@ -1081,5 +1034,133 @@ h2.header_title {
 	}
 	.sponsor-logos-community .sponsorship-logo--mmie {
 		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 420px){
+	#header_landing{
+		background-size:cover;
+		background-position: 10% 50%;
+		background-image: url("../img/qhacksCover9x16.svg");
+	}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 950px){
+	#header_landing{
+		background-image: url("../img/qhacksCover4x3.svg");
+		background-size:cover;
+		background-position: center;
+	}
+}
+
+@media only screen and (min-width: 1250px){
+	#header_landing{
+		background-image: url("../img/qhacksCover4x3.svg");
+		background-size:cover;
+	}
+}
+
+@media only screen and (device-width : 768px) and (device-height : 1024px){
+	#header_landing{
+		background-size:cover;
+		background-image: url("../img/qhacksCover9x16.svg");
+	}
+}
+
+@media only screen and (min-width: 1350px) and (max-width: 1900px){
+	#header_landing{
+		background-image: url("../img/qhacksCover21x9.svg");
+		background-size:cover;
+	}
+}
+
+@media only screen and (min-width: 1900px){
+	#header_landing{
+		background-image: url("../img/qhacksCover21x9.svg");
+		background-size:cover;
+		background-position: center;
+	}
+}
+
+@media only screen and (min-aspect-ratio: 9/16){
+	#header_landing{
+		background-size:cover;
+		background-image: url("../img/qhacksCover9x16.svg");
+	}
+}
+
+@media only screen and (min-aspect-ratio: 4/3){
+	#header_landing{
+		background-image: url("../img/qhacksCover4x3.svg");
+	}
+
+}
+
+@media only screen and (min-aspect-ratio: 21/9){
+	#header_landing{
+		background-image: url("../img/qhacksCover21x9.svg");
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+@media (max-width: 767px) {
+	.wrapper {
+		min-height: inherit;
+		margin-bottom: 0;
+	}
+	.wrapper:after {
+		content: none;
+	}
+	.footer {
+		height: auto;
+		padding-bottom: 0;
+	}
+	.footer-col {
+		margin-bottom: 60px;
+	}
+	.footer .bottom-bar .copyright {
+		margin-bottom: 15px;
+	}
+	.footer .bottom-bar .social li {
+		float: left;
+		margin-left: 0;
+		margin-right: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+	.wrapper {
+		min-height: inherit;
+		margin-bottom: 0;
+	}
+	.wrapper:after {
+		content: none;
+	}
+	.footer {
+		height: auto;
+		padding-bottom: 0;
+	}
+	.footer-col-inner {
+		margin-bottom: 15px;
+	}
+}
+
+@media (min-width: 992px) {
+	html,
+	body {
+		height: 100%;
+	}
+	.wrapper {
+		min-height: 100%;
+		margin-bottom: -245px;
+	}
+	.wrapper:after {
+		content: "";
+		display: block;
+		height: 245px;
+	}
+	.footer {
+		height: 245px;
 	}
 }
