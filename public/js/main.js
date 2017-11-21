@@ -11,11 +11,9 @@ function WidthChange(mq) {
   if (mq.matches) {
     // window width is at least 500px
 		pipe.innerHTML = "|";
-		console.log("pipe");
   } else {
     // window width is less than 500px
 		pipe.innerHTML = "<br>";
-		console.log("stack");
   }
 
 }

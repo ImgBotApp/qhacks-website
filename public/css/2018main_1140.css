@@ -821,6 +821,9 @@ h2.header_title {
 	.talk_to_us{
 		margin-top: 15px;
 	}
+	.front_contact_link{
+		font-size: 1em;
+	}
 }
 
 @media only screen and (max-width: 875px) {
