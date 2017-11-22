@@ -674,7 +674,7 @@ h2.header_title {
 }
 
 .sponsor-logos-startup .sponsorship-logo--stickermule {
-	width: 120px
+	width: 110px
 }
 
 .sponsor-logos-startup .sponsorship-logo--gocubes {
@@ -723,6 +723,10 @@ h2.header_title {
 
 .sponsor-logos-startup .sponsorship-logo--balsamiq {
 	width: 140px;
+}
+
+.sponsor-logos-startup .sponsorship-logo--diid {
+	width: 100px;
 }
 
 .sponsor-logos-community {
