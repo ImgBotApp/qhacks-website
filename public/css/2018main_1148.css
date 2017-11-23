@@ -1,0 +1,1198 @@
+
+/* Base Implementation */
+
+html, body {
+	height: 100%;
+	font-family: 'Encode Sans', 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	color: #444;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.footer {
+	height: 245px;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -245px;
+}
+
+.wrapper:after {
+	content: "";
+	display: block;
+	height: 245px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Encode Sans', sans-serif;
+	font-weight: bold;
+}
+
+p {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+a {
+	color: #0a205b;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #c61633;
+}
+
+a:focus {
+	text-decoration: none;
+}
+
+/* Header Background Graphic */
+
+#header_landing{
+	height: 100%;
+	min-height: 600px;
+	background-image: url("../img/qhacksCover16x9.svg");
+	background-size: cover;
+	background-position: center;
+}
+
+/* Buttons */
+
+.btn_main {
+	font-family: 'Encode Sans', 'Lato', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	border-radius: 3px;
+	width: 205px;
+	height: 45px;
+	color: #FFF;
+}
+
+.orange_btn {
+	background-color: #F4A531;
+}
+
+.btn_main.orange_btn:hover {
+	background-color: #c61633;
+	color: #fff;
+}
+
+.btn_main.orange_btn:active {
+	background-color: #c61633;
+	color: #fff;
+}
+
+a.btn_main {
+	padding-top: 8px;
+}
+
+.yellow_btn {
+	background-color: #EFBF37;
+}
+
+.btn_main.yellow_btn:hover {
+	background-color: #c61633;
+	color: #fff;
+}
+
+.btn_main.yellow_btn:active {
+	background-color: #c61633;
+	color: #fff;
+}
+
+.btn,
+a.btn {
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	font-family: 'Encode Sans', sans-serif;
+	padding: 8px 16px;
+}
+
+a.btn-cta-primary,
+.btn-cta-primary {
+	background: #0a205b;
+	border: 2px solid #0a205b;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+a.btn-cta-primary:hover,
+.btn-cta-primary:hover {
+	background: #c61633;
+	border: 2px solid #c61633;
+	color: #fff;
+}
+
+a.btn-cta-secondary,
+.btn-cta-secondary {
+	background: #fff;
+	color: #0a205b;
+}
+
+a.btn-cta-secondary:hover,
+.btn-cta-secondary:hover {
+	background: #fff;
+	color: #c61633;
+}
+
+/* Sign up section */
+
+.signup {
+	padding: 60px 0;
+}
+
+.signup.has-bg-color {
+	background: #f5f5f5;
+}
+
+.signup .title {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	margin-top: 0;
+}
+
+.signup .summary {
+	margin-bottom: 30px;
+	color: #999;
+	font-size: 18px;
+}
+
+/* Footer */
+
+.footer {
+	background: #0a205b;
+	color: #fff;
+	padding: 15px 0;
+}
+
+.footer .footer-col.about .more .fa {
+	margin-left: 5px;
+	position: relative;
+	top: 1px;
+}
+
+.footer .footer-col.links .fa {
+	margin-right: 5px;
+}
+
+.footer .footer-col.links li {
+	margin-bottom: 10px;
+}
+
+.footer .footer-col.contact p {
+	color: #fff;
+}
+
+.footer .footer-col.contact .fa {
+	margin-right: 10px;
+	color: #fff;
+}
+
+.footer .footer-col .title {
+	color: #fff;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.footer .footer-col p {
+	color: #fff;
+}
+
+.footer .footer-col a {
+	color: #fff;
+}
+
+.footer .footer-col a:hover {
+	color: #c61633;
+}
+
+.footer .bottom-bar {
+	background: #444;
+	color: #b3b3b3;
+	font-size: 14px;
+	padding: 10px 0;
+	margin-top: 0px;
+}
+
+.footer .bottom-bar .copyright {
+	line-height: 1.6;
+}
+.footer .footer-content{
+	height:100%;
+}
+
+/* Features */
+
+.feature-title {
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.features-promo {
+	position: relative;
+	background: #0a205b url('../img/qhacksFeatureTwo.jpg') no-repeat center bottom;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 520px;
+}
+
+.features-promo .bg-mask {
+	background: #0a205b;
+	-webkit-opacity: 0.9;
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.features-promo .features-intro {
+	color: #fff;
+	padding-top: 90px;
+}
+
+.features-promo .features-intro .title {
+	color: #fff;
+	font-size: 32px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	max-width: 720px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.features-promo .features-intro .features-list {
+	font-size: 18px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	margin-left: 0;
+}
+
+.features-promo .features-intro .features-list li {
+	margin-bottom: 15px;
+}
+
+.features-promo .features-intro .features-list li .fa {
+	margin-right: 10px;
+	color: #0a205b;
+	text-shadow: none;
+}
+
+.features-promo .features-video {
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.features {
+	padding-top: 20px;
+}
+
+.features .item {
+	padding: 60px 0;
+}
+
+.features .item .title {
+	font-size: 22px;
+	color: #0a205b;
+	margin-top: 0;
+}
+
+.features .item .content p {
+	font-size: 16px;
+}
+
+.features .figure img {
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQ */
+
+.faq {
+	padding: 40px 0;
+}
+
+.faq.has-bg-color {
+	background: #f5f5f5;
+}
+
+.faq .title {
+	margin-bottom: 60px;
+	font-size: 28px;
+}
+
+.faq .panel {
+	background: #f0f0f0;
+}
+
+.faq .panel .panel-heading {
+	padding: 15px 30px;
+}
+
+.faq .panel .panel-body {
+	padding: 30px;
+	padding-top: 0;
+	color: #666;
+}
+
+.faq .panel .panel-title {
+	font-weight: normal;
+	color: #666;
+}
+
+.faq .panel .panel-title .active {
+	color: #408337;
+}
+
+.faq .panel .panel-title .panel-toggle .fa {
+	margin-right: 10px;
+	color: #0a205b;
+}
+
+.faq .more {
+	margin-top: 60px;
+}
+
+.faq .more .title {
+	margin-bottom: 15px;
+	color: #999;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.text_align_center {
+	text-align: center;
+}
+
+.front_contact_link{
+	color:white;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.front_contact_link:hover{
+	color:white;
+}
+
+/* Titles */
+
+.logo{
+	position: relative;
+	top:70px;
+	height: 100%;
+	width: 100%;
+	max-height: 350px;
+	max-width: 350px;
+}
+
+#header-title{
+	margin-top: 20px;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 44%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	-webkit-transform: translate(-50%, -60%);
+	z-index: 100;
+	width: 100%;
+	font-size: 120%;
+}
+
+#header-title .btn_row{
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+
+#header-title .main_btn{
+	margin-bottom: 10px;
+	font-size:1em;
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.talk_to_us{
+	color: #001e51;
+	margin-top: 15px;
+}
+
+.talk_to_us a{
+	color: #001e51;
+}
+
+.talk_to_us a{
+	color: #001e51;
+}
+
+.talk_to_us a:hover{
+	color:#c61633;
+}
+
+h1.main_title{
+	font-weight: 700;
+	font-size: 4.3em;
+	color: #fff;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+h2.sub_title{
+	font-weight: 400;
+	font-size: 2.1em;
+	letter-spacing: 0.5px;
+	color: #001e51;
+	margin-bottom: 15px;
+	margin-top: 30px;
+}
+
+.sub_title_date{
+	font-size: .75em;
+}
+
+.sub-title{
+	color: #464646;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+}
+.alt_sub_title{
+	color: white;
+	width: 100%;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	line-height: 42px;
+	display: none;
+}
+
+/* START Content Titles */
+
+.header_wrapper {
+	text-align: center;
+}
+
+.header_title {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+	color:#476d99;
+	padding: 7px 21px 7px 21px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	border: 3px solid #476d99;
+}
+
+h2.header_title {
+	font-size: 22px;
+}
+
+.hvr-grow {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0,0,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+
+/* Sponsors */
+
+.sponsors-wrap{
+	overflow: hidden;
+	padding: 40px 0;
+}
+
+.sponsor-row-wrapper {
+	justify-content: center;
+	padding: 1em 2em;
+	position: relative;
+}
+
+.sponsor-tera-row-wrapper-wide {
+	max-width: 1200px;
+	font-size: 0.8em;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	margin-top: 50px;
+	width: 100%;
+}
+
+.sponsor-giga-row-wrapper-wide {
+	max-width: 1000px;
+	font-size: 0.8em;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+.sponsor-mega-row-wrapper-wide {
+	max-width: 1000px;
+	font-size: 0.8em;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	width: 100%;
+}
+
+.sponsor-startup-row-wrapper-wide {
+	max-width: 900px;
+	font-size: 0.8em;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.sponsor-community-row-wrapper-wide {
+	max-width: 900px;
+	font-size: 0.8em;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.sponsorship-logo img {
+	width: 100%;
+	height: 100%
+}
+
+.sponsor-logos-tera .sponsorship-logo {
+	width: 100%;
+	margin: auto
+}
+
+.sponsorship-logo--stdlib {
+	max-width: 500px
+}
+
+.sponsor-logos-giga .sponsorship-logo {
+	width: 100%;
+	margin: auto
+}
+
+.sponsor-logos-giga .sponsorship-logo--sunlife {
+	width: 420px
+}
+
+.sponsor-logos-mega {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.sponsor-logos-mega .sponsorship-logo {
+	width: 100px;
+	margin: 0px;
+}
+
+.sponsor-logos-mega .sponsorship-logo--rbc {
+	width: 110px
+}
+
+.sponsor-logos-mega .sponsorship-logo--td {
+	width: 120px
+}
+
+.sponsor-logos-mega .sponsorship-logo--ibm {
+	width: 180px
+}
+
+.sponsor-logos-mega .sponsorship-logo--scotiabank {
+	width: 300px
+}
+
+.sponsor-logos-mega .sponsorship-logo--ratehub {
+	width: 270px
+}
+
+.sponsor-logos-mega .sponsorship-logo--microsoft {
+	width: 240px
+}
+
+.sponsor-logos-mega .sponsorship-logo--telus {
+	width: 260px;
+}
+
+.sponsor-logos-startup {
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center, baseline;
+}
+
+.sponsor-logos-startup .sponsorship-logo {
+		width: 110px;
+		margin: 20px;
+}
+
+.sponsor-logos-startup .sponsorship-logo--1password {
+	width: 160px
+}
+
+.sponsor-logos-startup .sponsorship-logo--sketch {
+	width: 160px;
+}
+
+.sponsor-logos-startup .sponsorship-logo--indico {
+	width: 120px
+}
+
+.sponsor-logos-startup .sponsorship-logo--communitech {
+	width: 170px
+}
+
+.sponsor-logos-startup .sponsorship-logo--stickermule {
+	width: 110px
+}
+
+.sponsor-logos-startup .sponsorship-logo--gocubes {
+	width: 180px
+}
+
+.sponsor-logos-startup .sponsorship-logo--studentxel {
+	width: 160px
+}
+
+.sponsor-logos-startup .sponsorship-logo--techdomains {
+	width: 110px
+}
+
+.sponsor-logos-startup .sponsorship-logo--loopio {
+	width: 120px
+}
+
+.sponsor-logos-startup .sponsorship-logo--wakeups {
+	width: 110px;
+}
+
+.sponsor-logos-startup .sponsorship-logo--mosaic {
+	width: 140px
+}
+
+.sponsor-logos-startup .sponsorship-logo--digitalocean {
+	width: 100px
+}
+
+.sponsor-logos-startup .sponsorship-logo--movember {
+	width: 75px;
+}
+
+.sponsor-logos-startup .sponsorship-logo--nextcanada {
+	width: 140px;
+}
+
+.sponsor-logos-startup .sponsorship-logo--wolfram {
+	width: 160px;
+}
+
+.sponsor-logos-startup .sponsorship-logo--ritual {
+	width: 140px;
+}
+
+.sponsor-logos-startup .sponsorship-logo--balsamiq {
+	width: 140px;
+}
+
+.sponsor-logos-startup .sponsorship-logo--diid {
+	width: 100px;
+}
+
+.sponsor-logos-community {
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center, baseline;
+}
+
+.sponsor-logos-community .sponsorship-logo--ams {
+	width: 200px
+}
+
+.sponsor-logos-community .sponsorship-logo--qic {
+	width: 370px
+}
+
+.sponsor-logos-community .sponsorship-logo--mmie {
+	width: 340px
+}
+
+.sponsor-logos-community .sponsorship-logo--bloomberg {
+	width: 220px;
+}
+
+.sponsor-logos-community .sponsorship-logo--github {
+	margin-bottom: 14px;
+	width: 140px;
+}
+
+.sponsor-logos-community .sponsorship-logo--mlh {
+		width: 150px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 950px) {
+	.logo{
+		position: relative;
+		top:70px;
+		height: 100%;
+		width: 100%;
+		max-height: 250px;
+		max-width: 250px;
+	}
+
+	h2.sub_title{
+		font-weight: 400;
+		font-size: 1.5em;
+		letter-spacing: 0.5px;
+		margin-bottom: 5px;
+		margin-top: 30px;
+		padding-top: 20px;
+	}
+	.sub-title{
+		color: #464646;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+	}
+	#header-title .btn_row{
+		margin-top: 20px;
+		margin-bottom: 5px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.logo{
+		position: relative;
+		top:70px;
+		height: 100%;
+		width: 100%;
+		max-height: 200px;
+		max-width: 200px;
+	}
+
+	h2.sub_title{
+		font-weight: 400;
+		font-size: 1.4em;
+		letter-spacing: 0.5px;
+		margin-bottom: 10px;
+		margin-top: 40px;
+	}
+
+	.sub-title{
+		color: #464646;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+	}
+
+	#header-title .btn_row{
+		margin-top: 18px;
+		margin-bottom: 0px;
+	}
+
+	.talk_to_us{
+		margin-top: 15px;
+	}
+	.front_contact_link{
+		font-size: 1em;
+	}
+}
+
+@media only screen and (max-width: 875px) {
+	.sponsor-row-wrapper {
+		justify-content: center;
+		padding: 1em 2em;
+		position: relative;
+	}
+
+
+	.sponsor-giga-row-wrapper-wide {
+		max-width: 1000px;
+		font-size: 0.8em;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	.sponsor-mega-row-wrapper-wide {
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.sponsor-startup-row-wrapper-wide {
+		max-width: 900px;
+		font-size: 0.8em;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.sponsor-community-row-wrapper-wide {
+		max-width: 900px;
+		font-size: 0.8em;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	.sponsorship-logo img {
+		width: 100%;
+		height: 100%
+	}
+
+	.sponsor-logos-giga .sponsorship-logo {
+		width: 100%;
+		margin: auto
+	}
+
+	.sponsor-logos-giga .sponsorship-logo--sunlife {
+		max-width: 400px
+	}
+
+	.sponsor-logos-mega {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.sponsor-logos-mega .sponsorship-logo {
+		width: 100px;
+		margin: 0px;
+		margin-right: 20px;
+		margin-left: 20px;
+		margin-top: 40px;
+	}
+
+	.sponsor-logos-mega .sponsorship-logo--rbc {
+		width: 110px;
+		margin-right: 60px;
+		margin-left: 60px;
+	}
+
+	.sponsor-logos-mega .sponsorship-logo--td {
+		width: 120px;
+		margin-right: 60px;
+		margin-left: 60px;
+
+
+	}
+
+	.sponsor-logos-mega .sponsorship-logo--ibm {
+		width: 180px;
+		margin-right: 60px;
+		margin-left: 60px;
+	}
+
+	.sponsor-logos-mega .sponsorship-logo--scotiabank {
+		width: 300px
+	}
+
+	.sponsor-logos-mega .sponsorship-logo--ratehub {
+		width: 270px
+	}
+
+	.sponsor-logos-mega .sponsorship-logo--microsoft {
+		width: 240px
+	}
+
+	.sponsor-logos-mega .sponsorship-logo--telus {
+		width: 260px;
+		margin-top: 60px;
+	}
+
+	.sponsor-logos-startup {
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center, baseline;
+	}
+
+	.sponsor-logos-startup .sponsorship-logo {
+		width: 110px;
+		margin: 20px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center, baseline;
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--1password {
+		width: 160px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--sketch {
+		width: 160px;
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--indico {
+		width: 120px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--communitech {
+		width: 170px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--stickermule {
+		width: 120px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--gocubes {
+		width: 180px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--studentxel {
+		width: 160px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--techdomains {
+		width: 110px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--loopio {
+		width: 120px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--wakeups {
+		width: 110px;
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--mosaic {
+		width: 140px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--digitalocean {
+		width: 100px
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--movember {
+		width: 75px;
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--nextcanada {
+		width: 140px;
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--wolfram {
+		width: 160px;
+	}
+
+	.sponsor-logos-startup .sponsorship-logo--ritual {
+		width: 140px;
+	}
+
+	.sponsor-logos-community {
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center, baseline;
+	}
+
+	.sponsor-logos-community .sponsorship-logo--ams {
+		width: 200px
+	}
+
+	.sponsor-logos-community .sponsorship-logo--qic {
+		width: 370px
+	}
+
+	.sponsor-logos-community .sponsorship-logo--mmie {
+		width: 340px
+	}
+
+	.sponsor-logos-community .sponsorship-logo--bloomberg {
+		width: 220px;
+	}
+
+	.sponsor-logos-community .sponsorship-logo--github {
+		width: 140px;
+	}
+
+	.sponsor-logos-community .sponsorship-logo--mlh {
+		width: 150px;
+	}
+}
+
+@media(max-width: 460px){
+	.sponsor-logos-community .sponsorship-logo--github {
+		margin-bottom: 15px;
+		margin-right: 20px;
+	}
+	.sponsor-logos-community .sponsorship-logo--mmie {
+		margin-bottom: 50px;
+	}
+}
+@media(max-width: 425px){
+	.sponsor-logos-community .sponsorship-logo--github {
+		margin-bottom: 40px;
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 420px){
+	#header_landing{
+		background-size:cover;
+		background-position: 10% 50%;
+		background-image: url("../img/qhacksCover9x16.svg");
+	}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 950px){
+	#header_landing{
+		background-image: url("../img/qhacksCover4x3.svg");
+		background-size:cover;
+		background-position: center;
+	}
+}
+
+@media only screen and (min-width: 1250px){
+	#header_landing{
+		background-image: url("../img/qhacksCover4x3.svg");
+		background-size:cover;
+	}
+}
+
+@media only screen and (device-width : 768px) and (device-height : 1024px){
+	#header_landing{
+		background-size:cover;
+		background-image: url("../img/qhacksCover9x16.svg");
+	}
+}
+
+@media only screen and (min-width: 1350px) and (max-width: 1900px){
+	#header_landing{
+		background-image: url("../img/qhacksCover21x9.svg");
+		background-size:cover;
+	}
+}
+
+@media only screen and (min-width: 1900px){
+	#header_landing{
+		background-image: url("../img/qhacksCover21x9.svg");
+		background-size:cover;
+		background-position: center;
+	}
+}
+
+@media only screen and (min-aspect-ratio: 9/16){
+	#header_landing{
+		background-size:cover;
+		background-image: url("../img/qhacksCover9x16.svg");
+	}
+}
+
+@media only screen and (min-aspect-ratio: 4/3){
+	#header_landing{
+		background-image: url("../img/qhacksCover4x3.svg");
+	}
+
+}
+
+@media only screen and (min-aspect-ratio: 21/9){
+	#header_landing{
+		background-image: url("../img/qhacksCover21x9.svg");
+		background-size: cover;
+		background-position: center;
+	}
+}
+/*Reduce sub-title date size on stack*/
+@media (max-width: 500px) {
+#sub_date{
+	font-size: .8em;
+}
+}
+@media (max-width: 767px) {
+	.wrapper {
+		min-height: inherit;
+		margin-bottom: 0;
+	}
+	.wrapper:after {
+		content: none;
+	}
+	.footer {
+		height: auto;
+		padding-bottom: 0;
+	}
+	.footer-col {
+		margin-bottom: 60px;
+	}
+	.footer .bottom-bar .copyright {
+		margin-bottom: 15px;
+	}
+	.footer .bottom-bar .social li {
+		float: left;
+		margin-left: 0;
+		margin-right: 10px;
+	}
+	.features-promo .features-video {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+@media (min-width: 768px) {
+	.wrapper {
+		min-height: inherit;
+		margin-bottom: 0;
+	}
+	.wrapper:after {
+		content: none;
+	}
+	.footer {
+		height: auto;
+		padding-bottom: 0;
+	}
+	.footer-col-inner {
+		margin-bottom: 15px;
+	}
+}
+
+@media (min-width: 992px) {
+	html,
+	body {
+		height: 100%;
+	}
+	.wrapper {
+		min-height: 100%;
+		margin-bottom: -245px;
+	}
+	.wrapper:after {
+		content: "";
+		display: block;
+		height: 245px;
+	}
+	.footer {
+		height: 245px;
+	}
+}
