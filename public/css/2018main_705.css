@@ -729,6 +729,11 @@ h2.header_title {
 	width: 100px;
 }
 
+.sponsor-logos-startup .sponsorship-logo--launchacademy {
+	width: 170px;
+}
+
+
 .sponsor-logos-community {
 	justify-content: center;
 	display: flex;
