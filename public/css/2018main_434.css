@@ -733,6 +733,14 @@ h2.header_title {
 	width: 170px;
 }
 
+.sponsor-logos-startup .sponsorship-logo--logdna {
+	width: 160px;
+}
+
+.sponsor-logos-startup .sponsorship-logo--seedbelt {
+	width: 160px;
+}
+
 
 .sponsor-logos-community {
 	justify-content: center;
